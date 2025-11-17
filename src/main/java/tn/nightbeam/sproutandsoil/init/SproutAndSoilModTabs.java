@@ -19,5 +19,6 @@ public class SproutAndSoilModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.sprout_and_soil.sprout_and_soil")).icon(() -> new ItemStack(SproutAndSoilModItems.TOMATO.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(SproutAndSoilModItems.TOMATO_SEEDS.get());
 				tabData.accept(SproutAndSoilModItems.TOMATO.get());
+				tabData.accept(SproutAndSoilModItems.GARLIC.get());
 			}).build());
 }

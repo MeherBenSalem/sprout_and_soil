@@ -39,5 +39,10 @@
   "block.sprout_and_soil.tomato_plant_stage_6": "Tomato Plant",
   "block.sprout_and_soil.tomato_plant_stage_7": "Tomato Plant",
   "item.sprout_and_soil.tomato": "Tomato",
-  "item_group.sprout_and_soil.sprout_and_soil": "Sprout \u0026 Soil"
+  "item_group.sprout_and_soil.sprout_and_soil": "Sprout \u0026 Soil",
+  "item.sprout_and_soil.garlic": "Garlic",
+  "block.sprout_and_soil.garlic_plant_stage_0": "Garlic Plant",
+  "block.sprout_and_soil.garlic_plant_stage_1": "Garlic Plant",
+  "block.sprout_and_soil.garlic_plant_stage_2": "Garlic Plant",
+  "block.sprout_and_soil.garlic_plant_stage_3": "Garlic Plant"
 }

@@ -11,6 +11,10 @@ import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage3BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage2BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage1BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage0BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.GarlicPlantStage3BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.GarlicPlantStage2BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.GarlicPlantStage1BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.GarlicPlantStage0BlockEntity;
 import tn.nightbeam.sproutandsoil.SproutAndSoilMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -31,6 +35,10 @@ public class SproutAndSoilModBlockEntities {
 	public static final RegistryObject<BlockEntityType<TomatoPlantStage5BlockEntity>> TOMATO_PLANT_STAGE_5 = register("tomato_plant_stage_5", SproutAndSoilModBlocks.TOMATO_PLANT_STAGE_5, TomatoPlantStage5BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<TomatoPlantStage6BlockEntity>> TOMATO_PLANT_STAGE_6 = register("tomato_plant_stage_6", SproutAndSoilModBlocks.TOMATO_PLANT_STAGE_6, TomatoPlantStage6BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<TomatoPlantStage7BlockEntity>> TOMATO_PLANT_STAGE_7 = register("tomato_plant_stage_7", SproutAndSoilModBlocks.TOMATO_PLANT_STAGE_7, TomatoPlantStage7BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<GarlicPlantStage0BlockEntity>> GARLIC_PLANT_STAGE_0 = register("garlic_plant_stage_0", SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_0, GarlicPlantStage0BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<GarlicPlantStage1BlockEntity>> GARLIC_PLANT_STAGE_1 = register("garlic_plant_stage_1", SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_1, GarlicPlantStage1BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<GarlicPlantStage2BlockEntity>> GARLIC_PLANT_STAGE_2 = register("garlic_plant_stage_2", SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_2, GarlicPlantStage2BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<GarlicPlantStage3BlockEntity>> GARLIC_PLANT_STAGE_3 = register("garlic_plant_stage_3", SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_3, GarlicPlantStage3BlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

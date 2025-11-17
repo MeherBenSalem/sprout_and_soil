@@ -11,6 +11,10 @@ import tn.nightbeam.sproutandsoil.block.TomatoPlantStage3Block;
 import tn.nightbeam.sproutandsoil.block.TomatoPlantStage2Block;
 import tn.nightbeam.sproutandsoil.block.TomatoPlantStage1Block;
 import tn.nightbeam.sproutandsoil.block.TomatoPlantStage0Block;
+import tn.nightbeam.sproutandsoil.block.GarlicPlantStage3Block;
+import tn.nightbeam.sproutandsoil.block.GarlicPlantStage2Block;
+import tn.nightbeam.sproutandsoil.block.GarlicPlantStage1Block;
+import tn.nightbeam.sproutandsoil.block.GarlicPlantStage0Block;
 import tn.nightbeam.sproutandsoil.SproutAndSoilMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -29,6 +33,10 @@ public class SproutAndSoilModBlocks {
 	public static final RegistryObject<Block> TOMATO_PLANT_STAGE_5 = REGISTRY.register("tomato_plant_stage_5", () -> new TomatoPlantStage5Block());
 	public static final RegistryObject<Block> TOMATO_PLANT_STAGE_6 = REGISTRY.register("tomato_plant_stage_6", () -> new TomatoPlantStage6Block());
 	public static final RegistryObject<Block> TOMATO_PLANT_STAGE_7 = REGISTRY.register("tomato_plant_stage_7", () -> new TomatoPlantStage7Block());
+	public static final RegistryObject<Block> GARLIC_PLANT_STAGE_0 = REGISTRY.register("garlic_plant_stage_0", () -> new GarlicPlantStage0Block());
+	public static final RegistryObject<Block> GARLIC_PLANT_STAGE_1 = REGISTRY.register("garlic_plant_stage_1", () -> new GarlicPlantStage1Block());
+	public static final RegistryObject<Block> GARLIC_PLANT_STAGE_2 = REGISTRY.register("garlic_plant_stage_2", () -> new GarlicPlantStage2Block());
+	public static final RegistryObject<Block> GARLIC_PLANT_STAGE_3 = REGISTRY.register("garlic_plant_stage_3", () -> new GarlicPlantStage3Block());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

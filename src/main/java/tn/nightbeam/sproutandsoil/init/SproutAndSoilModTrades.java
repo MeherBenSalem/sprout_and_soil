@@ -20,6 +20,9 @@ public class SproutAndSoilModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.WHEAT, 8),
 
 					new ItemStack(SproutAndSoilModItems.TOMATO_SEEDS.get()), 10, 5, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(SproutAndSoilModItems.TOMATO.get(), 8),
+
+					new ItemStack(SproutAndSoilModItems.GARLIC.get()), 10, 5, 0.05f));
 		}
 	}
 }

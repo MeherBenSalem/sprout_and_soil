@@ -5,6 +5,7 @@ package tn.nightbeam.sproutandsoil.init;
 
 import tn.nightbeam.sproutandsoil.item.TomatoSeedsItem;
 import tn.nightbeam.sproutandsoil.item.TomatoItem;
+import tn.nightbeam.sproutandsoil.item.GarlicItem;
 import tn.nightbeam.sproutandsoil.SproutAndSoilMod;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -27,6 +28,11 @@ public class SproutAndSoilModItems {
 	public static final RegistryObject<Item> TOMATO_PLANT_STAGE_6 = block(SproutAndSoilModBlocks.TOMATO_PLANT_STAGE_6);
 	public static final RegistryObject<Item> TOMATO_PLANT_STAGE_7 = block(SproutAndSoilModBlocks.TOMATO_PLANT_STAGE_7);
 	public static final RegistryObject<Item> TOMATO = REGISTRY.register("tomato", () -> new TomatoItem());
+	public static final RegistryObject<Item> GARLIC = REGISTRY.register("garlic", () -> new GarlicItem());
+	public static final RegistryObject<Item> GARLIC_PLANT_STAGE_0 = block(SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_0);
+	public static final RegistryObject<Item> GARLIC_PLANT_STAGE_1 = block(SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_1);
+	public static final RegistryObject<Item> GARLIC_PLANT_STAGE_2 = block(SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_2);
+	public static final RegistryObject<Item> GARLIC_PLANT_STAGE_3 = block(SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_3);
 
 	// Start of user code block custom items
 	// End of user code block custom items
