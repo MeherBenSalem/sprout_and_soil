@@ -20,5 +20,6 @@ public class SproutAndSoilModTabs {
 				tabData.accept(SproutAndSoilModItems.TOMATO_SEEDS.get());
 				tabData.accept(SproutAndSoilModItems.TOMATO.get());
 				tabData.accept(SproutAndSoilModItems.GARLIC.get());
+				tabData.accept(SproutAndSoilModItems.LETUCE.get());
 			}).build());
 }

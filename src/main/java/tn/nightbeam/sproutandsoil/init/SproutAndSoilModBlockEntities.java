@@ -11,6 +11,10 @@ import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage3BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage2BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage1BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage0BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.LetucePlantStage3BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.LetucePlantStage2BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.LetucePlantStage1BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.LetucePlantStage0BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.GarlicPlantStage3BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.GarlicPlantStage2BlockEntity;
 import tn.nightbeam.sproutandsoil.block.entity.GarlicPlantStage1BlockEntity;
@@ -39,6 +43,10 @@ public class SproutAndSoilModBlockEntities {
 	public static final RegistryObject<BlockEntityType<GarlicPlantStage1BlockEntity>> GARLIC_PLANT_STAGE_1 = register("garlic_plant_stage_1", SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_1, GarlicPlantStage1BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<GarlicPlantStage2BlockEntity>> GARLIC_PLANT_STAGE_2 = register("garlic_plant_stage_2", SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_2, GarlicPlantStage2BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<GarlicPlantStage3BlockEntity>> GARLIC_PLANT_STAGE_3 = register("garlic_plant_stage_3", SproutAndSoilModBlocks.GARLIC_PLANT_STAGE_3, GarlicPlantStage3BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<LetucePlantStage0BlockEntity>> LETUCE_PLANT_STAGE_0 = register("letuce_plant_stage_0", SproutAndSoilModBlocks.LETUCE_PLANT_STAGE_0, LetucePlantStage0BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<LetucePlantStage1BlockEntity>> LETUCE_PLANT_STAGE_1 = register("letuce_plant_stage_1", SproutAndSoilModBlocks.LETUCE_PLANT_STAGE_1, LetucePlantStage1BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<LetucePlantStage2BlockEntity>> LETUCE_PLANT_STAGE_2 = register("letuce_plant_stage_2", SproutAndSoilModBlocks.LETUCE_PLANT_STAGE_2, LetucePlantStage2BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<LetucePlantStage3BlockEntity>> LETUCE_PLANT_STAGE_3 = register("letuce_plant_stage_3", SproutAndSoilModBlocks.LETUCE_PLANT_STAGE_3, LetucePlantStage3BlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

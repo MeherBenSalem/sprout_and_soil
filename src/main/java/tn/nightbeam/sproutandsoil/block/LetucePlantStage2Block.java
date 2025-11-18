@@ -1,11 +1,10 @@
 package tn.nightbeam.sproutandsoil.block;
 
 import tn.nightbeam.sproutandsoil.procedures.TomatoPlantBlockValidPlacementConditionProcedure;
-import tn.nightbeam.sproutandsoil.procedures.GarlicPlantStage0BlockAddedProcedure;
-import tn.nightbeam.sproutandsoil.procedures.GarlicPlantGrowthUpdateTickProcedure;
+import tn.nightbeam.sproutandsoil.procedures.LetucePlantGrowthUpdateTickProcedure;
 import tn.nightbeam.sproutandsoil.procedures.FertilizerUsedOnPlantProcedure;
 import tn.nightbeam.sproutandsoil.init.SproutAndSoilModItems;
-import tn.nightbeam.sproutandsoil.block.entity.GarlicPlantStage0BlockEntity;
+import tn.nightbeam.sproutandsoil.block.entity.LetucePlantStage2BlockEntity;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -34,8 +33,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class GarlicPlantStage0Block extends Block implements EntityBlock {
-	public GarlicPlantStage0Block() {
+public class LetucePlantStage2Block extends Block implements EntityBlock {
+	public LetucePlantStage2Block() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
@@ -56,7 +55,7 @@ public class GarlicPlantStage0Block extends Block implements EntityBlock {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return box(0, 0.001, 0, 16, 3, 16);
+		return box(0, 0.001, 0, 16, 6, 16);
 	}
 
 	@Override
@@ -77,13 +76,7 @@ public class GarlicPlantStage0Block extends Block implements EntityBlock {
 
 	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(SproutAndSoilModItems.GARLIC.get());
-	}
-
-	@Override
-	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
-		super.onPlace(blockstate, world, pos, oldState, moving);
-		GarlicPlantStage0BlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		return new ItemStack(SproutAndSoilModItems.LETUCE.get());
 	}
 
 	@Override
@@ -92,7 +85,7 @@ public class GarlicPlantStage0Block extends Block implements EntityBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		GarlicPlantGrowthUpdateTickProcedure.execute(world, x, y, z);
+		LetucePlantGrowthUpdateTickProcedure.execute(world, x, y, z);
 	}
 
 	@Override
@@ -117,7 +110,7 @@ public class GarlicPlantStage0Block extends Block implements EntityBlock {
 
 	@Override
 	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new GarlicPlantStage0BlockEntity(pos, state);
+		return new LetucePlantStage2BlockEntity(pos, state);
 	}
 
 	@Override

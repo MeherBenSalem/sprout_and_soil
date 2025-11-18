@@ -72,7 +72,7 @@ public class GarlicPlantStage3Block extends Block implements EntityBlock {
 
 	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(SproutAndSoilModItems.TOMATO_SEEDS.get());
+		return new ItemStack(SproutAndSoilModItems.GARLIC.get());
 	}
 
 	@Override

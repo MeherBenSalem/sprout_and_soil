@@ -6,7 +6,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
-public class TomatoPlantStage0BlockAddedProcedure {
+public class LetucePlantStage0BlockAddedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!world.isClientSide()) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
@@ -31,7 +31,7 @@ public class TomatoPlantStage0BlockAddedProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getPersistentData().putString("type", "tomato");
+				_blockEntity.getPersistentData().putString("type", "letuce");
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

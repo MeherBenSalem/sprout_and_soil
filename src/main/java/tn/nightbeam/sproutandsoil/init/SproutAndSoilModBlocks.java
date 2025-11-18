@@ -11,6 +11,10 @@ import tn.nightbeam.sproutandsoil.block.TomatoPlantStage3Block;
 import tn.nightbeam.sproutandsoil.block.TomatoPlantStage2Block;
 import tn.nightbeam.sproutandsoil.block.TomatoPlantStage1Block;
 import tn.nightbeam.sproutandsoil.block.TomatoPlantStage0Block;
+import tn.nightbeam.sproutandsoil.block.LetucePlantStage3Block;
+import tn.nightbeam.sproutandsoil.block.LetucePlantStage2Block;
+import tn.nightbeam.sproutandsoil.block.LetucePlantStage1Block;
+import tn.nightbeam.sproutandsoil.block.LetucePlantStage0Block;
 import tn.nightbeam.sproutandsoil.block.GarlicPlantStage3Block;
 import tn.nightbeam.sproutandsoil.block.GarlicPlantStage2Block;
 import tn.nightbeam.sproutandsoil.block.GarlicPlantStage1Block;
@@ -37,6 +41,10 @@ public class SproutAndSoilModBlocks {
 	public static final RegistryObject<Block> GARLIC_PLANT_STAGE_1 = REGISTRY.register("garlic_plant_stage_1", () -> new GarlicPlantStage1Block());
 	public static final RegistryObject<Block> GARLIC_PLANT_STAGE_2 = REGISTRY.register("garlic_plant_stage_2", () -> new GarlicPlantStage2Block());
 	public static final RegistryObject<Block> GARLIC_PLANT_STAGE_3 = REGISTRY.register("garlic_plant_stage_3", () -> new GarlicPlantStage3Block());
+	public static final RegistryObject<Block> LETUCE_PLANT_STAGE_0 = REGISTRY.register("letuce_plant_stage_0", () -> new LetucePlantStage0Block());
+	public static final RegistryObject<Block> LETUCE_PLANT_STAGE_1 = REGISTRY.register("letuce_plant_stage_1", () -> new LetucePlantStage1Block());
+	public static final RegistryObject<Block> LETUCE_PLANT_STAGE_2 = REGISTRY.register("letuce_plant_stage_2", () -> new LetucePlantStage2Block());
+	public static final RegistryObject<Block> LETUCE_PLANT_STAGE_3 = REGISTRY.register("letuce_plant_stage_3", () -> new LetucePlantStage3Block());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

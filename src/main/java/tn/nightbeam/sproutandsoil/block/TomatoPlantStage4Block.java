@@ -2,7 +2,7 @@ package tn.nightbeam.sproutandsoil.block;
 
 import tn.nightbeam.sproutandsoil.procedures.TomatoPlantGrowthUpdateTickProcedure;
 import tn.nightbeam.sproutandsoil.procedures.TomatoPlantBlockValidPlacementConditionProcedure;
-import tn.nightbeam.sproutandsoil.procedures.FertilizerUsedOnSingleStage4Procedure;
+import tn.nightbeam.sproutandsoil.procedures.FertilizerUsedOnPlantProcedure;
 import tn.nightbeam.sproutandsoil.init.SproutAndSoilModItems;
 import tn.nightbeam.sproutandsoil.block.entity.TomatoPlantStage4BlockEntity;
 
@@ -98,7 +98,7 @@ public class TomatoPlantStage4Block extends Block implements EntityBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		FertilizerUsedOnSingleStage4Procedure.execute(world, x, y, z, entity);
+		FertilizerUsedOnPlantProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 
