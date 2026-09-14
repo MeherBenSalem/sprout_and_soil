@@ -54,7 +54,7 @@ jobs:
           if (!jars.length) throw new Error('no jars');
           function parseJar(jar) {
             const name = path.basename(jar);
-            const m = name.match(/^better_witch_huts-(fabric|forge|neoforge)-(.+)-(\\d+\\.\\d+\\.\\d+)\\.jar$/i);
+            const m = name.match(/^better_witch_huts-(fabric|forge|neoforge)-(.+)-(\d+\.\d+\.\d+)\.jar$/i);
             if (!m) throw new Error('bad jar ' + name);
             return { jar, name, loader: m[1].toLowerCase(), game: m[2] };
           }
