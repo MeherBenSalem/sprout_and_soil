@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "sprout_and_soil",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "license": "${license}",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "tn.nightbeam.sproutandsoil.fabric.SproutAndSoilFabric"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=25"
+  }
+}

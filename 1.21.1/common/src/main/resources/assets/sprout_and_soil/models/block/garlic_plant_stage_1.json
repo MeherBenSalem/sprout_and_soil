@@ -1,0 +1,8 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "sprout_and_soil:block/garlic_stage1",
+    "particle": "sprout_and_soil:block/garlic_stage1"
+  },
+  "render_type": "cutout"
+}

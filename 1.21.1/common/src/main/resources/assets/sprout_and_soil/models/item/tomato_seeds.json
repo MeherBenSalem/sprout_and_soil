@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "sprout_and_soil:item/tomato_seeds"
+  }
+}

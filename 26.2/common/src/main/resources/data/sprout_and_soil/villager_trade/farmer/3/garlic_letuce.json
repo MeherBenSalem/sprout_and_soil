@@ -1,0 +1,12 @@
+{
+  "wants": {
+    "count": 8.0,
+    "id": "sprout_and_soil:garlic"
+  },
+  "gives": {
+    "id": "sprout_and_soil:letuce"
+  },
+  "max_uses": 10.0,
+  "reputation_discount": 0.05,
+  "xp": 5.0
+}
