@@ -1,0 +1,148 @@
+name: Publish Witch Hut one-shot
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Download Witch Hut 1.0.0 jars
+        run: |
+          set -euo pipefail
+          mkdir -p all-jars
+          base="https://github.com/MeherBenSalem/the-witch-hut/releases/download/v1.0.0"
+          for f in \
+            better_witch_huts-fabric-26.1.2-1.0.0.jar \
+            better_witch_huts-neoforge-26.1.2-1.0.0.jar \
+            better_witch_huts-fabric-26.2-1.0.0.jar \
+            better_witch_huts-neoforge-26.2-1.0.0.jar
+          do
+            curl -fsSL -o "all-jars/$f" "$base/$f"
+          done
+          ls -la all-jars
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Upload to Modrinth + CurseForge
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+          CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "${MODRINTH_TOKEN:-}"
+          test -n "${CURSEFORGE_TOKEN:-}"
+          test -n "${CURSEFORGE_API_KEY:-}"
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const MODRINTH_ID = 'xcgCWpcP';
+          const CURSEFORGE_ID = '1393188';
+          const version = '1.0.0';
+          const changelog = fs.existsSync('CHANGELOG.md')
+            ? fs.readFileSync('CHANGELOG.md','utf8')
+            : '## The Witch Hut 1.0.0\\n\\nMultiLoader release for 26.1.2 and 26.2.';
+          const jars = fs.readdirSync('all-jars')
+            .filter(n => n.startsWith('better_witch_huts-') && n.endsWith(`-${version}.jar`))
+            .map(n => path.join('all-jars', n))
+            .sort();
+          if (!jars.length) throw new Error('no jars');
+          function parseJar(jar) {
+            const name = path.basename(jar);
+            const m = name.match(/^better_witch_huts-(fabric|forge|neoforge)-(.+)-(\\d+\\.\\d+\\.\\d+)\\.jar$/i);
+            if (!m) throw new Error('bad jar ' + name);
+            return { jar, name, loader: m[1].toLowerCase(), game: m[2] };
+          }
+          const parsed = jars.map(parseJar);
+          async function main() {
+            for (const p of parsed) {
+              const body = {
+                name: `${version} · ${p.loader} · ${p.game}`,
+                version_number: `${version}+${p.loader}-${p.game}`,
+                changelog,
+                dependencies: [],
+                game_versions: [p.game],
+                version_type: 'release',
+                loaders: [p.loader],
+                featured: false,
+                status: 'listed',
+                project_id: MODRINTH_ID,
+                file_parts: ['file_0'],
+                primary_file: 'file_0',
+              };
+              const form = new FormData();
+              form.append('data', JSON.stringify(body));
+              form.append('file_0', new Blob([fs.readFileSync(p.jar)]), p.name);
+              const res = await fetch('https://api.modrinth.com/v2/version', {
+                method: 'POST',
+                headers: { Authorization: process.env.MODRINTH_TOKEN },
+                body: form,
+              });
+              const text = await res.text();
+              if (!res.ok) throw new Error(`Modrinth ${res.status} ${p.name} ${text.slice(0,400)}`);
+              console.log('Modrinth OK', body.version_number);
+            }
+
+            const LOADER_IDS = { fabric: 7499, forge: 7498, neoforge: 10150 };
+            const legacyPayload = await fetch('https://minecraft.curseforge.com/api/game/versions', {
+              headers: { 'X-Api-Token': process.env.CURSEFORGE_TOKEN },
+            }).then(r => r.json());
+            const legacyFlat = Array.isArray(legacyPayload) ? legacyPayload : legacyPayload?.data || [];
+            const clientId = legacyFlat.find(v => v.name === 'Client')?.id;
+            const serverId = legacyFlat.find(v => v.name === 'Server')?.id;
+            if (!clientId || !serverId) throw new Error('missing Client/Server ids');
+
+            for (const p of parsed) {
+              const loaderId = LOADER_IDS[p.loader];
+              let gameId = null;
+              const direct = await fetch(
+                `https://api.curseforge.com/v1/minecraft/version/${encodeURIComponent(p.game)}`,
+                { headers: { 'x-api-key': process.env.CURSEFORGE_API_KEY, Accept: 'application/json' } },
+              );
+              if (direct.ok) {
+                const j = await direct.json();
+                gameId = j?.data?.gameVersionId || null;
+              }
+              if (!gameId) {
+                const hit = legacyFlat.find(v => v.name === p.game);
+                if (!hit) throw new Error('No CF game version for ' + p.game);
+                gameId = hit.id;
+              }
+              const meta = {
+                changelog,
+                changelogType: 'markdown',
+                displayName: `${version} · ${p.loader} · ${p.game}`,
+                gameVersions: [clientId, serverId, loaderId, gameId],
+                releaseType: 'release',
+              };
+              const cfForm = new FormData();
+              cfForm.append('metadata', JSON.stringify(meta));
+              cfForm.append('file', new Blob([fs.readFileSync(p.jar)]), p.name);
+              let ok = false;
+              for (let attempt = 1; attempt <= 4; attempt++) {
+                const res = await fetch(
+                  `https://minecraft.curseforge.com/api/projects/${CURSEFORGE_ID}/upload-file`,
+                  { method: 'POST', headers: { 'X-Api-Token': process.env.CURSEFORGE_TOKEN }, body: cfForm },
+                );
+                const text = await res.text();
+                if (res.ok) {
+                  console.log('CurseForge OK', meta.displayName);
+                  ok = true;
+                  break;
+                }
+                if ((res.status === 429 || res.status === 503) && attempt < 4) {
+                  await new Promise(r => setTimeout(r, 15000 * attempt));
+                  continue;
+                }
+                throw new Error(`CurseForge ${res.status} ${p.name} ${text.slice(0,400)}`);
+              }
+              if (!ok) throw new Error('CF upload failed ' + p.name);
+            }
+          }
+          main().catch(e => { console.error(e); process.exit(1); });
+          NODE
