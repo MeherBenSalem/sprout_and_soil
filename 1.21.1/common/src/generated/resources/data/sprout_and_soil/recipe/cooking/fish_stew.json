@@ -1,0 +1,26 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "tag": "c:foods/raw_fish"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:onion"
+    },
+    {
+      "item": "sprout_and_soil:garlic"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:fish_stew"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

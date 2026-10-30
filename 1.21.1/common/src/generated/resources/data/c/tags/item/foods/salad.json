@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:garden_salad",
+    "sprout_and_soil:fruit_salad",
+    "sprout_and_soil:coleslaw",
+    "sprout_and_soil:greek_salad",
+    "sprout_and_soil:caprese_salad"
+  ]
+}

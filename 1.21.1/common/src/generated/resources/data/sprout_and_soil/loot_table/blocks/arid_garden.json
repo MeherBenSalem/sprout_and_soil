@@ -1,0 +1,130 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "sprout_and_soil:blocks/arid_garden",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:arid_garden"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "minecraft:shears"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1.0,
+        "max": 2.0
+      },
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:shears"
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:bell_pepper_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:chili_pepper_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:eggplant_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:zucchini_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:sweet_potato"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:peanuts"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:grape_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cotton_seeds"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:shears"
+            }
+          }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.35
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:bell_pepper"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:chili_pepper"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:eggplant"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:zucchini"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:sweet_potato"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:peanuts"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:grapes"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cotton"
+        }
+      ]
+    }
+  ]
+}

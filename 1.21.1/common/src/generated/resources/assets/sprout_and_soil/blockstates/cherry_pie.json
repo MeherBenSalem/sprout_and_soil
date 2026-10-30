@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "servings_taken=0": {
+      "model": "sprout_and_soil:block/cherry_pie_0"
+    },
+    "servings_taken=1": {
+      "model": "sprout_and_soil:block/cherry_pie_1"
+    },
+    "servings_taken=2": {
+      "model": "sprout_and_soil:block/cherry_pie_2"
+    },
+    "servings_taken=3": {
+      "model": "sprout_and_soil:block/cherry_pie_3"
+    }
+  }
+}

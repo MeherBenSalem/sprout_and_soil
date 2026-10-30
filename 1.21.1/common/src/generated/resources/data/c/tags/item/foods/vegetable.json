@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:tomato",
+    "sprout_and_soil:bell_pepper",
+    "sprout_and_soil:eggplant",
+    "sprout_and_soil:cucumber",
+    "sprout_and_soil:zucchini",
+    "sprout_and_soil:green_beans",
+    "sprout_and_soil:lettuce",
+    "sprout_and_soil:cabbage",
+    "sprout_and_soil:spinach",
+    "sprout_and_soil:broccoli",
+    "sprout_and_soil:cauliflower",
+    "sprout_and_soil:celery",
+    "sprout_and_soil:asparagus",
+    "sprout_and_soil:onion",
+    "sprout_and_soil:leek",
+    "sprout_and_soil:radish",
+    "sprout_and_soil:turnip",
+    "sprout_and_soil:sweet_potato",
+    "sprout_and_soil:pumpkin_slice"
+  ]
+}

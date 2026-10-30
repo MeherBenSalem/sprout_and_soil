@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:plate"
+    },
+    {
+      "item": "sprout_and_soil:cooked_salmon_fillet"
+    },
+    {
+      "item": "sprout_and_soil:cooked_salmon_fillet"
+    },
+    {
+      "item": "sprout_and_soil:asparagus"
+    },
+    {
+      "item": "sprout_and_soil:lemon"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:grilled_salmon"
+  }
+}

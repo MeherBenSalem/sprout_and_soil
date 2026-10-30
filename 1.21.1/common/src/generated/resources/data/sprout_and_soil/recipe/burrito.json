@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:tortilla"
+    },
+    {
+      "item": "sprout_and_soil:cooked_rice"
+    },
+    {
+      "item": "sprout_and_soil:soybeans"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    },
+    {
+      "item": "sprout_and_soil:chili_pepper"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:burrito"
+  }
+}

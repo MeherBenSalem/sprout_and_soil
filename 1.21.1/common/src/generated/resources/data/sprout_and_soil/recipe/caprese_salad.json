@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:plate"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    },
+    {
+      "item": "sprout_and_soil:basil"
+    },
+    {
+      "item": "sprout_and_soil:cooking_oil"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:caprese_salad"
+  }
+}

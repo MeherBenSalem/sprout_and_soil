@@ -1,0 +1,340 @@
+{
+  "values": {
+    "sprout_and_soil:tomato": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:tomato_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:bell_pepper": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:bell_pepper_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:chili_pepper": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:chili_pepper_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:eggplant": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:eggplant_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:cucumber": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:cucumber_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:zucchini": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:zucchini_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:green_beans": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:green_bean_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:lettuce": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:lettuce_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:cabbage": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:cabbage_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:spinach": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:spinach_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:broccoli": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:broccoli_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:cauliflower": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:cauliflower_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:celery": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:celery_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:asparagus": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:asparagus_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:garlic": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:onion": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:leek": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:leek_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:radish": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:radish_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:turnip": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:turnip_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:sweet_potato": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:ginger": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:peanuts": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:corn": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:corn_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:rice": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:barley": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:barley_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:oats": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:oat_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:soybeans": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:strawberry": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:strawberry_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:blueberries": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:blueberry_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:raspberries": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:raspberry_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:blackberries": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:blackberry_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:cranberries": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:cranberry_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:grapes": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:grape_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:pineapple": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:pineapple_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:coffee_beans": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:tea_leaves": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:tea_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:cotton": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:cotton_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:basil": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:basil_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:mint": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:mint_seeds": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:peppercorns": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:orange": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:lemon": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:lime": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:peach": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:pear": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:plum": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:cherries": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:mango": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:avocado": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:banana": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:olives": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:apple_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:apple_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:orange_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:orange_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:lemon_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:lemon_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:lime_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:lime_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:peach_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:peach_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:pear_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:pear_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:plum_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:plum_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:sweet_cherry_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:sweet_cherry_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:mango_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:mango_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:avocado_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:avocado_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:banana_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:banana_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:olive_sapling": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:olive_leaves": {
+      "chance": 0.3
+    },
+    "sprout_and_soil:meadow_garden": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:woodland_garden": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:highland_garden": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:arid_garden": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:tropical_garden": {
+      "chance": 0.65
+    },
+    "sprout_and_soil:marsh_garden": {
+      "chance": 0.65
+    }
+  }
+}

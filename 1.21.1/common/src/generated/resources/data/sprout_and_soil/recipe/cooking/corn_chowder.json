@@ -1,0 +1,29 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:corn"
+    },
+    {
+      "item": "sprout_and_soil:corn"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "sprout_and_soil:bacon"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:corn_chowder"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:meadow_garden",
+    "sprout_and_soil:woodland_garden",
+    "sprout_and_soil:highland_garden",
+    "sprout_and_soil:arid_garden",
+    "sprout_and_soil:tropical_garden",
+    "sprout_and_soil:marsh_garden"
+  ]
+}

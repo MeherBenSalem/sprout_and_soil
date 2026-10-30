@@ -1,0 +1,10 @@
+{
+  "parent": "sprout_and_soil:block/template_pie_2",
+  "textures": {
+    "particle": "sprout_and_soil:block/apple_pie_top",
+    "top": "sprout_and_soil:block/apple_pie_top",
+    "inner": "sprout_and_soil:block/apple_pie_inner",
+    "side": "sprout_and_soil:block/pie_side",
+    "bottom": "sprout_and_soil:block/pie_bottom"
+  }
+}

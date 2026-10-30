@@ -1,0 +1,16 @@
+{
+  "type": "sprout_and_soil:tool_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:mortar_and_pestle"
+    },
+    {
+      "item": "sprout_and_soil:peppercorns"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "sprout_and_soil:black_pepper"
+  }
+}

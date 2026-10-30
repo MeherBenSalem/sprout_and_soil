@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:pie_crust"
+    },
+    {
+      "item": "sprout_and_soil:cherries"
+    },
+    {
+      "item": "sprout_and_soil:cherries"
+    },
+    {
+      "item": "sprout_and_soil:cherries"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:cherry_pie"
+  }
+}

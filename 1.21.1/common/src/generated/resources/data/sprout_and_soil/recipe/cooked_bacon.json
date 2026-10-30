@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "sprout_and_soil:bacon"
+  },
+  "result": {
+    "id": "sprout_and_soil:cooked_bacon"
+  }
+}

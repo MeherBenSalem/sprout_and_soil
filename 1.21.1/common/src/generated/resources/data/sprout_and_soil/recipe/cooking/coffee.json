@@ -1,0 +1,20 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:roasted_coffee_beans"
+    },
+    {
+      "item": "sprout_and_soil:roasted_coffee_beans"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:coffee"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "sprout_and_soil:mug"
+  }
+}

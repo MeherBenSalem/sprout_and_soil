@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "sprout_and_soil:cabbage"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "sprout_and_soil:onion"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:coleslaw"
+  }
+}

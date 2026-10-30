@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " I",
+    "S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:golden_knife"
+  }
+}

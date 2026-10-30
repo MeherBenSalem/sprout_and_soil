@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "sprout_and_soil:sweet_potato"
+  },
+  "result": {
+    "id": "sprout_and_soil:baked_sweet_potato"
+  }
+}

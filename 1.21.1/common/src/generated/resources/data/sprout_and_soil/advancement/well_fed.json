@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:beef_stew"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.well_fed.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.well_fed.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "well_fed": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "sprout_and_soil:well_fed": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "well_fed"
+    ]
+  ],
+  "parent": "sprout_and_soil:first_meal"
+}

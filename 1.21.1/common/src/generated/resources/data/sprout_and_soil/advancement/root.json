@@ -1,0 +1,76 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:tomato"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.root.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/farmland_moist.png"
+  },
+  "criteria": {
+    "seeds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:tomato_seeds",
+              "sprout_and_soil:bell_pepper_seeds",
+              "sprout_and_soil:chili_pepper_seeds",
+              "sprout_and_soil:eggplant_seeds",
+              "sprout_and_soil:cucumber_seeds",
+              "sprout_and_soil:zucchini_seeds",
+              "sprout_and_soil:green_bean_seeds",
+              "sprout_and_soil:lettuce_seeds",
+              "sprout_and_soil:cabbage_seeds",
+              "sprout_and_soil:spinach_seeds",
+              "sprout_and_soil:broccoli_seeds",
+              "sprout_and_soil:cauliflower_seeds",
+              "sprout_and_soil:celery_seeds",
+              "sprout_and_soil:asparagus_seeds",
+              "sprout_and_soil:garlic",
+              "sprout_and_soil:onion",
+              "sprout_and_soil:leek_seeds",
+              "sprout_and_soil:radish_seeds",
+              "sprout_and_soil:turnip_seeds",
+              "sprout_and_soil:sweet_potato",
+              "sprout_and_soil:ginger",
+              "sprout_and_soil:peanuts",
+              "sprout_and_soil:corn_seeds",
+              "sprout_and_soil:rice",
+              "sprout_and_soil:barley_seeds",
+              "sprout_and_soil:oat_seeds",
+              "sprout_and_soil:soybeans",
+              "sprout_and_soil:strawberry_seeds",
+              "sprout_and_soil:blueberry_seeds",
+              "sprout_and_soil:raspberry_seeds",
+              "sprout_and_soil:blackberry_seeds",
+              "sprout_and_soil:cranberry_seeds",
+              "sprout_and_soil:grape_seeds",
+              "sprout_and_soil:pineapple_seeds",
+              "sprout_and_soil:coffee_beans",
+              "sprout_and_soil:tea_seeds",
+              "sprout_and_soil:cotton_seeds",
+              "sprout_and_soil:basil_seeds",
+              "sprout_and_soil:mint_seeds",
+              "sprout_and_soil:peppercorns"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "seeds"
+    ]
+  ]
+}

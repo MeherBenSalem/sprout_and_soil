@@ -1,0 +1,32 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:rice"
+    },
+    {
+      "item": "sprout_and_soil:chicken_cuts"
+    },
+    {
+      "tag": "c:foods/raw_fish"
+    },
+    {
+      "item": "sprout_and_soil:bell_pepper"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:garlic"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:paella"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "sprout_and_soil:plate"
+  }
+}

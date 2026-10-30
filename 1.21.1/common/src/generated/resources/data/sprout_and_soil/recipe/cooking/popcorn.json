@@ -1,0 +1,23 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:corn"
+    },
+    {
+      "item": "sprout_and_soil:cooking_oil"
+    },
+    {
+      "item": "sprout_and_soil:salt"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:popcorn"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

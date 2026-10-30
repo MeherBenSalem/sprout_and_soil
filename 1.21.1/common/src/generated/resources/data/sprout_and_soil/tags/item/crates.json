@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:apple_crate",
+    "sprout_and_soil:beetroot_crate",
+    "sprout_and_soil:bell_pepper_crate",
+    "sprout_and_soil:cabbage_crate",
+    "sprout_and_soil:carrot_crate",
+    "sprout_and_soil:chili_pepper_crate",
+    "sprout_and_soil:corn_crate",
+    "sprout_and_soil:cucumber_crate",
+    "sprout_and_soil:eggplant_crate",
+    "sprout_and_soil:garlic_crate",
+    "sprout_and_soil:lemon_crate",
+    "sprout_and_soil:lettuce_crate",
+    "sprout_and_soil:mango_crate",
+    "sprout_and_soil:onion_crate",
+    "sprout_and_soil:orange_crate",
+    "sprout_and_soil:peach_crate",
+    "sprout_and_soil:pear_crate",
+    "sprout_and_soil:potato_crate",
+    "sprout_and_soil:radish_crate",
+    "sprout_and_soil:rice_crate",
+    "sprout_and_soil:sweet_potato_crate",
+    "sprout_and_soil:tomato_crate",
+    "sprout_and_soil:turnip_crate"
+  ]
+}

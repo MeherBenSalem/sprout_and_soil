@@ -1,0 +1,72 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "sprout_and_soil:block/cutting_board/board",
+    "board": "sprout_and_soil:block/cutting_board/board"
+  },
+  "elements": [
+    {
+      "__comment": "west round",
+      "from": [1, 0, 4],
+      "to": [2, 1, 12],
+      "faces": {
+        "down": {"uv": [1, 12, 2, 4], "texture": "#board"},
+        "up": {"uv": [1, 4, 2, 12], "texture": "#board"},
+        "north": {"uv": [1, 0, 2, 1], "texture": "#board"},
+        "south": {"uv": [1, 1, 2, 2], "texture": "#board"},
+        "west": {"uv": [4, 15, 12, 16], "texture": "#board"},
+        "east": {"uv": [4, 15, 12, 16], "texture": "#board"}
+      }
+    },
+    {
+      "__comment": "board",
+      "from": [2, 0, 3],
+      "to": [11, 1, 13],
+      "faces": {
+        "down": {"uv": [2, 13, 11, 3], "texture": "#board"},
+        "up": {"uv": [2, 3, 11, 13], "texture": "#board"},
+        "north": {"uv": [2, 0, 11, 1], "texture": "#board"},
+        "south": {"uv": [2, 1, 11, 2], "texture": "#board"},
+        "west": {"uv": [3, 15, 13, 16], "texture": "#board"},
+        "east": {"uv": [3, 15, 13, 16], "texture": "#board"}
+      }
+    },
+    {
+      "__comment": "east round",
+      "from": [11, 0, 4],
+      "to": [12, 1, 12],
+      "faces": {
+        "down": {"uv": [11, 12, 12, 4], "texture": "#board"},
+        "up": {"uv": [11, 4, 12, 12], "texture": "#board"},
+        "north": {"uv": [11, 0, 12, 1], "texture": "#board"},
+        "south": {"uv": [11, 1, 12, 2], "texture": "#board"},
+        "west": {"uv": [4, 15, 12, 16], "texture": "#board"},
+        "east": {"uv": [4, 15, 12, 16], "texture": "#board"}
+      }
+    },
+    {
+      "__comment": "handle",
+      "from": [12, 0, 6],
+      "to": [15, 1, 10],
+      "faces": {
+        "down": {"uv": [12, 10, 15, 6], "texture": "#board"},
+        "up": {"uv": [12, 6, 15, 10], "texture": "#board"},
+        "north": {"uv": [12, 0, 15, 1], "texture": "#board"},
+        "south": {"uv": [12, 1, 15, 2], "texture": "#board"},
+        "west": {"uv": [6, 15, 10, 16], "texture": "#board"},
+        "east": {"uv": [6, 15, 10, 16], "texture": "#board"}
+      }
+    }
+  ],
+  "display": {
+    "gui": {"rotation": [55, 20, 0], "translation": [0.34, 4.72, 0], "scale": [1, 1, 1]},
+    "ground": {"rotation": [0, 0, 0], "translation": [0, 3, 0], "scale": [0.35, 0.35, 0.35]},
+    "fixed": {"rotation": [-90, 0, 0], "translation": [0, 0, -5.6], "scale": [0.75, 0.75, 0.75]},
+    "head": {"rotation": [0, 0, 0], "translation": [0, 16, 0], "scale": [1, 1, 1]},
+    "thirdperson_righthand": {"rotation": [75, 45, 0], "translation": [0, 2.5, 0], "scale": [0.45, 0.45, 0.45]},
+    "thirdperson_lefthand": {"rotation": [75, 45, 0], "translation": [0, 2.5, 0], "scale": [0.45, 0.45, 0.45]},
+    "firstperson_righthand": {"rotation": [10, 45, 0], "translation": [0, 3, 0], "scale": [0.5, 0.5, 0.5]},
+    "firstperson_lefthand": {"rotation": [10, 225, 0], "translation": [0, 3, 0], "scale": [0.5, 0.5, 0.5]}
+  }
+}

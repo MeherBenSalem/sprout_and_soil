@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:plate"
+    },
+    {
+      "item": "sprout_and_soil:fried_egg"
+    },
+    {
+      "item": "sprout_and_soil:cooked_bacon"
+    },
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:breakfast_plate"
+  }
+}

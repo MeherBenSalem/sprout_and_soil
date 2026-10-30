@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:apple_leaves",
+    "sprout_and_soil:orange_leaves",
+    "sprout_and_soil:lemon_leaves",
+    "sprout_and_soil:lime_leaves",
+    "sprout_and_soil:peach_leaves",
+    "sprout_and_soil:pear_leaves",
+    "sprout_and_soil:plum_leaves",
+    "sprout_and_soil:sweet_cherry_leaves",
+    "sprout_and_soil:mango_leaves",
+    "sprout_and_soil:avocado_leaves",
+    "sprout_and_soil:banana_leaves",
+    "sprout_and_soil:olive_leaves"
+  ]
+}

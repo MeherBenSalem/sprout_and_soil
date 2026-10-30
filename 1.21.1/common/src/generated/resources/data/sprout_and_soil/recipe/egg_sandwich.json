@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "sprout_and_soil:fried_egg"
+    },
+    {
+      "item": "sprout_and_soil:lettuce"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:egg_sandwich"
+  }
+}

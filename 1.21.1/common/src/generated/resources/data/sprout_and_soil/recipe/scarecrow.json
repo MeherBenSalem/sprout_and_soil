@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "H": {
+      "item": "minecraft:hay_block"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " P ",
+    "SHS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:scarecrow"
+  }
+}

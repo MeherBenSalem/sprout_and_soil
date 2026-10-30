@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#sprout_and_soil:spawns/tropical",
+  "features": "sprout_and_soil:wild_garden/tropical_garden",
+  "step": "vegetal_decoration"
+}

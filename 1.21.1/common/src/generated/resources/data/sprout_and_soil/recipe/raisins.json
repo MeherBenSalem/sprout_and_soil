@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "sprout_and_soil:grapes"
+  },
+  "result": {
+    "id": "sprout_and_soil:raisins"
+  }
+}

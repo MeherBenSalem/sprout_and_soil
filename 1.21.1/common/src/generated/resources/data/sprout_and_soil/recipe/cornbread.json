@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:cornmeal"
+    },
+    {
+      "item": "sprout_and_soil:cornmeal"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "sprout_and_soil:butter"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "sprout_and_soil:cornbread"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "sprout_and_soil:salt"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "sprout_and_soil:cheese"
+  },
+  "experience": 0.5,
+  "cookingtime": 400
+}

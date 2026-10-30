@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "sprout_and_soil:sweet_potato"
+  },
+  "result": {
+    "id": "sprout_and_soil:baked_sweet_potato"
+  }
+}

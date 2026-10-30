@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "sprout_and_soil:lettuce"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:cucumber"
+    },
+    {
+      "item": "sprout_and_soil:radish"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:garden_salad"
+  }
+}

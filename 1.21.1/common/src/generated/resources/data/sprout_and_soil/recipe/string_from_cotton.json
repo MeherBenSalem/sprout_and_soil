@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:cotton"
+    },
+    {
+      "item": "sprout_and_soil:cotton"
+    },
+    {
+      "item": "sprout_and_soil:cotton"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:string"
+  }
+}

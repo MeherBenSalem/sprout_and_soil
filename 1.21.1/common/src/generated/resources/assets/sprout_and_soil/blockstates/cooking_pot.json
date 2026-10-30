@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sprout_and_soil:block/cooking_pot"
+    },
+    "facing=east": {
+      "model": "sprout_and_soil:block/cooking_pot",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sprout_and_soil:block/cooking_pot",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sprout_and_soil:block/cooking_pot",
+      "y": 270
+    }
+  }
+}

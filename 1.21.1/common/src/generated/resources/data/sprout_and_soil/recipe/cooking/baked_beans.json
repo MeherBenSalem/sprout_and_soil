@@ -1,0 +1,26 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:soybeans"
+    },
+    {
+      "item": "sprout_and_soil:soybeans"
+    },
+    {
+      "item": "sprout_and_soil:tomato_sauce"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:baked_beans"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

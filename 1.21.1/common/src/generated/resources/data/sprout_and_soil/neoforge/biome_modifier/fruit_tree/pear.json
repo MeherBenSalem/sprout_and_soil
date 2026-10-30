@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#sprout_and_soil:spawns/orchard",
+  "features": "sprout_and_soil:fruit_tree/pear",
+  "step": "vegetal_decoration"
+}

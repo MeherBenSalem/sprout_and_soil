@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:meadow_garden"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.wild_garden.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.wild_garden.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "garden": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:meadow_garden",
+              "sprout_and_soil:woodland_garden",
+              "sprout_and_soil:highland_garden",
+              "sprout_and_soil:arid_garden",
+              "sprout_and_soil:tropical_garden",
+              "sprout_and_soil:marsh_garden"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "garden"
+    ]
+  ],
+  "parent": "sprout_and_soil:root"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "sprout_and_soil:cutting",
+  "ingredient": {
+    "item": "minecraft:melon"
+  },
+  "tool": {
+    "tag": "c:tools/knife"
+  },
+  "results": [
+    {
+      "item": {
+        "count": 8,
+        "id": "minecraft:melon_slice"
+      }
+    }
+  ]
+}

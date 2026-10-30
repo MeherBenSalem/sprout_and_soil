@@ -1,0 +1,170 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:steak_dinner"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.gourmet.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.gourmet.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "spaghetti_bolognese": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:spaghetti_bolognese"
+          ]
+        }
+      }
+    },
+    "lasagna": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:lasagna"
+          ]
+        }
+      }
+    },
+    "ratatouille": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:ratatouille"
+          ]
+        }
+      }
+    },
+    "paella": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:paella"
+          ]
+        }
+      }
+    },
+    "stuffed_peppers": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:stuffed_peppers"
+          ]
+        }
+      }
+    },
+    "omelette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:omelette"
+          ]
+        }
+      }
+    },
+    "pancakes": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:pancakes"
+          ]
+        }
+      }
+    },
+    "breakfast_plate": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:breakfast_plate"
+          ]
+        }
+      }
+    },
+    "fish_and_chips": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:fish_and_chips"
+          ]
+        }
+      }
+    },
+    "steak_dinner": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:steak_dinner"
+          ]
+        }
+      }
+    },
+    "roast_chicken_dinner": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:roast_chicken_dinner"
+          ]
+        }
+      }
+    },
+    "grilled_salmon": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:grilled_salmon"
+          ]
+        }
+      }
+    },
+    "caprese_salad": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:caprese_salad"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "spaghetti_bolognese",
+      "lasagna",
+      "ratatouille",
+      "paella",
+      "stuffed_peppers",
+      "omelette",
+      "pancakes",
+      "breakfast_plate",
+      "fish_and_chips",
+      "steak_dinner",
+      "roast_chicken_dinner",
+      "grilled_salmon",
+      "caprese_salad"
+    ]
+  ],
+  "parent": "sprout_and_soil:well_fed",
+  "rewards": {
+    "experience": 250
+  }
+}

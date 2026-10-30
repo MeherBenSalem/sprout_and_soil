@@ -1,0 +1,20 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:rice"
+    },
+    {
+      "item": "sprout_and_soil:rice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:cooked_rice"
+  },
+  "experience": 0.35,
+  "cookingtime": 150,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

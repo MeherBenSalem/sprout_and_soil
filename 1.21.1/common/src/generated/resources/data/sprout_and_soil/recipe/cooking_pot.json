@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    "I I",
+    "IBI",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:cooking_pot"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:orange_juice",
+    "sprout_and_soil:apple_juice",
+    "sprout_and_soil:grape_juice",
+    "sprout_and_soil:lemonade",
+    "sprout_and_soil:pineapple_juice",
+    "sprout_and_soil:tomato_juice",
+    "sprout_and_soil:carrot_juice",
+    "sprout_and_soil:berry_smoothie",
+    "sprout_and_soil:tropical_smoothie",
+    "sprout_and_soil:coffee",
+    "sprout_and_soil:cafe_latte",
+    "sprout_and_soil:green_tea",
+    "sprout_and_soil:mint_tea",
+    "sprout_and_soil:ginger_tea",
+    "sprout_and_soil:hot_cocoa"
+  ]
+}

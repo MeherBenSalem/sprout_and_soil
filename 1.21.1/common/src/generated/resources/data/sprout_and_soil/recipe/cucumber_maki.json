@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:cooked_rice"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "sprout_and_soil:cucumber"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "sprout_and_soil:cucumber_maki"
+  }
+}

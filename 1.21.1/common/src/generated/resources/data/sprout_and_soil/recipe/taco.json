@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:tortilla"
+    },
+    {
+      "item": "sprout_and_soil:beef_patty"
+    },
+    {
+      "item": "sprout_and_soil:lettuce"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:taco"
+  }
+}

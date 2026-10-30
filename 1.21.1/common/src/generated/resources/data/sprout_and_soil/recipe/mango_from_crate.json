@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:mango_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "sprout_and_soil:mango"
+  }
+}

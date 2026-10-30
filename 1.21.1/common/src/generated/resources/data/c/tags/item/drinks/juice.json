@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:orange_juice",
+    "sprout_and_soil:apple_juice",
+    "sprout_and_soil:grape_juice",
+    "sprout_and_soil:lemonade",
+    "sprout_and_soil:pineapple_juice",
+    "sprout_and_soil:tomato_juice",
+    "sprout_and_soil:carrot_juice"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "sprout_and_soil:pineapple"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:pineapple_juice"
+  }
+}

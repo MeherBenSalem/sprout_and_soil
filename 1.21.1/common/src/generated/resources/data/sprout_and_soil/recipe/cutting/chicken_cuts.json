@@ -1,0 +1,17 @@
+{
+  "type": "sprout_and_soil:cutting",
+  "ingredient": {
+    "item": "minecraft:chicken"
+  },
+  "tool": {
+    "tag": "c:tools/knife"
+  },
+  "results": [
+    {
+      "item": {
+        "count": 2,
+        "id": "sprout_and_soil:chicken_cuts"
+      }
+    }
+  ]
+}
