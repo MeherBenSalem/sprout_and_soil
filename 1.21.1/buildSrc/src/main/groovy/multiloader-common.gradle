@@ -57,6 +57,11 @@ repositories {
     }
 }
 
+// Javadoc jars are published for API consumers; don't fail or spam on undocumented members.
+tasks.withType(Javadoc).configureEach {
+    options.addStringOption('Xdoclint:none', '-quiet')
+}
+
 sourcesJar {
     from(rootProject.file('LICENSE')) {
         rename { "${it}_${mod_name}" }
@@ -96,6 +101,7 @@ processResources {
             'description'                  : project.description,
             'neoforge_version'             : neoforge_version,
             'neoforge_loader_version_range': neoforge_loader_version_range,
+            'neoforge_dependency_range'    : neoforge_dependency_range,
             'credits'                      : credits,
             'java_version'                 : java_version
     ]

@@ -21,6 +21,7 @@ dependencies {
     // fabric and neoforge both bundle mixinextras, so it is safe to use it in common
     compileOnly group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
     annotationProcessor group: 'io.github.llamalad7', name: 'mixinextras-common', version: '0.3.5'
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
 }
 
 configurations {
@@ -34,8 +35,11 @@ configurations {
     }
 }
 
+// Assets and data under src/generated are produced by tools/assetgen (python3 tools/assetgen/build_assets.py).
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
 artifacts {
     commonJava sourceSets.main.java.sourceDirectories.singleFile
-    commonResources sourceSets.main.resources.sourceDirectories.singleFile
+    sourceSets.main.resources.sourceDirectories.each { commonResources it }
 }
 

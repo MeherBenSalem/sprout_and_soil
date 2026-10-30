@@ -25,3 +25,8 @@ elements
 .project
 .factorypath
 *.class
+
+# asset pipeline scratch output
+tools/assetgen/build/
+__pycache__/
+*.pyc

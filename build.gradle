@@ -52,25 +52,26 @@ void configureWorkspaceClean(String taskName, String rootDirName, String descrip
     }
 }
 
-configureWorkspaceBuild('build1201', '1.20.1', 'Build all 1.20.1 loaders (Fabric + Forge).')
-configureWorkspaceBuild('build1211', '1.21.1', 'Build all 1.21.1 loaders (Fabric + NeoForge).')
-configureWorkspaceBuild('build262', '26.2', 'Build all 26.2 loaders (Fabric + NeoForge).')
+// Minecraft workspaces and their loader subprojects. Add an entry here when porting to a new version.
+def workspaces = [
+        '1.21.1': ['fabric', 'neoforge'],
+]
 
-configureWorkspaceClean('clean1201', '1.20.1', 'Clean all 1.20.1 loaders.')
-configureWorkspaceClean('clean1211', '1.21.1', 'Clean all 1.21.1 loaders.')
-configureWorkspaceClean('clean262', '26.2', 'Clean all 26.2 loaders.')
+workspaces.each { dir, loaders ->
+    def suffix = dir.replace('.', '')
+    configureWorkspaceBuild("build${suffix}", dir, "Build all ${dir} loaders (${loaders.join(' + ')}).")
+    configureWorkspaceClean("clean${suffix}", dir, "Clean all ${dir} loaders.")
+}
 
 tasks.register('dist') {
     group = 'build'
     description = 'Build ALL versions and copy every mod JAR into all-jars/.'
-    dependsOn 'build1201', 'build1211', 'build262'
+    dependsOn workspaces.keySet().collect { "build${it.replace('.', '')}" }
     notCompatibleWithConfigurationCache('Copies workspace JARs with dynamic file trees.')
     doLast {
         def outDir = project.layout.projectDirectory.dir('all-jars').asFile
         outDir.mkdirs()
-        def dirs = ['1.20.1/fabric', '1.20.1/forge',
-                    '1.21.1/fabric', '1.21.1/neoforge',
-                    '26.2/fabric', '26.2/neoforge']
+        def dirs = workspaces.collectMany { dir, loaders -> loaders.collect { "${dir}/${it}" } }
         dirs.each { modDir ->
             def libsDir = project.file("${modDir}/build/libs")
             if (libsDir.exists()) {
@@ -91,14 +92,14 @@ tasks.register('dist') {
 
 tasks.register('buildAll') {
     group = 'build'
-    description = 'Build ALL versions (1.20.1, 1.21.1, 26.2) and collect JARs into all-jars/.'
+    description = 'Build every Minecraft workspace and collect JARs into all-jars/.'
     dependsOn 'dist'
 }
 
 tasks.register('cleanAll') {
     group = 'build'
     description = 'Clean ALL versions and all-jars/.'
-    dependsOn 'clean1201', 'clean1211', 'clean262'
+    dependsOn workspaces.keySet().collect { "clean${it.replace('.', '')}" }
     doLast {
         def outDir = file('all-jars')
         if (outDir.exists()) {
@@ -123,7 +124,7 @@ tasks.register('syncVersion') {
             throw new GradleException('Pass -PmodVersion=x.y.z or add a VERSION file at repo root.')
         }
         file('VERSION').text = v + System.lineSeparator()
-        ['1.20.1', '1.21.1', '26.2'].each { dir ->
+        workspaces.keySet().each { dir ->
             def props = file("${dir}/gradle.properties")
             if (!props.exists()) {
                 throw new GradleException("Missing ${props}")

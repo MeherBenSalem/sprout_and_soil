@@ -68,11 +68,30 @@ function collectJars(version) {
 }
 
 function readChangelog(version, changelogFile) {
-  for (const f of [changelogFile, path.join(ROOT, "CHANGELOG.md")].filter(Boolean)) {
-    if (fs.existsSync(f)) return fs.readFileSync(f, "utf8");
+  if (changelogFile && fs.existsSync(changelogFile)) return fs.readFileSync(changelogFile, "utf8");
+  const file = path.join(ROOT, "CHANGELOG.md");
+  if (fs.existsSync(file)) {
+    // Only the section for this version: from "## <version>" up to the next "## ".
+    const text = fs.readFileSync(file, "utf8");
+    const start = text.search(new RegExp(`^## ${version.replace(/\./g, "\\.")}\\b`, "m"));
+    if (start >= 0) {
+      const rest = text.slice(start);
+      const next = rest.slice(3).search(/^## /m);
+      return (next >= 0 ? rest.slice(0, next + 3) : rest).trim();
+    }
+    return text;
   }
   return `## ${MOD_TITLE} ${version}\n\nMultiLoader release.`;
 }
+
+// Modrinth project ids: Fabric API, JEI
+const MODRINTH_DEPENDENCIES = {
+  fabric: [
+    { project_id: "P7dR8mSH", dependency_type: "required" },
+    { project_id: "u6dRKJwZ", dependency_type: "optional" },
+  ],
+  neoforge: [{ project_id: "u6dRKJwZ", dependency_type: "optional" }],
+};
 
 function loadReleaseState() {
   if (!fs.existsSync(RELEASE_STATE_PATH)) return { uploads: [] };
@@ -113,7 +132,7 @@ async function uploadToModrinth(parsed, version, changelog, token, dryRun, state
       name: `${version} · ${parsedJar.loader} · ${parsedJar.game}`,
       version_number: `${version}+${parsedJar.loader}-${parsedJar.game}`,
       changelog,
-      dependencies: [],
+      dependencies: MODRINTH_DEPENDENCIES[parsedJar.loader] ?? [],
       game_versions: [parsedJar.game],
       version_type: "release",
       loaders: [parsedJar.loader],

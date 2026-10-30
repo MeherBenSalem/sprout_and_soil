@@ -33,6 +33,10 @@ neoForge {
         server {
             server()
         }
+        gameTestServer {
+            type = 'gameTestServer'
+            gameDirectory = project.file('build/gametest')
+        }
     }
     mods {
         "${mod_id}" {
@@ -42,3 +46,7 @@ neoForge {
 }
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+dependencies {
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}"
+}
