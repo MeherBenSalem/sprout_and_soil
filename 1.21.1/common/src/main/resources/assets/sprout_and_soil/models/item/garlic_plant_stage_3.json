@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "sprout_and_soil:block/garlic_stage3"
-  }
-}
