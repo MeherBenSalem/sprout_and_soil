@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:pizza"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        },
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "sprout_and_soil:pizza",
+          "properties": {
+            "servings_taken": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "sprout_and_soil:blocks/pizza"
+}

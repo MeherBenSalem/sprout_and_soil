@@ -794,22 +794,27 @@ def _nbt(tag_type: int, name: str | None, value) -> bytes:
     return head + payload(tag_type, value)
 
 
-def gen_test_structure(size=(9, 4, 9)) -> None:
-    """An empty GameTest arena with a stone floor: data/sprout_and_soil/structure/empty.nbt."""
+def write_test_structure(path: Path, data_version: int, size=(9, 4, 9)) -> None:
+    """An empty GameTest arena with a stone floor."""
     import gzip
 
     sx, sy, sz = size
     blocks = [(10, {"pos": (9, (3, [x, 0, z])), "state": (3, 1)}) for x in range(sx) for z in range(sz)]
     root = {
-        "DataVersion": (3, 3955),
+        "DataVersion": (3, data_version),
         "size": (9, (3, [sx, sy, sz])),
         "palette": (9, (10, [{"Name": (8, "minecraft:air")}, {"Name": (8, "minecraft:stone")}])),
         "blocks": (9, (10, [b[1] for b in blocks])),
         "entities": (9, (10, [])),
     }
-    path = data(M, "structure/empty.nbt")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(gzip.compress(_nbt(10, "", root), mtime=0))
+
+
+def gen_test_structure() -> None:
+    """data/sprout_and_soil/structure/empty.nbt for Minecraft 1.21.1 (data version 3955)."""
+    path = data(M, "structure/empty.nbt")
+    write_test_structure(path, 3955)
     WRITTEN.append(path)
 
 

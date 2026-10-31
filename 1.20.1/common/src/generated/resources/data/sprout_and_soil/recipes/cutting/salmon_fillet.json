@@ -1,0 +1,17 @@
+{
+  "type": "sprout_and_soil:cutting",
+  "ingredient": {
+    "item": "minecraft:salmon"
+  },
+  "tool": {
+    "tag": "sprout_and_soil:knives"
+  },
+  "results": [
+    {
+      "item": {
+        "item": "sprout_and_soil:salmon_fillet",
+        "count": 2
+      }
+    }
+  ]
+}

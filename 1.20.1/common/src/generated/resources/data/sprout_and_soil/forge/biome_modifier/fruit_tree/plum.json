@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#sprout_and_soil:spawns/orchard",
+  "features": "sprout_and_soil:fruit_tree/plum",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:lettuce_crate"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:lettuce",
+    "count": 9
+  }
+}

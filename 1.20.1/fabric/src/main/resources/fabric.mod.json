@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}",
+  "version": "${version}",
+  "name": "${mod_name}",
+  "description": "${description}",
+  "authors": [
+    "${mod_author}"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/nZVwZSoj",
+    "sources": "https://github.com/MeherBenSalem/sprout_and_soil",
+    "issues": "https://github.com/MeherBenSalem/sprout_and_soil/issues"
+  },
+  "license": "${license}",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "tn.nightbeam.sproutandsoil.fabric.SproutAndSoilFabric"
+    ],
+    "client": [
+      "tn.nightbeam.sproutandsoil.fabric.SproutAndSoilFabricClient"
+    ],
+    "fabric-gametest": [
+      "tn.nightbeam.sproutandsoil.fabric.gametest.SproutAndSoilFabricGameTests"
+    ],
+    "jei_mod_plugin": [
+      "tn.nightbeam.sproutandsoil.compat.jei.SproutAndSoilJeiPlugin"
+    ]
+  },
+  "mixins": [
+    "${mod_id}.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=17"
+  },
+  "suggests": {
+    "jei": "*"
+  }
+}

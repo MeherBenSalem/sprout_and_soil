@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sprout_and_soil:block/cutting_board"
+    },
+    "facing=east": {
+      "model": "sprout_and_soil:block/cutting_board",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sprout_and_soil:block/cutting_board",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sprout_and_soil:block/cutting_board",
+      "y": 270
+    }
+  }
+}

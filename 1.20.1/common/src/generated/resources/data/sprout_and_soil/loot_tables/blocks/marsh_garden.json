@@ -1,0 +1,128 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "sprout_and_soil:blocks/marsh_garden",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:marsh_garden"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:shears"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1.0,
+        "max": 2.0
+      },
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:shears"
+              ]
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cucumber_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:green_bean_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:celery_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:rice"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:soybeans"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cranberry_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:mint_seeds"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:shears"
+              ]
+            }
+          }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.35
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cucumber"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:green_beans"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:celery"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:rice"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:soybeans"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cranberries"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:mint"
+        }
+      ]
+    }
+  ]
+}

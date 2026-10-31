@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sprout_and_soil:block/scarecrow"
+    },
+    "facing=east": {
+      "model": "sprout_and_soil:block/scarecrow",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sprout_and_soil:block/scarecrow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sprout_and_soil:block/scarecrow",
+      "y": 270
+    }
+  }
+}

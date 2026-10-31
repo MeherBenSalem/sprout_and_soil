@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:brick"
+    }
+  },
+  "pattern": [
+    "BBB"
+  ],
+  "result": {
+    "item": "sprout_and_soil:plate",
+    "count": 3
+  }
+}

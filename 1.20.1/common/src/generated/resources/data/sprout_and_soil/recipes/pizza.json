@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:dough"
+    },
+    {
+      "item": "sprout_and_soil:tomato_sauce"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    },
+    {
+      "item": "sprout_and_soil:basil"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:pizza"
+  }
+}

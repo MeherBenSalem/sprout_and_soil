@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:carrot_crate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:carrot",
+    "count": 9
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:egg"
+  },
+  "result": "sprout_and_soil:fried_egg"
+}

@@ -1,0 +1,35 @@
+plugins {
+    id 'multiloader-common'
+    id 'net.neoforged.moddev.legacyforge'
+}
+
+legacyForge {
+    mcpVersion = minecraft_version
+    parchment {
+        minecraftVersion = parchment_minecraft
+        mappingsVersion = parchment_version
+    }
+}
+
+dependencies {
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+}
+
+configurations {
+    commonJava {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+    commonResources {
+        canBeResolved = false
+        canBeConsumed = true
+    }
+}
+
+// Assets and data under src/generated are produced by tools/assetgen (python3 tools/assetgen/build_assets.py).
+sourceSets.main.resources.srcDir 'src/generated/resources'
+
+artifacts {
+    commonJava sourceSets.main.java.sourceDirectories.singleFile
+    sourceSets.main.resources.sourceDirectories.each { commonResources it }
+}

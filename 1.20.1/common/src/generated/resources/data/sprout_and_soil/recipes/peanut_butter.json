@@ -1,0 +1,21 @@
+{
+  "type": "sprout_and_soil:tool_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:mortar_and_pestle"
+    },
+    {
+      "item": "sprout_and_soil:peanuts"
+    },
+    {
+      "item": "sprout_and_soil:peanuts"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:peanut_butter"
+  }
+}

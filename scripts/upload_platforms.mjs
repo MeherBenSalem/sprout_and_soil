@@ -90,6 +90,7 @@ const MODRINTH_DEPENDENCIES = {
     { project_id: "P7dR8mSH", dependency_type: "required" },
     { project_id: "u6dRKJwZ", dependency_type: "optional" },
   ],
+  forge: [{ project_id: "u6dRKJwZ", dependency_type: "optional" }],
   neoforge: [{ project_id: "u6dRKJwZ", dependency_type: "optional" }],
 };
 

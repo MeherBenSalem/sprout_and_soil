@@ -1,0 +1,3304 @@
+{
+  "format": 1,
+  "crops": [
+    {
+      "id": "tomato",
+      "block": "tomato_crop",
+      "planting_item": "tomato_seeds",
+      "produce": "tomato",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "bell_pepper",
+      "block": "bell_pepper_crop",
+      "planting_item": "bell_pepper_seeds",
+      "produce": "bell_pepper",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "chili_pepper",
+      "block": "chili_pepper_crop",
+      "planting_item": "chili_pepper_seeds",
+      "produce": "chili_pepper",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "eggplant",
+      "block": "eggplant_crop",
+      "planting_item": "eggplant_seeds",
+      "produce": "eggplant",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "cucumber",
+      "block": "cucumber_crop",
+      "planting_item": "cucumber_seeds",
+      "produce": "cucumber",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "zucchini",
+      "block": "zucchini_crop",
+      "planting_item": "zucchini_seeds",
+      "produce": "zucchini",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "green_bean",
+      "block": "green_bean_crop",
+      "planting_item": "green_bean_seeds",
+      "produce": "green_beans",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "lettuce",
+      "block": "lettuce_crop",
+      "planting_item": "lettuce_seeds",
+      "produce": "lettuce",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "cabbage",
+      "block": "cabbage_crop",
+      "planting_item": "cabbage_seeds",
+      "produce": "cabbage",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "spinach",
+      "block": "spinach_crop",
+      "planting_item": "spinach_seeds",
+      "produce": "spinach",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "broccoli",
+      "block": "broccoli_crop",
+      "planting_item": "broccoli_seeds",
+      "produce": "broccoli",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "cauliflower",
+      "block": "cauliflower_crop",
+      "planting_item": "cauliflower_seeds",
+      "produce": "cauliflower",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "celery",
+      "block": "celery_crop",
+      "planting_item": "celery_seeds",
+      "produce": "celery",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "asparagus",
+      "block": "asparagus_crop",
+      "planting_item": "asparagus_seeds",
+      "produce": "asparagus",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "garlic",
+      "block": "garlic_crop",
+      "planting_item": "garlic",
+      "produce": "garlic",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "onion",
+      "block": "onion_crop",
+      "planting_item": "onion",
+      "produce": "onion",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "leek",
+      "block": "leek_crop",
+      "planting_item": "leek_seeds",
+      "produce": "leek",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "radish",
+      "block": "radish_crop",
+      "planting_item": "radish_seeds",
+      "produce": "radish",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "turnip",
+      "block": "turnip_crop",
+      "planting_item": "turnip_seeds",
+      "produce": "turnip",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "sweet_potato",
+      "block": "sweet_potato_crop",
+      "planting_item": "sweet_potato",
+      "produce": "sweet_potato",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "ginger",
+      "block": "ginger_crop",
+      "planting_item": "ginger",
+      "produce": "ginger",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "peanut",
+      "block": "peanut_crop",
+      "planting_item": "peanuts",
+      "produce": "peanuts",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "corn",
+      "block": "corn_crop",
+      "planting_item": "corn_seeds",
+      "produce": "corn",
+      "model": "tall",
+      "regrow_age": -1
+    },
+    {
+      "id": "rice",
+      "block": "rice_crop",
+      "planting_item": "rice",
+      "produce": "rice",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "barley",
+      "block": "barley_crop",
+      "planting_item": "barley_seeds",
+      "produce": "barley",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "oat",
+      "block": "oat_crop",
+      "planting_item": "oat_seeds",
+      "produce": "oats",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "soybean",
+      "block": "soybean_crop",
+      "planting_item": "soybeans",
+      "produce": "soybeans",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "strawberry",
+      "block": "strawberry_crop",
+      "planting_item": "strawberry_seeds",
+      "produce": "strawberry",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "blueberry",
+      "block": "blueberry_crop",
+      "planting_item": "blueberry_seeds",
+      "produce": "blueberries",
+      "model": "cross",
+      "regrow_age": 4
+    },
+    {
+      "id": "raspberry",
+      "block": "raspberry_crop",
+      "planting_item": "raspberry_seeds",
+      "produce": "raspberries",
+      "model": "cross",
+      "regrow_age": 4
+    },
+    {
+      "id": "blackberry",
+      "block": "blackberry_crop",
+      "planting_item": "blackberry_seeds",
+      "produce": "blackberries",
+      "model": "cross",
+      "regrow_age": 4
+    },
+    {
+      "id": "cranberry",
+      "block": "cranberry_crop",
+      "planting_item": "cranberry_seeds",
+      "produce": "cranberries",
+      "model": "cross",
+      "regrow_age": 4
+    },
+    {
+      "id": "grape",
+      "block": "grape_crop",
+      "planting_item": "grape_seeds",
+      "produce": "grapes",
+      "model": "crop",
+      "regrow_age": 4
+    },
+    {
+      "id": "pineapple",
+      "block": "pineapple_crop",
+      "planting_item": "pineapple_seeds",
+      "produce": "pineapple",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "coffee",
+      "block": "coffee_crop",
+      "planting_item": "coffee_beans",
+      "produce": "coffee_beans",
+      "model": "cross",
+      "regrow_age": 4
+    },
+    {
+      "id": "tea",
+      "block": "tea_crop",
+      "planting_item": "tea_seeds",
+      "produce": "tea_leaves",
+      "model": "cross",
+      "regrow_age": 4
+    },
+    {
+      "id": "cotton",
+      "block": "cotton_crop",
+      "planting_item": "cotton_seeds",
+      "produce": "cotton",
+      "model": "crop",
+      "regrow_age": -1
+    },
+    {
+      "id": "basil",
+      "block": "basil_crop",
+      "planting_item": "basil_seeds",
+      "produce": "basil",
+      "model": "cross",
+      "regrow_age": 4
+    },
+    {
+      "id": "mint",
+      "block": "mint_crop",
+      "planting_item": "mint_seeds",
+      "produce": "mint",
+      "model": "cross",
+      "regrow_age": 4
+    },
+    {
+      "id": "peppercorn",
+      "block": "peppercorn_crop",
+      "planting_item": "peppercorns",
+      "produce": "peppercorns",
+      "model": "cross",
+      "regrow_age": 4
+    }
+  ],
+  "trees": [
+    {
+      "id": "apple",
+      "sapling": "apple_sapling",
+      "leaves": "apple_leaves",
+      "fruit": "minecraft:apple",
+      "feature": "sprout_and_soil:fruit_tree/apple"
+    },
+    {
+      "id": "orange",
+      "sapling": "orange_sapling",
+      "leaves": "orange_leaves",
+      "fruit": "sprout_and_soil:orange",
+      "feature": "sprout_and_soil:fruit_tree/orange"
+    },
+    {
+      "id": "lemon",
+      "sapling": "lemon_sapling",
+      "leaves": "lemon_leaves",
+      "fruit": "sprout_and_soil:lemon",
+      "feature": "sprout_and_soil:fruit_tree/lemon"
+    },
+    {
+      "id": "lime",
+      "sapling": "lime_sapling",
+      "leaves": "lime_leaves",
+      "fruit": "sprout_and_soil:lime",
+      "feature": "sprout_and_soil:fruit_tree/lime"
+    },
+    {
+      "id": "peach",
+      "sapling": "peach_sapling",
+      "leaves": "peach_leaves",
+      "fruit": "sprout_and_soil:peach",
+      "feature": "sprout_and_soil:fruit_tree/peach"
+    },
+    {
+      "id": "pear",
+      "sapling": "pear_sapling",
+      "leaves": "pear_leaves",
+      "fruit": "sprout_and_soil:pear",
+      "feature": "sprout_and_soil:fruit_tree/pear"
+    },
+    {
+      "id": "plum",
+      "sapling": "plum_sapling",
+      "leaves": "plum_leaves",
+      "fruit": "sprout_and_soil:plum",
+      "feature": "sprout_and_soil:fruit_tree/plum"
+    },
+    {
+      "id": "sweet_cherry",
+      "sapling": "sweet_cherry_sapling",
+      "leaves": "sweet_cherry_leaves",
+      "fruit": "sprout_and_soil:cherries",
+      "feature": "sprout_and_soil:fruit_tree/sweet_cherry"
+    },
+    {
+      "id": "mango",
+      "sapling": "mango_sapling",
+      "leaves": "mango_leaves",
+      "fruit": "sprout_and_soil:mango",
+      "feature": "sprout_and_soil:fruit_tree/mango"
+    },
+    {
+      "id": "avocado",
+      "sapling": "avocado_sapling",
+      "leaves": "avocado_leaves",
+      "fruit": "sprout_and_soil:avocado",
+      "feature": "sprout_and_soil:fruit_tree/avocado"
+    },
+    {
+      "id": "banana",
+      "sapling": "banana_sapling",
+      "leaves": "banana_leaves",
+      "fruit": "sprout_and_soil:banana",
+      "feature": "sprout_and_soil:fruit_tree/banana"
+    },
+    {
+      "id": "olive",
+      "sapling": "olive_sapling",
+      "leaves": "olive_leaves",
+      "fruit": "sprout_and_soil:olives",
+      "feature": "sprout_and_soil:fruit_tree/olive"
+    }
+  ],
+  "items": [
+    {
+      "id": "plate",
+      "stack": 64
+    },
+    {
+      "id": "mug",
+      "stack": 64
+    },
+    {
+      "id": "tomato",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "tomato_seeds",
+      "stack": 64,
+      "plants": "tomato_crop"
+    },
+    {
+      "id": "bell_pepper",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "bell_pepper_seeds",
+      "stack": 64,
+      "plants": "bell_pepper_crop"
+    },
+    {
+      "id": "chili_pepper",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2
+      }
+    },
+    {
+      "id": "chili_pepper_seeds",
+      "stack": 64,
+      "plants": "chili_pepper_crop"
+    },
+    {
+      "id": "eggplant",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "eggplant_seeds",
+      "stack": 64,
+      "plants": "eggplant_crop"
+    },
+    {
+      "id": "cucumber",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "cucumber_seeds",
+      "stack": 64,
+      "plants": "cucumber_crop"
+    },
+    {
+      "id": "zucchini",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "zucchini_seeds",
+      "stack": 64,
+      "plants": "zucchini_crop"
+    },
+    {
+      "id": "green_beans",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "green_bean_seeds",
+      "stack": 64,
+      "plants": "green_bean_crop"
+    },
+    {
+      "id": "lettuce",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "lettuce_seeds",
+      "stack": 64,
+      "plants": "lettuce_crop"
+    },
+    {
+      "id": "cabbage",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "cabbage_seeds",
+      "stack": 64,
+      "plants": "cabbage_crop"
+    },
+    {
+      "id": "spinach",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "spinach_seeds",
+      "stack": 64,
+      "plants": "spinach_crop"
+    },
+    {
+      "id": "broccoli",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.5
+      }
+    },
+    {
+      "id": "broccoli_seeds",
+      "stack": 64,
+      "plants": "broccoli_crop"
+    },
+    {
+      "id": "cauliflower",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.5
+      }
+    },
+    {
+      "id": "cauliflower_seeds",
+      "stack": 64,
+      "plants": "cauliflower_crop"
+    },
+    {
+      "id": "celery",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "celery_seeds",
+      "stack": 64,
+      "plants": "celery_crop"
+    },
+    {
+      "id": "asparagus",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "asparagus_seeds",
+      "stack": 64,
+      "plants": "asparagus_crop"
+    },
+    {
+      "id": "garlic",
+      "stack": 64,
+      "food": {
+        "nutrition": 1,
+        "saturation": 0.3
+      },
+      "plants": "garlic_crop"
+    },
+    {
+      "id": "onion",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.4
+      },
+      "plants": "onion_crop"
+    },
+    {
+      "id": "leek",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "leek_seeds",
+      "stack": 64,
+      "plants": "leek_crop"
+    },
+    {
+      "id": "radish",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "radish_seeds",
+      "stack": 64,
+      "plants": "radish_crop"
+    },
+    {
+      "id": "turnip",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "turnip_seeds",
+      "stack": 64,
+      "plants": "turnip_crop"
+    },
+    {
+      "id": "sweet_potato",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      },
+      "plants": "sweet_potato_crop"
+    },
+    {
+      "id": "ginger",
+      "stack": 64,
+      "food": {
+        "nutrition": 1,
+        "saturation": 0.2
+      },
+      "plants": "ginger_crop"
+    },
+    {
+      "id": "peanuts",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      },
+      "plants": "peanut_crop"
+    },
+    {
+      "id": "corn",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "corn_seeds",
+      "stack": 64,
+      "plants": "corn_crop"
+    },
+    {
+      "id": "rice",
+      "stack": 64,
+      "plants": "rice_crop"
+    },
+    {
+      "id": "barley",
+      "stack": 64
+    },
+    {
+      "id": "barley_seeds",
+      "stack": 64,
+      "plants": "barley_crop"
+    },
+    {
+      "id": "oats",
+      "stack": 64
+    },
+    {
+      "id": "oat_seeds",
+      "stack": 64,
+      "plants": "oat_crop"
+    },
+    {
+      "id": "soybeans",
+      "stack": 64,
+      "plants": "soybean_crop"
+    },
+    {
+      "id": "strawberry",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3,
+        "fast": true
+      }
+    },
+    {
+      "id": "strawberry_seeds",
+      "stack": 64,
+      "plants": "strawberry_crop"
+    },
+    {
+      "id": "blueberries",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2,
+        "fast": true
+      }
+    },
+    {
+      "id": "blueberry_seeds",
+      "stack": 64,
+      "plants": "blueberry_crop"
+    },
+    {
+      "id": "raspberries",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2,
+        "fast": true
+      }
+    },
+    {
+      "id": "raspberry_seeds",
+      "stack": 64,
+      "plants": "raspberry_crop"
+    },
+    {
+      "id": "blackberries",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2,
+        "fast": true
+      }
+    },
+    {
+      "id": "blackberry_seeds",
+      "stack": 64,
+      "plants": "blackberry_crop"
+    },
+    {
+      "id": "cranberries",
+      "stack": 64,
+      "food": {
+        "nutrition": 1,
+        "saturation": 0.2,
+        "fast": true
+      }
+    },
+    {
+      "id": "cranberry_seeds",
+      "stack": 64,
+      "plants": "cranberry_crop"
+    },
+    {
+      "id": "grapes",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3,
+        "fast": true
+      }
+    },
+    {
+      "id": "grape_seeds",
+      "stack": 64,
+      "plants": "grape_crop"
+    },
+    {
+      "id": "pineapple",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "pineapple_seeds",
+      "stack": 64,
+      "plants": "pineapple_crop"
+    },
+    {
+      "id": "coffee_beans",
+      "stack": 64,
+      "plants": "coffee_crop",
+      "tooltip": true
+    },
+    {
+      "id": "tea_leaves",
+      "stack": 64
+    },
+    {
+      "id": "tea_seeds",
+      "stack": 64,
+      "plants": "tea_crop"
+    },
+    {
+      "id": "cotton",
+      "stack": 64
+    },
+    {
+      "id": "cotton_seeds",
+      "stack": 64,
+      "plants": "cotton_crop"
+    },
+    {
+      "id": "basil",
+      "stack": 64
+    },
+    {
+      "id": "basil_seeds",
+      "stack": 64,
+      "plants": "basil_crop"
+    },
+    {
+      "id": "mint",
+      "stack": 64
+    },
+    {
+      "id": "mint_seeds",
+      "stack": 64,
+      "plants": "mint_crop"
+    },
+    {
+      "id": "peppercorns",
+      "stack": 64,
+      "plants": "peppercorn_crop"
+    },
+    {
+      "id": "orange",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "lemon",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2
+      }
+    },
+    {
+      "id": "lime",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2
+      }
+    },
+    {
+      "id": "peach",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "pear",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "plum",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "cherries",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3,
+        "fast": true
+      }
+    },
+    {
+      "id": "mango",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "avocado",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "banana",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "olives",
+      "stack": 64,
+      "food": {
+        "nutrition": 1,
+        "saturation": 0.3,
+        "fast": true
+      }
+    },
+    {
+      "id": "flour",
+      "stack": 64
+    },
+    {
+      "id": "dough",
+      "stack": 64
+    },
+    {
+      "id": "cornmeal",
+      "stack": 64
+    },
+    {
+      "id": "tortilla",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "raw_pasta",
+      "stack": 64
+    },
+    {
+      "id": "salt",
+      "stack": 64
+    },
+    {
+      "id": "black_pepper",
+      "stack": 64
+    },
+    {
+      "id": "butter",
+      "stack": 64,
+      "food": {
+        "nutrition": 1,
+        "saturation": 0.2
+      }
+    },
+    {
+      "id": "cheese",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.5
+      }
+    },
+    {
+      "id": "cooking_oil",
+      "stack": 16,
+      "remainder": "minecraft:glass_bottle"
+    },
+    {
+      "id": "soy_sauce",
+      "stack": 16,
+      "remainder": "minecraft:glass_bottle"
+    },
+    {
+      "id": "tofu",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.5
+      }
+    },
+    {
+      "id": "tomato_sauce",
+      "stack": 16,
+      "remainder": "minecraft:bowl"
+    },
+    {
+      "id": "cooked_rice",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.5
+      },
+      "container": "minecraft:bowl",
+      "remainder": "minecraft:bowl"
+    },
+    {
+      "id": "pie_crust",
+      "stack": 64
+    },
+    {
+      "id": "waffle_cone",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2
+      }
+    },
+    {
+      "id": "chocolate_bar",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.3,
+        "fast": true
+      }
+    },
+    {
+      "id": "raisins",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3,
+        "fast": true
+      }
+    },
+    {
+      "id": "roasted_coffee_beans",
+      "stack": 64
+    },
+    {
+      "id": "peanut_butter",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4
+      },
+      "container": "minecraft:glass_bottle",
+      "remainder": "minecraft:glass_bottle"
+    },
+    {
+      "id": "berry_jam",
+      "stack": 16,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.3
+      },
+      "container": "minecraft:glass_bottle",
+      "remainder": "minecraft:glass_bottle"
+    },
+    {
+      "id": "orange_marmalade",
+      "stack": 16,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.3
+      },
+      "container": "minecraft:glass_bottle",
+      "remainder": "minecraft:glass_bottle"
+    },
+    {
+      "id": "pumpkin_slice",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "bacon",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "cooked_bacon",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.8
+      }
+    },
+    {
+      "id": "minced_beef",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.3
+      }
+    },
+    {
+      "id": "beef_patty",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.8
+      }
+    },
+    {
+      "id": "chicken_cuts",
+      "stack": 64,
+      "food": {
+        "nutrition": 1,
+        "saturation": 0.3,
+        "effects": [
+          {
+            "effect": "minecraft:hunger",
+            "duration": 600,
+            "amplifier": 0,
+            "chance": 0.3
+          }
+        ]
+      }
+    },
+    {
+      "id": "cooked_chicken_cuts",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "cod_fillet",
+      "stack": 64,
+      "food": {
+        "nutrition": 1,
+        "saturation": 0.1
+      }
+    },
+    {
+      "id": "cooked_cod_fillet",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "salmon_fillet",
+      "stack": 64,
+      "food": {
+        "nutrition": 1,
+        "saturation": 0.1
+      }
+    },
+    {
+      "id": "cooked_salmon_fillet",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.8
+      }
+    },
+    {
+      "id": "fried_egg",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "tomato_soup",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "vegetable_soup",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "pumpkin_soup",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "chicken_noodle_soup",
+      "stack": 16,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 6000,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "beef_stew",
+      "stack": 16,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 6000,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "fish_stew",
+      "stack": 16,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 6000,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "miso_soup",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "ramen",
+      "stack": 16,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 6000,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "chili_con_carne",
+      "stack": 16,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 6000,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "vegetable_curry",
+      "stack": 16,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 6000,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "chicken_curry",
+      "stack": 16,
+      "food": {
+        "nutrition": 14,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 7200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "fried_rice",
+      "stack": 16,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "mushroom_risotto",
+      "stack": 16,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "oatmeal",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "corn_chowder",
+      "stack": 16,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "mac_and_cheese",
+      "stack": 16,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "baked_beans",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "french_onion_soup",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "potato_leek_soup",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "broccoli_cheese_soup",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "gazpacho",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          },
+          {
+            "effect": "minecraft:fire_resistance",
+            "duration": 600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "vegetable_stir_fry",
+      "stack": 16,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "dumplings",
+      "stack": 16,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "custard",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.5
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "popcorn",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.3,
+        "fast": true
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "garden_salad",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "fruit_salad",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          },
+          {
+            "effect": "minecraft:regeneration",
+            "duration": 100,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "coleslaw",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 1200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "greek_salad",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "guacamole",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 1200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:bowl"
+    },
+    {
+      "id": "spaghetti_bolognese",
+      "stack": 16,
+      "food": {
+        "nutrition": 14,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 7200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "lasagna",
+      "stack": 16,
+      "food": {
+        "nutrition": 14,
+        "saturation": 0.9,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 8400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "ratatouille",
+      "stack": 16,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 7200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "paella",
+      "stack": 16,
+      "food": {
+        "nutrition": 14,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 7200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "stuffed_peppers",
+      "stack": 16,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 6000,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "omelette",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "pancakes",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "breakfast_plate",
+      "stack": 16,
+      "food": {
+        "nutrition": 14,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 7200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "fish_and_chips",
+      "stack": 16,
+      "food": {
+        "nutrition": 14,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 7200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "steak_dinner",
+      "stack": 16,
+      "food": {
+        "nutrition": 16,
+        "saturation": 0.9,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 9600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "roast_chicken_dinner",
+      "stack": 16,
+      "food": {
+        "nutrition": 16,
+        "saturation": 0.9,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 9600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "grilled_salmon",
+      "stack": 16,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.9,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 7200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "caprese_salad",
+      "stack": 16,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.6,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:plate"
+    },
+    {
+      "id": "blt_sandwich",
+      "stack": 64,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "chicken_sandwich",
+      "stack": 64,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "egg_sandwich",
+      "stack": 64,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 1200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "pbj_sandwich",
+      "stack": 64,
+      "food": {
+        "nutrition": 8,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 1200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "hamburger",
+      "stack": 64,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "cheeseburger",
+      "stack": 64,
+      "food": {
+        "nutrition": 13,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "veggie_burger",
+      "stack": 64,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "taco",
+      "stack": 64,
+      "food": {
+        "nutrition": 9,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "burrito",
+      "stack": 64,
+      "food": {
+        "nutrition": 12,
+        "saturation": 0.8,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "chicken_wrap",
+      "stack": 64,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "kebab",
+      "stack": 64,
+      "food": {
+        "nutrition": 10,
+        "saturation": 0.7,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:well_fed",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "salmon_maki",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.6,
+        "fast": true
+      }
+    },
+    {
+      "id": "cucumber_maki",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.6,
+        "fast": true
+      }
+    },
+    {
+      "id": "onigiri",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.5
+      }
+    },
+    {
+      "id": "garlic_bread",
+      "stack": 64,
+      "food": {
+        "nutrition": 7,
+        "saturation": 0.7
+      }
+    },
+    {
+      "id": "bruschetta",
+      "stack": 64,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "fries",
+      "stack": 64,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.5
+      }
+    },
+    {
+      "id": "onion_rings",
+      "stack": 64,
+      "food": {
+        "nutrition": 5,
+        "saturation": 0.5
+      }
+    },
+    {
+      "id": "trail_mix",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "fast": true
+      }
+    },
+    {
+      "id": "roasted_peanuts",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.5,
+        "fast": true
+      }
+    },
+    {
+      "id": "pickles",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4
+      },
+      "container": "minecraft:glass_bottle"
+    },
+    {
+      "id": "baked_sweet_potato",
+      "stack": 64,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "grilled_corn",
+      "stack": 64,
+      "food": {
+        "nutrition": 5,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "blueberry_muffin",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "banana_bread",
+      "stack": 64,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "cornbread",
+      "stack": 64,
+      "food": {
+        "nutrition": 5,
+        "saturation": 0.6
+      }
+    },
+    {
+      "id": "oatmeal_cookie",
+      "stack": 64,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2,
+        "fast": true
+      }
+    },
+    {
+      "id": "strawberry_ice_cream",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "chocolate_ice_cream",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "mint_ice_cream",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "orange_juice",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:speed",
+            "duration": 600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "apple_juice",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:regeneration",
+            "duration": 100,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "grape_juice",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:haste",
+            "duration": 600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "lemonade",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:fire_resistance",
+            "duration": 600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "pineapple_juice",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:jump_boost",
+            "duration": 600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "tomato_juice",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:absorption",
+            "duration": 600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "carrot_juice",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:night_vision",
+            "duration": 1200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "berry_smoothie",
+      "stack": 16,
+      "food": {
+        "nutrition": 5,
+        "saturation": 0.5,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:regeneration",
+            "duration": 160,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "tropical_smoothie",
+      "stack": 16,
+      "food": {
+        "nutrition": 6,
+        "saturation": 0.5,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "minecraft:speed",
+            "duration": 1200,
+            "amplifier": 0,
+            "chance": 1.0
+          },
+          {
+            "effect": "minecraft:jump_boost",
+            "duration": 1200,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "minecraft:glass_bottle",
+      "drink": true
+    },
+    {
+      "id": "coffee",
+      "stack": 16,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:caffeinated",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:mug",
+      "drink": true
+    },
+    {
+      "id": "cafe_latte",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.3,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:caffeinated",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          },
+          {
+            "effect": "sprout_and_soil:cozy",
+            "duration": 2400,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:mug",
+      "drink": true
+    },
+    {
+      "id": "green_tea",
+      "stack": 16,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:cozy",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:mug",
+      "drink": true
+    },
+    {
+      "id": "mint_tea",
+      "stack": 16,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:cozy",
+            "duration": 3600,
+            "amplifier": 0,
+            "chance": 1.0
+          },
+          {
+            "effect": "minecraft:regeneration",
+            "duration": 80,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:mug",
+      "drink": true
+    },
+    {
+      "id": "ginger_tea",
+      "stack": 16,
+      "food": {
+        "nutrition": 2,
+        "saturation": 0.2,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:cozy",
+            "duration": 4800,
+            "amplifier": 0,
+            "chance": 1.0
+          },
+          {
+            "effect": "minecraft:regeneration",
+            "duration": 100,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:mug",
+      "drink": true
+    },
+    {
+      "id": "hot_cocoa",
+      "stack": 16,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.4,
+        "always_edible": true,
+        "effects": [
+          {
+            "effect": "sprout_and_soil:cozy",
+            "duration": 6000,
+            "amplifier": 0,
+            "chance": 1.0
+          }
+        ]
+      },
+      "container": "sprout_and_soil:mug",
+      "drink": true
+    },
+    {
+      "id": "apple_pie_slice",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "cherry_pie_slice",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "berry_pie_slice",
+      "stack": 64,
+      "food": {
+        "nutrition": 3,
+        "saturation": 0.4
+      }
+    },
+    {
+      "id": "pizza_slice",
+      "stack": 64,
+      "food": {
+        "nutrition": 4,
+        "saturation": 0.5
+      }
+    }
+  ],
+  "feasts": [
+    {
+      "id": "apple_pie",
+      "kind": "pie",
+      "slice": "apple_pie_slice"
+    },
+    {
+      "id": "cherry_pie",
+      "kind": "pie",
+      "slice": "cherry_pie_slice"
+    },
+    {
+      "id": "berry_pie",
+      "kind": "pie",
+      "slice": "berry_pie_slice"
+    },
+    {
+      "id": "pizza",
+      "kind": "pizza",
+      "slice": "pizza_slice"
+    },
+    {
+      "id": "chocolate_cake",
+      "kind": "cake"
+    },
+    {
+      "id": "carrot_cake",
+      "kind": "cake"
+    }
+  ],
+  "crates": [
+    "apple_crate",
+    "beetroot_crate",
+    "bell_pepper_crate",
+    "cabbage_crate",
+    "carrot_crate",
+    "chili_pepper_crate",
+    "corn_crate",
+    "cucumber_crate",
+    "eggplant_crate",
+    "garlic_crate",
+    "lemon_crate",
+    "lettuce_crate",
+    "mango_crate",
+    "onion_crate",
+    "orange_crate",
+    "peach_crate",
+    "pear_crate",
+    "potato_crate",
+    "radish_crate",
+    "rice_crate",
+    "sweet_potato_crate",
+    "tomato_crate",
+    "turnip_crate"
+  ],
+  "gardens": [
+    "meadow_garden",
+    "woodland_garden",
+    "highland_garden",
+    "arid_garden",
+    "tropical_garden",
+    "marsh_garden"
+  ],
+  "compost": {
+    "sprout_and_soil:tomato": 0.65,
+    "sprout_and_soil:tomato_seeds": 0.3,
+    "sprout_and_soil:bell_pepper": 0.65,
+    "sprout_and_soil:bell_pepper_seeds": 0.3,
+    "sprout_and_soil:chili_pepper": 0.65,
+    "sprout_and_soil:chili_pepper_seeds": 0.3,
+    "sprout_and_soil:eggplant": 0.65,
+    "sprout_and_soil:eggplant_seeds": 0.3,
+    "sprout_and_soil:cucumber": 0.65,
+    "sprout_and_soil:cucumber_seeds": 0.3,
+    "sprout_and_soil:zucchini": 0.65,
+    "sprout_and_soil:zucchini_seeds": 0.3,
+    "sprout_and_soil:green_beans": 0.65,
+    "sprout_and_soil:green_bean_seeds": 0.3,
+    "sprout_and_soil:lettuce": 0.65,
+    "sprout_and_soil:lettuce_seeds": 0.3,
+    "sprout_and_soil:cabbage": 0.65,
+    "sprout_and_soil:cabbage_seeds": 0.3,
+    "sprout_and_soil:spinach": 0.65,
+    "sprout_and_soil:spinach_seeds": 0.3,
+    "sprout_and_soil:broccoli": 0.65,
+    "sprout_and_soil:broccoli_seeds": 0.3,
+    "sprout_and_soil:cauliflower": 0.65,
+    "sprout_and_soil:cauliflower_seeds": 0.3,
+    "sprout_and_soil:celery": 0.65,
+    "sprout_and_soil:celery_seeds": 0.3,
+    "sprout_and_soil:asparagus": 0.65,
+    "sprout_and_soil:asparagus_seeds": 0.3,
+    "sprout_and_soil:garlic": 0.65,
+    "sprout_and_soil:onion": 0.65,
+    "sprout_and_soil:leek": 0.65,
+    "sprout_and_soil:leek_seeds": 0.3,
+    "sprout_and_soil:radish": 0.65,
+    "sprout_and_soil:radish_seeds": 0.3,
+    "sprout_and_soil:turnip": 0.65,
+    "sprout_and_soil:turnip_seeds": 0.3,
+    "sprout_and_soil:sweet_potato": 0.65,
+    "sprout_and_soil:ginger": 0.65,
+    "sprout_and_soil:peanuts": 0.65,
+    "sprout_and_soil:corn": 0.65,
+    "sprout_and_soil:corn_seeds": 0.3,
+    "sprout_and_soil:rice": 0.3,
+    "sprout_and_soil:barley": 0.65,
+    "sprout_and_soil:barley_seeds": 0.3,
+    "sprout_and_soil:oats": 0.65,
+    "sprout_and_soil:oat_seeds": 0.3,
+    "sprout_and_soil:soybeans": 0.65,
+    "sprout_and_soil:strawberry": 0.65,
+    "sprout_and_soil:strawberry_seeds": 0.3,
+    "sprout_and_soil:blueberries": 0.65,
+    "sprout_and_soil:blueberry_seeds": 0.3,
+    "sprout_and_soil:raspberries": 0.65,
+    "sprout_and_soil:raspberry_seeds": 0.3,
+    "sprout_and_soil:blackberries": 0.65,
+    "sprout_and_soil:blackberry_seeds": 0.3,
+    "sprout_and_soil:cranberries": 0.65,
+    "sprout_and_soil:cranberry_seeds": 0.3,
+    "sprout_and_soil:grapes": 0.65,
+    "sprout_and_soil:grape_seeds": 0.3,
+    "sprout_and_soil:pineapple": 0.65,
+    "sprout_and_soil:pineapple_seeds": 0.3,
+    "sprout_and_soil:coffee_beans": 0.65,
+    "sprout_and_soil:tea_leaves": 0.65,
+    "sprout_and_soil:tea_seeds": 0.3,
+    "sprout_and_soil:cotton": 0.3,
+    "sprout_and_soil:cotton_seeds": 0.3,
+    "sprout_and_soil:basil": 0.65,
+    "sprout_and_soil:basil_seeds": 0.3,
+    "sprout_and_soil:mint": 0.65,
+    "sprout_and_soil:mint_seeds": 0.3,
+    "sprout_and_soil:peppercorns": 0.65,
+    "sprout_and_soil:orange": 0.65,
+    "sprout_and_soil:lemon": 0.65,
+    "sprout_and_soil:lime": 0.65,
+    "sprout_and_soil:peach": 0.65,
+    "sprout_and_soil:pear": 0.65,
+    "sprout_and_soil:plum": 0.65,
+    "sprout_and_soil:cherries": 0.65,
+    "sprout_and_soil:mango": 0.65,
+    "sprout_and_soil:avocado": 0.65,
+    "sprout_and_soil:banana": 0.65,
+    "sprout_and_soil:olives": 0.65,
+    "sprout_and_soil:apple_sapling": 0.3,
+    "sprout_and_soil:apple_leaves": 0.3,
+    "sprout_and_soil:orange_sapling": 0.3,
+    "sprout_and_soil:orange_leaves": 0.3,
+    "sprout_and_soil:lemon_sapling": 0.3,
+    "sprout_and_soil:lemon_leaves": 0.3,
+    "sprout_and_soil:lime_sapling": 0.3,
+    "sprout_and_soil:lime_leaves": 0.3,
+    "sprout_and_soil:peach_sapling": 0.3,
+    "sprout_and_soil:peach_leaves": 0.3,
+    "sprout_and_soil:pear_sapling": 0.3,
+    "sprout_and_soil:pear_leaves": 0.3,
+    "sprout_and_soil:plum_sapling": 0.3,
+    "sprout_and_soil:plum_leaves": 0.3,
+    "sprout_and_soil:sweet_cherry_sapling": 0.3,
+    "sprout_and_soil:sweet_cherry_leaves": 0.3,
+    "sprout_and_soil:mango_sapling": 0.3,
+    "sprout_and_soil:mango_leaves": 0.3,
+    "sprout_and_soil:avocado_sapling": 0.3,
+    "sprout_and_soil:avocado_leaves": 0.3,
+    "sprout_and_soil:banana_sapling": 0.3,
+    "sprout_and_soil:banana_leaves": 0.3,
+    "sprout_and_soil:olive_sapling": 0.3,
+    "sprout_and_soil:olive_leaves": 0.3,
+    "sprout_and_soil:meadow_garden": 0.65,
+    "sprout_and_soil:woodland_garden": 0.65,
+    "sprout_and_soil:highland_garden": 0.65,
+    "sprout_and_soil:arid_garden": 0.65,
+    "sprout_and_soil:tropical_garden": 0.65,
+    "sprout_and_soil:marsh_garden": 0.65
+  },
+  "worldgen": [
+    {
+      "feature": "sprout_and_soil:wild_garden/meadow_garden",
+      "biomes": "sprout_and_soil:spawns/meadow"
+    },
+    {
+      "feature": "sprout_and_soil:wild_garden/woodland_garden",
+      "biomes": "sprout_and_soil:spawns/woodland"
+    },
+    {
+      "feature": "sprout_and_soil:wild_garden/highland_garden",
+      "biomes": "sprout_and_soil:spawns/highland"
+    },
+    {
+      "feature": "sprout_and_soil:wild_garden/arid_garden",
+      "biomes": "sprout_and_soil:spawns/arid"
+    },
+    {
+      "feature": "sprout_and_soil:wild_garden/tropical_garden",
+      "biomes": "sprout_and_soil:spawns/tropical"
+    },
+    {
+      "feature": "sprout_and_soil:wild_garden/marsh_garden",
+      "biomes": "sprout_and_soil:spawns/marsh"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/apple",
+      "biomes": "sprout_and_soil:spawns/orchard"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/orange",
+      "biomes": "sprout_and_soil:spawns/citrus"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/lemon",
+      "biomes": "sprout_and_soil:spawns/citrus"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/lime",
+      "biomes": "sprout_and_soil:spawns/citrus"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/peach",
+      "biomes": "sprout_and_soil:spawns/orchard"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/pear",
+      "biomes": "sprout_and_soil:spawns/orchard"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/plum",
+      "biomes": "sprout_and_soil:spawns/orchard"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/sweet_cherry",
+      "biomes": "sprout_and_soil:spawns/cherry"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/mango",
+      "biomes": "sprout_and_soil:spawns/tropical"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/avocado",
+      "biomes": "sprout_and_soil:spawns/tropical"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/banana",
+      "biomes": "sprout_and_soil:spawns/tropical"
+    },
+    {
+      "feature": "sprout_and_soil:fruit_tree/olive",
+      "biomes": "sprout_and_soil:spawns/mediterranean"
+    }
+  ],
+  "tabs": {
+    "farm": [
+      "sprout_and_soil:iron_sickle",
+      "sprout_and_soil:golden_sickle",
+      "sprout_and_soil:diamond_sickle",
+      "sprout_and_soil:netherite_sickle",
+      "sprout_and_soil:watering_can",
+      "sprout_and_soil:fertilizer",
+      "sprout_and_soil:scarecrow",
+      "sprout_and_soil:sprinkler",
+      "sprout_and_soil:tomato_seeds",
+      "sprout_and_soil:bell_pepper_seeds",
+      "sprout_and_soil:chili_pepper_seeds",
+      "sprout_and_soil:eggplant_seeds",
+      "sprout_and_soil:cucumber_seeds",
+      "sprout_and_soil:zucchini_seeds",
+      "sprout_and_soil:green_bean_seeds",
+      "sprout_and_soil:lettuce_seeds",
+      "sprout_and_soil:cabbage_seeds",
+      "sprout_and_soil:spinach_seeds",
+      "sprout_and_soil:broccoli_seeds",
+      "sprout_and_soil:cauliflower_seeds",
+      "sprout_and_soil:celery_seeds",
+      "sprout_and_soil:asparagus_seeds",
+      "sprout_and_soil:leek_seeds",
+      "sprout_and_soil:radish_seeds",
+      "sprout_and_soil:turnip_seeds",
+      "sprout_and_soil:corn_seeds",
+      "sprout_and_soil:barley_seeds",
+      "sprout_and_soil:oat_seeds",
+      "sprout_and_soil:strawberry_seeds",
+      "sprout_and_soil:blueberry_seeds",
+      "sprout_and_soil:raspberry_seeds",
+      "sprout_and_soil:blackberry_seeds",
+      "sprout_and_soil:cranberry_seeds",
+      "sprout_and_soil:grape_seeds",
+      "sprout_and_soil:pineapple_seeds",
+      "sprout_and_soil:tea_seeds",
+      "sprout_and_soil:cotton_seeds",
+      "sprout_and_soil:basil_seeds",
+      "sprout_and_soil:mint_seeds",
+      "sprout_and_soil:tomato",
+      "sprout_and_soil:bell_pepper",
+      "sprout_and_soil:chili_pepper",
+      "sprout_and_soil:eggplant",
+      "sprout_and_soil:cucumber",
+      "sprout_and_soil:zucchini",
+      "sprout_and_soil:green_beans",
+      "sprout_and_soil:lettuce",
+      "sprout_and_soil:cabbage",
+      "sprout_and_soil:spinach",
+      "sprout_and_soil:broccoli",
+      "sprout_and_soil:cauliflower",
+      "sprout_and_soil:celery",
+      "sprout_and_soil:asparagus",
+      "sprout_and_soil:garlic",
+      "sprout_and_soil:onion",
+      "sprout_and_soil:leek",
+      "sprout_and_soil:radish",
+      "sprout_and_soil:turnip",
+      "sprout_and_soil:sweet_potato",
+      "sprout_and_soil:ginger",
+      "sprout_and_soil:peanuts",
+      "sprout_and_soil:corn",
+      "sprout_and_soil:rice",
+      "sprout_and_soil:barley",
+      "sprout_and_soil:oats",
+      "sprout_and_soil:soybeans",
+      "sprout_and_soil:strawberry",
+      "sprout_and_soil:blueberries",
+      "sprout_and_soil:raspberries",
+      "sprout_and_soil:blackberries",
+      "sprout_and_soil:cranberries",
+      "sprout_and_soil:grapes",
+      "sprout_and_soil:pineapple",
+      "sprout_and_soil:coffee_beans",
+      "sprout_and_soil:tea_leaves",
+      "sprout_and_soil:cotton",
+      "sprout_and_soil:basil",
+      "sprout_and_soil:mint",
+      "sprout_and_soil:peppercorns",
+      "sprout_and_soil:apple_sapling",
+      "sprout_and_soil:orange_sapling",
+      "sprout_and_soil:lemon_sapling",
+      "sprout_and_soil:lime_sapling",
+      "sprout_and_soil:peach_sapling",
+      "sprout_and_soil:pear_sapling",
+      "sprout_and_soil:plum_sapling",
+      "sprout_and_soil:sweet_cherry_sapling",
+      "sprout_and_soil:mango_sapling",
+      "sprout_and_soil:avocado_sapling",
+      "sprout_and_soil:banana_sapling",
+      "sprout_and_soil:olive_sapling",
+      "sprout_and_soil:orange",
+      "sprout_and_soil:lemon",
+      "sprout_and_soil:lime",
+      "sprout_and_soil:peach",
+      "sprout_and_soil:pear",
+      "sprout_and_soil:plum",
+      "sprout_and_soil:cherries",
+      "sprout_and_soil:mango",
+      "sprout_and_soil:avocado",
+      "sprout_and_soil:banana",
+      "sprout_and_soil:olives",
+      "sprout_and_soil:apple_leaves",
+      "sprout_and_soil:orange_leaves",
+      "sprout_and_soil:lemon_leaves",
+      "sprout_and_soil:lime_leaves",
+      "sprout_and_soil:peach_leaves",
+      "sprout_and_soil:pear_leaves",
+      "sprout_and_soil:plum_leaves",
+      "sprout_and_soil:sweet_cherry_leaves",
+      "sprout_and_soil:mango_leaves",
+      "sprout_and_soil:avocado_leaves",
+      "sprout_and_soil:banana_leaves",
+      "sprout_and_soil:olive_leaves",
+      "sprout_and_soil:meadow_garden",
+      "sprout_and_soil:woodland_garden",
+      "sprout_and_soil:highland_garden",
+      "sprout_and_soil:arid_garden",
+      "sprout_and_soil:tropical_garden",
+      "sprout_and_soil:marsh_garden",
+      "sprout_and_soil:apple_crate",
+      "sprout_and_soil:beetroot_crate",
+      "sprout_and_soil:bell_pepper_crate",
+      "sprout_and_soil:cabbage_crate",
+      "sprout_and_soil:carrot_crate",
+      "sprout_and_soil:chili_pepper_crate",
+      "sprout_and_soil:corn_crate",
+      "sprout_and_soil:cucumber_crate",
+      "sprout_and_soil:eggplant_crate",
+      "sprout_and_soil:garlic_crate",
+      "sprout_and_soil:lemon_crate",
+      "sprout_and_soil:lettuce_crate",
+      "sprout_and_soil:mango_crate",
+      "sprout_and_soil:onion_crate",
+      "sprout_and_soil:orange_crate",
+      "sprout_and_soil:peach_crate",
+      "sprout_and_soil:pear_crate",
+      "sprout_and_soil:potato_crate",
+      "sprout_and_soil:radish_crate",
+      "sprout_and_soil:rice_crate",
+      "sprout_and_soil:sweet_potato_crate",
+      "sprout_and_soil:tomato_crate",
+      "sprout_and_soil:turnip_crate"
+    ],
+    "kitchen": [
+      "sprout_and_soil:cooking_pot",
+      "sprout_and_soil:cutting_board",
+      "sprout_and_soil:flint_knife",
+      "sprout_and_soil:iron_knife",
+      "sprout_and_soil:golden_knife",
+      "sprout_and_soil:diamond_knife",
+      "sprout_and_soil:netherite_knife",
+      "sprout_and_soil:mortar_and_pestle",
+      "sprout_and_soil:plate",
+      "sprout_and_soil:mug",
+      "sprout_and_soil:flour",
+      "sprout_and_soil:dough",
+      "sprout_and_soil:cornmeal",
+      "sprout_and_soil:tortilla",
+      "sprout_and_soil:raw_pasta",
+      "sprout_and_soil:salt",
+      "sprout_and_soil:black_pepper",
+      "sprout_and_soil:butter",
+      "sprout_and_soil:cheese",
+      "sprout_and_soil:cooking_oil",
+      "sprout_and_soil:soy_sauce",
+      "sprout_and_soil:tofu",
+      "sprout_and_soil:tomato_sauce",
+      "sprout_and_soil:cooked_rice",
+      "sprout_and_soil:pie_crust",
+      "sprout_and_soil:waffle_cone",
+      "sprout_and_soil:chocolate_bar",
+      "sprout_and_soil:raisins",
+      "sprout_and_soil:roasted_coffee_beans",
+      "sprout_and_soil:peanut_butter",
+      "sprout_and_soil:berry_jam",
+      "sprout_and_soil:orange_marmalade",
+      "sprout_and_soil:pumpkin_slice",
+      "sprout_and_soil:bacon",
+      "sprout_and_soil:cooked_bacon",
+      "sprout_and_soil:minced_beef",
+      "sprout_and_soil:beef_patty",
+      "sprout_and_soil:chicken_cuts",
+      "sprout_and_soil:cooked_chicken_cuts",
+      "sprout_and_soil:cod_fillet",
+      "sprout_and_soil:cooked_cod_fillet",
+      "sprout_and_soil:salmon_fillet",
+      "sprout_and_soil:cooked_salmon_fillet",
+      "sprout_and_soil:fried_egg",
+      "sprout_and_soil:tomato_soup",
+      "sprout_and_soil:vegetable_soup",
+      "sprout_and_soil:pumpkin_soup",
+      "sprout_and_soil:chicken_noodle_soup",
+      "sprout_and_soil:beef_stew",
+      "sprout_and_soil:fish_stew",
+      "sprout_and_soil:miso_soup",
+      "sprout_and_soil:ramen",
+      "sprout_and_soil:chili_con_carne",
+      "sprout_and_soil:vegetable_curry",
+      "sprout_and_soil:chicken_curry",
+      "sprout_and_soil:fried_rice",
+      "sprout_and_soil:mushroom_risotto",
+      "sprout_and_soil:oatmeal",
+      "sprout_and_soil:corn_chowder",
+      "sprout_and_soil:mac_and_cheese",
+      "sprout_and_soil:baked_beans",
+      "sprout_and_soil:french_onion_soup",
+      "sprout_and_soil:potato_leek_soup",
+      "sprout_and_soil:broccoli_cheese_soup",
+      "sprout_and_soil:gazpacho",
+      "sprout_and_soil:vegetable_stir_fry",
+      "sprout_and_soil:dumplings",
+      "sprout_and_soil:custard",
+      "sprout_and_soil:popcorn",
+      "sprout_and_soil:garden_salad",
+      "sprout_and_soil:fruit_salad",
+      "sprout_and_soil:coleslaw",
+      "sprout_and_soil:greek_salad",
+      "sprout_and_soil:guacamole",
+      "sprout_and_soil:spaghetti_bolognese",
+      "sprout_and_soil:lasagna",
+      "sprout_and_soil:ratatouille",
+      "sprout_and_soil:paella",
+      "sprout_and_soil:stuffed_peppers",
+      "sprout_and_soil:omelette",
+      "sprout_and_soil:pancakes",
+      "sprout_and_soil:breakfast_plate",
+      "sprout_and_soil:fish_and_chips",
+      "sprout_and_soil:steak_dinner",
+      "sprout_and_soil:roast_chicken_dinner",
+      "sprout_and_soil:grilled_salmon",
+      "sprout_and_soil:caprese_salad",
+      "sprout_and_soil:blt_sandwich",
+      "sprout_and_soil:chicken_sandwich",
+      "sprout_and_soil:egg_sandwich",
+      "sprout_and_soil:pbj_sandwich",
+      "sprout_and_soil:hamburger",
+      "sprout_and_soil:cheeseburger",
+      "sprout_and_soil:veggie_burger",
+      "sprout_and_soil:taco",
+      "sprout_and_soil:burrito",
+      "sprout_and_soil:chicken_wrap",
+      "sprout_and_soil:kebab",
+      "sprout_and_soil:salmon_maki",
+      "sprout_and_soil:cucumber_maki",
+      "sprout_and_soil:onigiri",
+      "sprout_and_soil:garlic_bread",
+      "sprout_and_soil:bruschetta",
+      "sprout_and_soil:fries",
+      "sprout_and_soil:onion_rings",
+      "sprout_and_soil:trail_mix",
+      "sprout_and_soil:roasted_peanuts",
+      "sprout_and_soil:pickles",
+      "sprout_and_soil:baked_sweet_potato",
+      "sprout_and_soil:grilled_corn",
+      "sprout_and_soil:blueberry_muffin",
+      "sprout_and_soil:banana_bread",
+      "sprout_and_soil:cornbread",
+      "sprout_and_soil:oatmeal_cookie",
+      "sprout_and_soil:strawberry_ice_cream",
+      "sprout_and_soil:chocolate_ice_cream",
+      "sprout_and_soil:mint_ice_cream",
+      "sprout_and_soil:orange_juice",
+      "sprout_and_soil:apple_juice",
+      "sprout_and_soil:grape_juice",
+      "sprout_and_soil:lemonade",
+      "sprout_and_soil:pineapple_juice",
+      "sprout_and_soil:tomato_juice",
+      "sprout_and_soil:carrot_juice",
+      "sprout_and_soil:berry_smoothie",
+      "sprout_and_soil:tropical_smoothie",
+      "sprout_and_soil:coffee",
+      "sprout_and_soil:cafe_latte",
+      "sprout_and_soil:green_tea",
+      "sprout_and_soil:mint_tea",
+      "sprout_and_soil:ginger_tea",
+      "sprout_and_soil:hot_cocoa",
+      "sprout_and_soil:apple_pie",
+      "sprout_and_soil:apple_pie_slice",
+      "sprout_and_soil:cherry_pie",
+      "sprout_and_soil:cherry_pie_slice",
+      "sprout_and_soil:berry_pie",
+      "sprout_and_soil:berry_pie_slice",
+      "sprout_and_soil:pizza",
+      "sprout_and_soil:pizza_slice",
+      "sprout_and_soil:chocolate_cake",
+      "sprout_and_soil:carrot_cake"
+    ]
+  },
+  "trades": {
+    "seeds": [
+      "sprout_and_soil:tomato_seeds",
+      "sprout_and_soil:bell_pepper_seeds",
+      "sprout_and_soil:chili_pepper_seeds",
+      "sprout_and_soil:eggplant_seeds",
+      "sprout_and_soil:cucumber_seeds",
+      "sprout_and_soil:zucchini_seeds",
+      "sprout_and_soil:green_bean_seeds",
+      "sprout_and_soil:lettuce_seeds",
+      "sprout_and_soil:cabbage_seeds",
+      "sprout_and_soil:spinach_seeds",
+      "sprout_and_soil:broccoli_seeds",
+      "sprout_and_soil:cauliflower_seeds",
+      "sprout_and_soil:celery_seeds",
+      "sprout_and_soil:asparagus_seeds",
+      "sprout_and_soil:garlic",
+      "sprout_and_soil:onion",
+      "sprout_and_soil:leek_seeds",
+      "sprout_and_soil:radish_seeds",
+      "sprout_and_soil:turnip_seeds",
+      "sprout_and_soil:sweet_potato",
+      "sprout_and_soil:ginger",
+      "sprout_and_soil:peanuts",
+      "sprout_and_soil:corn_seeds",
+      "sprout_and_soil:rice",
+      "sprout_and_soil:barley_seeds",
+      "sprout_and_soil:oat_seeds",
+      "sprout_and_soil:soybeans",
+      "sprout_and_soil:strawberry_seeds",
+      "sprout_and_soil:blueberry_seeds",
+      "sprout_and_soil:raspberry_seeds",
+      "sprout_and_soil:blackberry_seeds",
+      "sprout_and_soil:cranberry_seeds",
+      "sprout_and_soil:grape_seeds",
+      "sprout_and_soil:pineapple_seeds",
+      "sprout_and_soil:coffee_beans",
+      "sprout_and_soil:tea_seeds",
+      "sprout_and_soil:cotton_seeds",
+      "sprout_and_soil:basil_seeds",
+      "sprout_and_soil:mint_seeds",
+      "sprout_and_soil:peppercorns"
+    ],
+    "produce": [
+      "sprout_and_soil:tomato",
+      "sprout_and_soil:bell_pepper",
+      "sprout_and_soil:chili_pepper",
+      "sprout_and_soil:eggplant",
+      "sprout_and_soil:cucumber",
+      "sprout_and_soil:zucchini",
+      "sprout_and_soil:green_beans",
+      "sprout_and_soil:lettuce",
+      "sprout_and_soil:cabbage",
+      "sprout_and_soil:spinach",
+      "sprout_and_soil:broccoli",
+      "sprout_and_soil:cauliflower",
+      "sprout_and_soil:celery",
+      "sprout_and_soil:asparagus",
+      "sprout_and_soil:garlic",
+      "sprout_and_soil:onion",
+      "sprout_and_soil:leek",
+      "sprout_and_soil:radish",
+      "sprout_and_soil:turnip",
+      "sprout_and_soil:sweet_potato",
+      "sprout_and_soil:ginger",
+      "sprout_and_soil:peanuts",
+      "sprout_and_soil:corn",
+      "sprout_and_soil:strawberry",
+      "sprout_and_soil:blueberries",
+      "sprout_and_soil:raspberries",
+      "sprout_and_soil:blackberries",
+      "sprout_and_soil:cranberries",
+      "sprout_and_soil:grapes",
+      "sprout_and_soil:pineapple"
+    ],
+    "fruits": [
+      "sprout_and_soil:orange",
+      "sprout_and_soil:lemon",
+      "sprout_and_soil:lime",
+      "sprout_and_soil:peach",
+      "sprout_and_soil:pear",
+      "sprout_and_soil:plum",
+      "sprout_and_soil:cherries",
+      "sprout_and_soil:mango",
+      "sprout_and_soil:avocado",
+      "sprout_and_soil:banana",
+      "sprout_and_soil:olives"
+    ],
+    "saplings": [
+      "sprout_and_soil:apple_sapling",
+      "sprout_and_soil:orange_sapling",
+      "sprout_and_soil:lemon_sapling",
+      "sprout_and_soil:lime_sapling",
+      "sprout_and_soil:peach_sapling",
+      "sprout_and_soil:pear_sapling",
+      "sprout_and_soil:plum_sapling",
+      "sprout_and_soil:sweet_cherry_sapling",
+      "sprout_and_soil:mango_sapling",
+      "sprout_and_soil:avocado_sapling",
+      "sprout_and_soil:banana_sapling",
+      "sprout_and_soil:olive_sapling"
+    ],
+    "meals": [
+      "sprout_and_soil:tomato_soup",
+      "sprout_and_soil:vegetable_soup",
+      "sprout_and_soil:pumpkin_soup",
+      "sprout_and_soil:chicken_noodle_soup",
+      "sprout_and_soil:beef_stew",
+      "sprout_and_soil:fish_stew",
+      "sprout_and_soil:miso_soup",
+      "sprout_and_soil:ramen",
+      "sprout_and_soil:chili_con_carne",
+      "sprout_and_soil:vegetable_curry",
+      "sprout_and_soil:chicken_curry",
+      "sprout_and_soil:fried_rice",
+      "sprout_and_soil:mushroom_risotto",
+      "sprout_and_soil:oatmeal",
+      "sprout_and_soil:corn_chowder",
+      "sprout_and_soil:mac_and_cheese",
+      "sprout_and_soil:baked_beans",
+      "sprout_and_soil:french_onion_soup",
+      "sprout_and_soil:potato_leek_soup",
+      "sprout_and_soil:broccoli_cheese_soup",
+      "sprout_and_soil:gazpacho",
+      "sprout_and_soil:vegetable_stir_fry",
+      "sprout_and_soil:dumplings",
+      "sprout_and_soil:custard",
+      "sprout_and_soil:popcorn",
+      "sprout_and_soil:garden_salad",
+      "sprout_and_soil:fruit_salad",
+      "sprout_and_soil:coleslaw",
+      "sprout_and_soil:greek_salad",
+      "sprout_and_soil:guacamole",
+      "sprout_and_soil:spaghetti_bolognese",
+      "sprout_and_soil:lasagna",
+      "sprout_and_soil:ratatouille",
+      "sprout_and_soil:paella",
+      "sprout_and_soil:stuffed_peppers",
+      "sprout_and_soil:omelette",
+      "sprout_and_soil:pancakes",
+      "sprout_and_soil:breakfast_plate",
+      "sprout_and_soil:fish_and_chips",
+      "sprout_and_soil:steak_dinner",
+      "sprout_and_soil:roast_chicken_dinner",
+      "sprout_and_soil:grilled_salmon",
+      "sprout_and_soil:caprese_salad"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#sprout_and_soil:spawns/mediterranean",
+  "features": "sprout_and_soil:fruit_tree/olive",
+  "step": "vegetal_decoration"
+}

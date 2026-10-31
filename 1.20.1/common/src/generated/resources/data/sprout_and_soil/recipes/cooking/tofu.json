@@ -1,0 +1,20 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:soybeans"
+    },
+    {
+      "item": "sprout_and_soil:soybeans"
+    },
+    {
+      "item": "sprout_and_soil:salt"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:tofu",
+    "count": 2
+  },
+  "experience": 0.35,
+  "cookingtime": 200
+}

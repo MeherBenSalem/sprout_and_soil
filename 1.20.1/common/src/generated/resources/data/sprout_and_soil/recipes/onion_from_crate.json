@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:onion_crate"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:onion",
+    "count": 9
+  }
+}

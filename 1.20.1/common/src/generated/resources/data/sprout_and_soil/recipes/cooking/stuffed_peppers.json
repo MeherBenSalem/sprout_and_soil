@@ -1,0 +1,28 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:bell_pepper"
+    },
+    {
+      "item": "sprout_and_soil:bell_pepper"
+    },
+    {
+      "item": "sprout_and_soil:rice"
+    },
+    {
+      "item": "sprout_and_soil:minced_beef"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:stuffed_peppers"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "sprout_and_soil:plate"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:strawberry"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:strawberry_seeds",
+    "count": 2
+  }
+}

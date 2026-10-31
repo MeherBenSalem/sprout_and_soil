@@ -20,12 +20,12 @@ A complete rewrite. Sprout & Soil is now an all-in-one farming and cooking mod.
 - Code-generated, original pixel-art textures and 3D models for everything.
 
 ### Changed
-- Targets Minecraft 1.21.1 on Fabric and NeoForge. Other Minecraft versions will be ported from this codebase.
+- Targets Minecraft 1.20.1 (Fabric and Forge) and 1.21.1 (Fabric and NeoForge), with identical content.
 - Crops use vanilla `CropBlock` ages (0-7) instead of one block per growth stage.
 
 ### Removed
 - 0.x blocks and items (`tomato_plant_stage_*`, `garlic_plant_stage_*`, `letuce*`). Existing 0.x worlds lose them.
-- The 1.20.1 (Forge/Fabric) and 26.2 workspaces; they will return as ports of 1.0.
+- The 26.2 workspace; it will return as a port of 1.0.
 
 ## 0.3.0
 

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "sprout_and_soil:block/cabbage_stage3"
+  },
+  "render_type": "minecraft:cutout"
+}

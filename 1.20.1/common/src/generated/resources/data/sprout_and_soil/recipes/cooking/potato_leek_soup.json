@@ -1,0 +1,25 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "sprout_and_soil:leek"
+    },
+    {
+      "item": "sprout_and_soil:leek"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:potato_leek_soup"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

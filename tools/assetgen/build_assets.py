@@ -5,7 +5,8 @@
     python3 tools/assetgen/build_assets.py --art      # also regenerate every texture / 3D model
     python3 tools/assetgen/build_assets.py --check    # validate only
 
-Everything is written to 1.21.1/common/src/generated/resources.
+Everything is written to 1.21.1/common/src/generated/resources, then converted for
+1.20.1/common/src/generated/resources (see sas/legacy.py).
 """
 from __future__ import annotations
 
@@ -17,7 +18,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from sas import datagen, spec  # noqa: E402
+from sas import datagen, legacy, spec  # noqa: E402
 from sas.paths import ASSETS, DATA, GENERATED, MAIN_RESOURCES  # noqa: E402
 
 ART_LANES = ["plants", "produce", "kitchen", "hardware"]
@@ -97,7 +98,9 @@ def main() -> int:
             run_art()
         written = datagen.generate()
         print(f"datagen: {len(written)} json files")
-    problems = validate()
+        converted = legacy.generate()
+        print(f"1.20.1: {len(converted)} files")
+    problems = validate() + legacy.validate()
     for p in problems[:200]:
         print("  !", p)
     print(f"validation: {len(problems)} problem(s)")

@@ -14,9 +14,11 @@ Thanks for contributing to Sprout & Soil.
 2. Make the smallest coherent change that solves the problem.
 3. Content (crops, trees, dishes, recipes) is declared once in `tools/assetgen/sas/spec/`. After editing it, run
    `python3 tools/assetgen/build_assets.py` (add `--art` to regenerate textures) and commit the regenerated files in
-   `1.21.1/common/src/generated/resources/`. The validator must report zero problems.
-4. Build the version root you changed from inside that folder (currently `1.21.1/`), and run
-   `tools/smoke_server.sh fabric` and `tools/smoke_server.sh neoforge` for gameplay or data changes.
+   `1.21.1/common/src/generated/resources/` and `1.20.1/common/src/generated/resources/`. The validator must report
+   zero problems.
+4. Build the version roots you changed from inside those folders (`1.20.1/` needs Java 17, `1.21.1/` Java 21), run
+   their GameTests, and for gameplay or data changes boot every release jar with `tools/qa/prod_server.sh <mc> <loader>`
+   and `tools/qa/client_boot.sh <mc> <loader>`.
 5. Update documentation when behavior or release steps change.
 6. Open a pull request with a clear summary and verification notes.
 

@@ -33,6 +33,12 @@ neoForge {
         server {
             server()
         }
+        // QA client: opens the "qa" save straight away (see tools/qa/client_boot.sh).
+        qaClient {
+            client()
+            gameDirectory = project.file('runs/client')
+            programArguments.addAll '--quickPlaySingleplayer', 'qa', '--width', '1600', '--height', '900'
+        }
         gameTestServer {
             type = 'gameTestServer'
             gameDirectory = project.file('build/gametest')

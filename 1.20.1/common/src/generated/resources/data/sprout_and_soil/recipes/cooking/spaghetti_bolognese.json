@@ -1,0 +1,28 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:raw_pasta"
+    },
+    {
+      "item": "sprout_and_soil:minced_beef"
+    },
+    {
+      "item": "sprout_and_soil:tomato_sauce"
+    },
+    {
+      "item": "sprout_and_soil:onion"
+    },
+    {
+      "item": "sprout_and_soil:garlic"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:spaghetti_bolognese"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "sprout_and_soil:plate"
+  }
+}

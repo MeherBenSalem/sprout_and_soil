@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:bell_pepper"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:bell_pepper_seeds",
+    "count": 2
+  }
+}

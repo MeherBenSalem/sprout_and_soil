@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#sprout_and_soil:spawns/arid",
+  "features": "sprout_and_soil:wild_garden/arid_garden",
+  "step": "vegetal_decoration"
+}

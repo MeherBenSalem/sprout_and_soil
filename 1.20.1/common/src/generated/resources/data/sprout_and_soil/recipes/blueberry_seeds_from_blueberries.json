@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:blueberries"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:blueberry_seeds",
+    "count": 2
+  }
+}

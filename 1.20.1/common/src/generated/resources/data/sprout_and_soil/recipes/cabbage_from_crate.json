@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:cabbage_crate"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:cabbage",
+    "count": 9
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "sprout_and_soil:salt"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:butter",
+    "count": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    },
+    {
+      "item": "sprout_and_soil:bell_pepper"
+    },
+    {
+      "item": "sprout_and_soil:onion"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:omelette"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "sprout_and_soil:plate"
+  }
+}

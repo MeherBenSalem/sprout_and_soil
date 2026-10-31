@@ -1,0 +1,28 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:raw_pasta"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "sprout_and_soil:bacon"
+    },
+    {
+      "item": "sprout_and_soil:soy_sauce"
+    },
+    {
+      "item": "sprout_and_soil:leek"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:ramen"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

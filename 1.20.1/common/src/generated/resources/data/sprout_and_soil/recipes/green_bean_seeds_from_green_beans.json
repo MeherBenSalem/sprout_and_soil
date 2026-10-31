@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:green_beans"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:green_bean_seeds",
+    "count": 2
+  }
+}

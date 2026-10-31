@@ -4,8 +4,8 @@
 gardens, water your fields, cook more than 100 dishes in a real kitchen, and eat well.
 
 Sprout & Soil 1.0 is a ground-up rewrite: new code, new content, and a fully generated, hand-tuned
-pixel-art asset set. It runs on **Fabric** and **NeoForge** for **Minecraft 1.21.1** (more versions will
-follow from the same codebase).
+pixel-art asset set. It runs on **Minecraft 1.20.1** (**Fabric** and **Forge**) and **Minecraft 1.21.1**
+(**Fabric** and **NeoForge**), with the same content everywhere.
 
 ![Crops growing in a field](docs/images/field.jpg)
 
@@ -56,7 +56,8 @@ follow from the same codebase).
 
 ### World & compatibility
 - Farmer villagers trade seeds, produce, fruit, meals and tools; wandering traders sell saplings.
-- Convention tags (`c:crops/*`, `c:seeds/*`, `c:foods/*`, `c:tools/knife`, `c:drinks`) for cross-mod recipes.
+- Convention tags (`c:crops/*`, `c:seeds/*`, `c:foods/*`, `c:tools/knife`, `c:drinks`) for cross-mod recipes;
+  on 1.20.1 also the Forge-style `forge:crops/*`, `forge:seeds/*`, `forge:vegetables`, `forge:tools/knives`.
 - Compostable produce, villager-plantable seeds, bee pollination, Fortune and Silk Touch support.
 - **JEI** integration for cooking pot and cutting board recipes (also picked up by EMI/REI JEI compat layers).
 - Advancement tree with 18 goals, from your first seed to *Master Gardener* and *Gourmet*.
@@ -65,6 +66,7 @@ follow from the same codebase).
 
 | Workspace | Minecraft | Loaders | Java |
 | --- | --- | --- | --- |
+| `1.20.1/` | 1.20.1 | Fabric (Loader ≥ 0.16, Fabric API), Forge ≥ 47.4.0 | 17 |
 | `1.21.1/` | 1.21.1 | Fabric (Loader ≥ 0.16, Fabric API), NeoForge ≥ 21.1.80 | 21 |
 
 > **1.0 is a breaking update.** Blocks and items from 0.x (`*_plant_stage_*`, `letuce`) no longer exist;
@@ -73,8 +75,8 @@ follow from the same codebase).
 ## Building
 
 ```bash
-cd 1.21.1
-./gradlew build                 # jars in fabric/build/libs and neoforge/build/libs
+cd 1.21.1 && ./gradlew build    # Java 21: jars in fabric/build/libs and neoforge/build/libs
+cd 1.20.1 && ./gradlew build    # Java 17: jars in fabric/build/libs and forge/build/libs
 ```
 
 From the repository root, `./gradlew buildAll` builds every workspace and collects the jars in `all-jars/`.
@@ -82,31 +84,37 @@ From the repository root, `./gradlew buildAll` builds every workspace and collec
 ## Testing
 
 ```bash
-cd 1.21.1
-./gradlew :fabric:runGametest              # in-world GameTests (crops, harvesting, cooking pot, cutting board,
-./gradlew :neoforge:runGameTestServer      #  mortar, fruit picking, pies, sprinkler, registration)
-cd .. && tools/smoke_server.sh fabric      # boots a dedicated server on a fresh world and fails on any
-tools/smoke_server.sh neoforge             #  recipe / loot / tag / worldgen error
-tools/showcase/capture.sh /tmp/shots       # real client on a virtual display (Xvfb), screenshots a showcase
+cd 1.21.1 && ./gradlew :fabric:runGametest :neoforge:runGameTestServer   # in-world GameTests (crops, harvesting,
+cd 1.20.1 && ./gradlew :fabric:runGametest :forge:runGameTestServer      #  cooking pot, cutting board, mortar,
+                                                                         #  fruit, pies, sprinkler, enchanting...)
+tools/qa/prod_server.sh 1.20.1 forge      # boots the built release jar on a real dedicated server (downloads the
+                                          #  loader / Fabric API) and fails on any mod, mixin or data error
+tools/qa/client_boot.sh 1.20.1 forge      # dev client on a virtual display (Xvfb): loads a world full of the
+                                          #  mod's blocks, screenshots it and checks the log for model errors
+tools/showcase/capture.sh /tmp/shots      # real client tour of a showcase world, one screenshot per scene
 ```
 
 ## Project layout
 
 ```
-1.21.1/                    MultiLoader workspace (common + fabric + neoforge)
+1.20.1/                    MultiLoader workspace (common + fabric + forge), Java 17
+1.21.1/                    MultiLoader workspace (common + fabric + neoforge), Java 21
   common/src/main          hand-written code and resources
   common/src/generated     generated assets & data (do not edit by hand)
 tools/assetgen/            content spec + asset pipeline (Python 3 + Pillow)
   sas/spec/                ← every crop, tree, dish and recipe is declared here, once
   sas/art/                 pixel-art and 3D-model generators
-  sas/datagen.py           models, blockstates, recipes, loot, tags, worldgen, advancements, lang
+  sas/datagen.py           models, blockstates, recipes, loot, tags, worldgen, advancements, lang (1.21.1)
+  sas/legacy.py            converts that output to the 1.20.1 data formats
   STYLE.md                 art style guide
-tools/smoke_server.sh      boots a dedicated server per loader and checks the logs
+tools/qa/                  production server and client boot checks
 tools/showcase/            datapack-driven in-game showcase + screenshot capture
+marketing/                 CurseForge / Modrinth listing copy and artwork
 ```
 
 The Java side reads `sprout_and_soil/content/manifest.json` (generated from the spec) to register the
-data-driven content, so ids, textures, recipes and translations can never drift apart.
+data-driven content, so ids, textures, recipes and translations can never drift apart. Both workspaces are
+generated from the same spec, so 1.20.1 and 1.21.1 always ship the same content.
 
 ```bash
 python3 tools/assetgen/build_assets.py          # regenerate data, models and lang; validate

@@ -1,0 +1,22 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:orange"
+    },
+    {
+      "item": "sprout_and_soil:orange"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:orange_marmalade"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:glass_bottle"
+  }
+}

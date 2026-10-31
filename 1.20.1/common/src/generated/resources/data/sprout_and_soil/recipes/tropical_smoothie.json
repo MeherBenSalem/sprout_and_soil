@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "sprout_and_soil:mango"
+    },
+    {
+      "item": "sprout_and_soil:banana"
+    },
+    {
+      "item": "sprout_and_soil:pineapple"
+    },
+    {
+      "item": "minecraft:snowball"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:tropical_smoothie"
+  }
+}

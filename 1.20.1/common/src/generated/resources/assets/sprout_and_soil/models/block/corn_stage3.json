@@ -1,0 +1,8 @@
+{
+  "parent": "sprout_and_soil:block/template_tall_crop",
+  "textures": {
+    "bottom": "sprout_and_soil:block/corn_stage3",
+    "top": "sprout_and_soil:block/corn_stage3_top"
+  },
+  "render_type": "minecraft:cutout"
+}

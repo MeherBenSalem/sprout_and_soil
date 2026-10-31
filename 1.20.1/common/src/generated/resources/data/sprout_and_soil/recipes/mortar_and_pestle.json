@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stone"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  T",
+    "S S",
+    " S "
+  ],
+  "result": {
+    "item": "sprout_and_soil:mortar_and_pestle"
+  }
+}

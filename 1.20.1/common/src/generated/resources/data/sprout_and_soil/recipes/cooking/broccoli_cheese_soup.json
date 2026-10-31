@@ -1,0 +1,25 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:broccoli"
+    },
+    {
+      "item": "sprout_and_soil:broccoli"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:broccoli_cheese_soup"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

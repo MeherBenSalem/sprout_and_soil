@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "sprout_and_soil:block/banana_sapling"
+  },
+  "render_type": "minecraft:cutout"
+}

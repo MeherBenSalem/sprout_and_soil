@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:basil"
+    },
+    {
+      "item": "sprout_and_soil:cooking_oil"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:bruschetta"
+  }
+}

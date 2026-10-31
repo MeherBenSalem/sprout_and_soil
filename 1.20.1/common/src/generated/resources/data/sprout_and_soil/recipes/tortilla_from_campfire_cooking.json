@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "sprout_and_soil:cornmeal"
+  },
+  "result": "sprout_and_soil:tortilla"
+}

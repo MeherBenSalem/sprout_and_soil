@@ -1,0 +1,152 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "sprout_and_soil:blocks/highland_garden",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:highland_garden"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:shears"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1.0,
+        "max": 2.0
+      },
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:shears"
+              ]
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cabbage_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:spinach_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:onion"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:leek_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:radish_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:turnip_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:barley_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:oat_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:blueberry_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cranberry_seeds"
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:shears"
+              ]
+            }
+          }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.35
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cabbage"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:spinach"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:onion"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:leek"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:radish"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:turnip"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:barley"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:oats"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:blueberries"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cranberries"
+        }
+      ]
+    }
+  ]
+}

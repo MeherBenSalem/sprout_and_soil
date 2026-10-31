@@ -1,0 +1,22 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:hot_cocoa"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "sprout_and_soil:mug"
+  }
+}

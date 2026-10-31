@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:flour"
+    },
+    {
+      "item": "sprout_and_soil:flour"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:raw_pasta",
+    "count": 3
+  }
+}

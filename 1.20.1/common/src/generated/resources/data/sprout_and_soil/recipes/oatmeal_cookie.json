@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:oats"
+    },
+    {
+      "item": "sprout_and_soil:raisins"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "sprout_and_soil:flour"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:oatmeal_cookie",
+    "count": 8
+  }
+}

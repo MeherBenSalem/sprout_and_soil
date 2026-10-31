@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:roasted_peanuts"
+    },
+    {
+      "item": "sprout_and_soil:raisins"
+    },
+    {
+      "item": "sprout_and_soil:chocolate_bar"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:trail_mix",
+    "count": 3
+  }
+}

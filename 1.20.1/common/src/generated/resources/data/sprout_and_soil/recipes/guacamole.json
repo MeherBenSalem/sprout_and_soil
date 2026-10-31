@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "sprout_and_soil:avocado"
+    },
+    {
+      "item": "sprout_and_soil:avocado"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:lime"
+    },
+    {
+      "item": "sprout_and_soil:onion"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:guacamole"
+  }
+}

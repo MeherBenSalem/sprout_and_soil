@@ -1,0 +1,31 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:chicken_cuts"
+    },
+    {
+      "item": "sprout_and_soil:rice"
+    },
+    {
+      "item": "sprout_and_soil:onion"
+    },
+    {
+      "item": "sprout_and_soil:ginger"
+    },
+    {
+      "item": "sprout_and_soil:chili_pepper"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:chicken_curry"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

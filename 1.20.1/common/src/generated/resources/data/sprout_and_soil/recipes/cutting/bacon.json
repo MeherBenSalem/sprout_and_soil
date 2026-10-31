@@ -1,0 +1,17 @@
+{
+  "type": "sprout_and_soil:cutting",
+  "ingredient": {
+    "item": "minecraft:porkchop"
+  },
+  "tool": {
+    "tag": "sprout_and_soil:knives"
+  },
+  "results": [
+    {
+      "item": {
+        "item": "sprout_and_soil:bacon",
+        "count": 2
+      }
+    }
+  ]
+}

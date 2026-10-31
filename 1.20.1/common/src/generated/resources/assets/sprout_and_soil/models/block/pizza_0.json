@@ -1,0 +1,10 @@
+{
+  "parent": "sprout_and_soil:block/template_pizza_0",
+  "textures": {
+    "particle": "sprout_and_soil:block/pizza_top",
+    "top": "sprout_and_soil:block/pizza_top",
+    "inner": "sprout_and_soil:block/pizza_inner",
+    "side": "sprout_and_soil:block/pizza_side",
+    "bottom": "sprout_and_soil:block/pizza_bottom"
+  }
+}

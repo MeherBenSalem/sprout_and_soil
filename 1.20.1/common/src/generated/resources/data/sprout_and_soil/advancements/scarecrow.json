@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "sprout_and_soil:scarecrow"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.scarecrow.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.scarecrow.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "scarecrow": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:scarecrow"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "scarecrow"
+    ]
+  ],
+  "parent": "sprout_and_soil:harvest"
+}

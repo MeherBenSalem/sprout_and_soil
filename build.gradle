@@ -54,6 +54,7 @@ void configureWorkspaceClean(String taskName, String rootDirName, String descrip
 
 // Minecraft workspaces and their loader subprojects. Add an entry here when porting to a new version.
 def workspaces = [
+        '1.20.1': ['fabric', 'forge'],
         '1.21.1': ['fabric', 'neoforge'],
 ]
 

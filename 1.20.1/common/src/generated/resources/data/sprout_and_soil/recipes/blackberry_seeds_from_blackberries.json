@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:blackberries"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:blackberry_seeds",
+    "count": 2
+  }
+}

@@ -2,8 +2,9 @@
 """Builds a datapack that stages an in-game showcase of Sprout & Soil content and flies a spectator
 camera through it. Used with tools/showcase/capture.sh to take real client screenshots.
 
-    python3 tools/showcase/make_showcase.py <world-dir>
+    python3 tools/showcase/make_showcase.py <world-dir> [--mc 1.20.1]
 """
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -14,6 +15,14 @@ from sas import spec  # noqa: E402
 M = "sprout_and_soil"
 Y = 160  # build platform height (above terrain)
 SCENE_TICKS = 300
+
+
+# Datapack differences between the supported Minecraft versions.
+FORMATS = {
+    "1.21.1": {"pack_format": 48, "functions": "function", "count": "count:1"},
+    "1.20.1": {"pack_format": 15, "functions": "functions", "count": "Count:1b"},
+}
+FMT = FORMATS["1.21.1"]
 
 
 def build_commands() -> list[str]:
@@ -51,10 +60,10 @@ def build_commands() -> list[str]:
         f"setblock {kx} {Y + 1} {kz} {M}:cooking_pot[facing=south]",
         f"setblock {kx + 2} {Y} {kz} minecraft:oak_planks",
         f"setblock {kx + 2} {Y + 1} {kz} {M}:cutting_board[facing=south]",
-        f'data merge block {kx + 2} {Y + 1} {kz} {{Item:{{id:"minecraft:beef",count:1}}}}',
+        f'data merge block {kx + 2} {Y + 1} {kz} {{Item:{{id:"minecraft:beef",{FMT['count']}}}}}',
         f"setblock {kx + 4} {Y} {kz} minecraft:oak_planks",
         f"setblock {kx + 4} {Y + 1} {kz} {M}:cutting_board[facing=south]",
-        f'data merge block {kx + 4} {Y + 1} {kz} {{Item:{{id:"{M}:tomato",count:1}}}}',
+        f'data merge block {kx + 4} {Y + 1} {kz} {{Item:{{id:"{M}:tomato",{FMT['count']}}}}}',
         f"setblock {kx + 7} {Y} {kz} {M}:scarecrow[facing=south]",
         f"setblock {kx + 9} {Y} {kz} {M}:sprinkler",
         f"setblock {kx + 10} {Y} {kz} minecraft:water_cauldron[level=3]",
@@ -89,13 +98,19 @@ SCENES = [
 
 
 def main() -> None:
-    world = Path(sys.argv[1])
+    global FMT
+    parser = argparse.ArgumentParser()
+    parser.add_argument("world")
+    parser.add_argument("--mc", default="1.21.1", choices=sorted(FORMATS))
+    args = parser.parse_args()
+    FMT = FORMATS[args.mc]
+    world = Path(args.world)
     pack = world / "datapacks" / "showcase"
-    fn = pack / "data" / "showcase" / "function"
-    tags = pack / "data" / "minecraft" / "tags" / "function"
+    fn = pack / "data" / "showcase" / FMT["functions"]
+    tags = pack / "data" / "minecraft" / "tags" / FMT["functions"]
     fn.mkdir(parents=True, exist_ok=True)
     tags.mkdir(parents=True, exist_ok=True)
-    (pack / "pack.mcmeta").write_text(json.dumps({"pack": {"pack_format": 48, "description": "Sprout & Soil showcase"}}))
+    (pack / "pack.mcmeta").write_text(json.dumps({"pack": {"pack_format": FMT["pack_format"], "description": "Sprout & Soil showcase"}}))
     (tags / "load.json").write_text(json.dumps({"values": ["showcase:load"]}))
     (tags / "tick.json").write_text(json.dumps({"values": ["showcase:tick"]}))
     (fn / "load.mcfunction").write_text("\n".join([

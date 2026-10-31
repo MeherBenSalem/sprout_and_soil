@@ -1,0 +1,25 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:raw_pasta"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    },
+    {
+      "item": "sprout_and_soil:cheese"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:mac_and_cheese"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

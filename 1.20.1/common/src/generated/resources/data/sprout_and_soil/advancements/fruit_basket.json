@@ -1,0 +1,170 @@
+{
+  "display": {
+    "icon": {
+      "item": "sprout_and_soil:mango"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.fruit_basket.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.fruit_basket.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "orange": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:orange"
+            ]
+          }
+        ]
+      }
+    },
+    "lemon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:lemon"
+            ]
+          }
+        ]
+      }
+    },
+    "lime": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:lime"
+            ]
+          }
+        ]
+      }
+    },
+    "peach": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:peach"
+            ]
+          }
+        ]
+      }
+    },
+    "pear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:pear"
+            ]
+          }
+        ]
+      }
+    },
+    "plum": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:plum"
+            ]
+          }
+        ]
+      }
+    },
+    "cherries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:cherries"
+            ]
+          }
+        ]
+      }
+    },
+    "mango": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:mango"
+            ]
+          }
+        ]
+      }
+    },
+    "avocado": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:avocado"
+            ]
+          }
+        ]
+      }
+    },
+    "banana": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:banana"
+            ]
+          }
+        ]
+      }
+    },
+    "olives": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:olives"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "orange",
+      "lemon",
+      "lime",
+      "peach",
+      "pear",
+      "plum",
+      "cherries",
+      "mango",
+      "avocado",
+      "banana",
+      "olives"
+    ]
+  ],
+  "parent": "sprout_and_soil:orchard",
+  "rewards": {
+    "experience": 150
+  }
+}

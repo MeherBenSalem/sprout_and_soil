@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:potato_crate"
+    }
+  ],
+  "result": {
+    "item": "minecraft:potato",
+    "count": 9
+  }
+}

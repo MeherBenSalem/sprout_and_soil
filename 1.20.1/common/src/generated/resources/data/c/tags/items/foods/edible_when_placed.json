@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:apple_pie",
+    "sprout_and_soil:cherry_pie",
+    "sprout_and_soil:berry_pie",
+    "sprout_and_soil:pizza",
+    "sprout_and_soil:chocolate_cake",
+    "sprout_and_soil:carrot_cake"
+  ]
+}

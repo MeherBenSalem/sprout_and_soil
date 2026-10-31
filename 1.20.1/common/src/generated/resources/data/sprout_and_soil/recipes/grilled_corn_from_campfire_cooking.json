@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "sprout_and_soil:corn"
+  },
+  "result": "sprout_and_soil:grilled_corn"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:salt",
+    "count": 4
+  },
+  "experience": 0.2,
+  "cookingtime": 300
+}

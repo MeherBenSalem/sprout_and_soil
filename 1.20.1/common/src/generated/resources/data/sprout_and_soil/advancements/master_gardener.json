@@ -1,0 +1,547 @@
+{
+  "display": {
+    "icon": {
+      "item": "sprout_and_soil:corn"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.master_gardener.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.master_gardener.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tomato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:tomato"
+            ]
+          }
+        ]
+      }
+    },
+    "bell_pepper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:bell_pepper"
+            ]
+          }
+        ]
+      }
+    },
+    "chili_pepper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:chili_pepper"
+            ]
+          }
+        ]
+      }
+    },
+    "eggplant": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:eggplant"
+            ]
+          }
+        ]
+      }
+    },
+    "cucumber": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:cucumber"
+            ]
+          }
+        ]
+      }
+    },
+    "zucchini": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:zucchini"
+            ]
+          }
+        ]
+      }
+    },
+    "green_beans": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:green_beans"
+            ]
+          }
+        ]
+      }
+    },
+    "lettuce": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:lettuce"
+            ]
+          }
+        ]
+      }
+    },
+    "cabbage": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:cabbage"
+            ]
+          }
+        ]
+      }
+    },
+    "spinach": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:spinach"
+            ]
+          }
+        ]
+      }
+    },
+    "broccoli": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:broccoli"
+            ]
+          }
+        ]
+      }
+    },
+    "cauliflower": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:cauliflower"
+            ]
+          }
+        ]
+      }
+    },
+    "celery": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:celery"
+            ]
+          }
+        ]
+      }
+    },
+    "asparagus": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:asparagus"
+            ]
+          }
+        ]
+      }
+    },
+    "garlic": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:garlic"
+            ]
+          }
+        ]
+      }
+    },
+    "onion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:onion"
+            ]
+          }
+        ]
+      }
+    },
+    "leek": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:leek"
+            ]
+          }
+        ]
+      }
+    },
+    "radish": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:radish"
+            ]
+          }
+        ]
+      }
+    },
+    "turnip": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:turnip"
+            ]
+          }
+        ]
+      }
+    },
+    "sweet_potato": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:sweet_potato"
+            ]
+          }
+        ]
+      }
+    },
+    "ginger": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:ginger"
+            ]
+          }
+        ]
+      }
+    },
+    "peanuts": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:peanuts"
+            ]
+          }
+        ]
+      }
+    },
+    "corn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:corn"
+            ]
+          }
+        ]
+      }
+    },
+    "rice": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:rice"
+            ]
+          }
+        ]
+      }
+    },
+    "barley": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:barley"
+            ]
+          }
+        ]
+      }
+    },
+    "oats": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:oats"
+            ]
+          }
+        ]
+      }
+    },
+    "soybeans": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:soybeans"
+            ]
+          }
+        ]
+      }
+    },
+    "strawberry": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:strawberry"
+            ]
+          }
+        ]
+      }
+    },
+    "blueberries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:blueberries"
+            ]
+          }
+        ]
+      }
+    },
+    "raspberries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:raspberries"
+            ]
+          }
+        ]
+      }
+    },
+    "blackberries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:blackberries"
+            ]
+          }
+        ]
+      }
+    },
+    "cranberries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:cranberries"
+            ]
+          }
+        ]
+      }
+    },
+    "grapes": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:grapes"
+            ]
+          }
+        ]
+      }
+    },
+    "pineapple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:pineapple"
+            ]
+          }
+        ]
+      }
+    },
+    "coffee_beans": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:coffee_beans"
+            ]
+          }
+        ]
+      }
+    },
+    "tea_leaves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:tea_leaves"
+            ]
+          }
+        ]
+      }
+    },
+    "cotton": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:cotton"
+            ]
+          }
+        ]
+      }
+    },
+    "basil": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:basil"
+            ]
+          }
+        ]
+      }
+    },
+    "mint": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:mint"
+            ]
+          }
+        ]
+      }
+    },
+    "peppercorns": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:peppercorns"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "tomato",
+      "bell_pepper",
+      "chili_pepper",
+      "eggplant",
+      "cucumber",
+      "zucchini",
+      "green_beans",
+      "lettuce",
+      "cabbage",
+      "spinach",
+      "broccoli",
+      "cauliflower",
+      "celery",
+      "asparagus",
+      "garlic",
+      "onion",
+      "leek",
+      "radish",
+      "turnip",
+      "sweet_potato",
+      "ginger",
+      "peanuts",
+      "corn",
+      "rice",
+      "barley",
+      "oats",
+      "soybeans",
+      "strawberry",
+      "blueberries",
+      "raspberries",
+      "blackberries",
+      "cranberries",
+      "grapes",
+      "pineapple",
+      "coffee_beans",
+      "tea_leaves",
+      "cotton",
+      "basil",
+      "mint",
+      "peppercorns"
+    ]
+  ],
+  "parent": "sprout_and_soil:harvest",
+  "rewards": {
+    "experience": 200
+  }
+}

@@ -10,6 +10,8 @@ DATA = GENERATED / "data"
 TEXTURES = ASSETS / "textures"
 MODELS = ASSETS / "models"
 MAIN_RESOURCES = WORKSPACE / "common" / "src" / "main" / "resources"
+# Minecraft 1.20.1 workspace: same content, converted by sas.legacy
+LEGACY_GENERATED = REPO / "1.20.1" / "common" / "src" / "generated" / "resources"
 BUILD = TOOLS / "build"          # scratch output (previews, contact sheets) - git-ignored
 # Optional: root of an extracted vanilla client jar (the folder that contains assets/minecraft), used only to show
 # vanilla items next to ours in previews and to resolve vanilla parent models in render3d. Never copied.

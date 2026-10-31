@@ -1,0 +1,28 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:bell_pepper"
+    },
+    {
+      "item": "sprout_and_soil:broccoli"
+    },
+    {
+      "item": "sprout_and_soil:green_beans"
+    },
+    {
+      "item": "sprout_and_soil:ginger"
+    },
+    {
+      "item": "sprout_and_soil:soy_sauce"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:vegetable_stir_fry"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

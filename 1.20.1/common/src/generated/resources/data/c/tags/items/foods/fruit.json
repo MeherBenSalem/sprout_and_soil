@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:grapes",
+    "sprout_and_soil:pineapple",
+    "sprout_and_soil:orange",
+    "sprout_and_soil:lemon",
+    "sprout_and_soil:lime",
+    "sprout_and_soil:peach",
+    "sprout_and_soil:pear",
+    "sprout_and_soil:plum",
+    "sprout_and_soil:mango",
+    "sprout_and_soil:avocado",
+    "sprout_and_soil:banana",
+    "sprout_and_soil:olives",
+    "sprout_and_soil:raisins"
+  ]
+}

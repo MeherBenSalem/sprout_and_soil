@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "sprout_and_soil:salmon_fillet"
+  },
+  "result": "sprout_and_soil:cooked_salmon_fillet"
+}

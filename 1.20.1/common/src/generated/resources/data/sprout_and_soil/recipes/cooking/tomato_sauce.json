@@ -1,0 +1,25 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:tomato"
+    },
+    {
+      "item": "sprout_and_soil:garlic"
+    },
+    {
+      "item": "sprout_and_soil:salt"
+    }
+  ],
+  "result": {
+    "item": "sprout_and_soil:tomato_sauce"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}
