@@ -14,7 +14,7 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw
 
-from ..paths import ASSETS, BUILD, MAIN_RESOURCES, MODELS, TEXTURES
+from ..paths import ASSETS, BADGE, BUILD, MODELS, TEXTURES
 from . import hardware_feasts as feasts
 from . import hardware_gui as gui
 from . import hardware_models as models
@@ -43,10 +43,10 @@ def generate() -> list[Path]:
     written.append(gui.cooking_pot_gui().save(TEXTURES / "gui" / "container" / "cooking_pot.png"))
     for eid, spr in gui.effect_icons().items():
         written.append(spr.save(TEXTURES / "mob_effect" / f"{eid}.png"))
-    MAIN_RESOURCES.mkdir(parents=True, exist_ok=True)
-    logo_path = MAIN_RESOURCES / "logo.png"
-    gui.logo().save(logo_path, optimize=True)
-    written.append(logo_path)
+    # The badge becomes the listing icon and logo.png through marketing/source/render.cjs.
+    BADGE.parent.mkdir(parents=True, exist_ok=True)
+    gui.logo().save(BADGE, optimize=True)
+    written.append(BADGE)
     return written
 
 
@@ -56,7 +56,7 @@ TEMPLATE_VARS = ("top", "side", "inner", "bottom", "particle")
 
 
 def _contract_path(rel: str) -> Path:
-    return MAIN_RESOURCES / "logo.png" if rel == "logo.png" else ASSETS / rel
+    return BADGE if rel == "logo.png" else ASSETS / rel
 
 
 def _alpha_ok(path: Path) -> bool:
@@ -262,7 +262,7 @@ def preview_effects_logo() -> list[Path]:
         out.alpha_composite(_upscale(bg, 6), (8 + 160 * i, 8))
         out.alpha_composite(bg, (3 * 160 + 6 + 34 * i, 20))
     out.save(PREVIEWS / "hardware_effects.png")
-    logo = Image.open(MAIN_RESOURCES / "logo.png").convert("RGBA")
+    logo = Image.open(BADGE).convert("RGBA")
     lp = Image.new("RGBA", (128 * 3 + 30, 256), (52, 54, 60, 255))
     lp.alpha_composite(_upscale(logo, 2), (0, 0))
     lp.alpha_composite(logo, (270, 0))

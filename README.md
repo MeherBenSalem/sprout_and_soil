@@ -1,3 +1,5 @@
+![Sprout & Soil](marketing/images/banner.png)
+
 # Sprout & Soil
 
 **The all-in-one farming and cooking mod for Minecraft.** Grow 40 crops and 12 fruit trees, forage wild
@@ -7,15 +9,16 @@ Sprout & Soil 1.0 is a ground-up rewrite: new code, new content, and a fully gen
 pixel-art asset set. It runs on **Minecraft 1.20.1** (**Fabric** and **Forge**) and **Minecraft 1.21.1**
 (**Fabric** and **NeoForge**), with the same content everywhere.
 
-![Crops growing in a field](docs/images/field.jpg)
+![Forty crops, one field](marketing/images/card-crops.png)
 
-| Orchard | Kitchen |
+| Orchards | Kitchen |
 | --- | --- |
-| ![Fruit trees blossoming and fruiting](docs/images/orchard.jpg) | ![Cooking pot, cutting boards, pies and crates](docs/images/kitchen.jpg) |
+| ![Twelve fruit trees](marketing/images/card-orchard.png) | ![The cooking pot](marketing/images/card-kitchen.png) |
 
-![Every item in Sprout & Soil](docs/images/items.png)
+![Every item in Sprout & Soil](marketing/images/card-items.png)
 
-*Screenshots are captured from the real game client by `tools/showcase/capture.sh`.*
+*Screenshots are single frames from the real game client, captured by `marketing/source/capture.py`; the listing
+copy and artwork live in [`marketing/`](marketing/README.md).*
 
 ## Features
 

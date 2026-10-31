@@ -119,7 +119,7 @@ def build() -> list[Tex]:
                         "caffeinated": "coffee bean with lightning spark"}[e], size="18x18"))
     out.append(Tex("logo.png", "hardware", "logo", "logo", [],
                    "mod icon: sprout growing from rich soil with a tomato & wheat, warm farmhouse palette",
-                   size="128x128 (placed at common/src/main/resources/logo.png)"))
+                   size="128x128 (marketing/source/badge.png; render.cjs turns it into the icon and logo.png)"))
     return out
 
 

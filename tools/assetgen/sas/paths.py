@@ -10,6 +10,8 @@ DATA = GENERATED / "data"
 TEXTURES = ASSETS / "textures"
 MODELS = ASSETS / "models"
 MAIN_RESOURCES = WORKSPACE / "common" / "src" / "main" / "resources"
+# The pixel-art badge the listing icon (and so every logo.png) is built from, see marketing/source/render.cjs
+BADGE = REPO / "marketing" / "source" / "badge.png"
 # Minecraft 1.20.1 workspace: same content, converted by sas.legacy
 LEGACY_GENERATED = REPO / "1.20.1" / "common" / "src" / "generated" / "resources"
 BUILD = TOOLS / "build"          # scratch output (previews, contact sheets) - git-ignored
