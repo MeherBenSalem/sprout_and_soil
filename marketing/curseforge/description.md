@@ -1,5 +1,9 @@
 ![Sprout & Soil 1.0: The Harvest Update](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/banner.png)
 
+**[Discord](https://discord.gg/TJc3CxR4jK) · [The modpack](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy) · [Support NightBeam](https://nightbeam.dev/support) · [NightBeam Pro](https://nightbeam.dev/memberships) · [All projects](https://nightbeam.dev/projects)**
+
+> **Featured in [Remnants: Ashen Legacy](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy)**, NightBeam's story-driven soulslike RPG modpack.
+
 **The all-in-one farming and cooking mod.** Plant 40 crops and 12 fruit trees, forage wild gardens for new seeds,
 keep your fields watered and safe, then carry the harvest to a real kitchen: a cooking pot over the fire, cutting
 boards and knives, a mortar and pestle, and more than 150 foods and drinks to cook, bake, share and enjoy.
@@ -8,7 +12,7 @@ Everything is built on vanilla mechanics, so bone meal, bees, villagers, hoppers
 Every texture and model was made for this mod.
 
 Fabric and Forge on Minecraft 1.20.1 · Fabric and NeoForge on Minecraft 1.21.1 · install on the server and clients ·
-only Fabric API is needed on Fabric
+Fabric API is all you need on Fabric
 
 ![What's inside](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/header-inside.png)
 
@@ -61,7 +65,7 @@ only Fabric API is needed on Fabric
 **The cooking pot** cooks up to six ingredients into a dish. Many dishes need a serving container (bowl, plate, mug
 or glass bottle) in the container slot.
 
-- It only cooks with **heat directly below**: a lit campfire or soul campfire, fire, a magma block, lava or a lava
+- It cooks just with **heat directly below**: a lit campfire or soul campfire, fire, a magma block, lava or a lava
   cauldron (the `#sprout_and_soil:heat_sources` block tag). The flame in its screen shows whether it is heated.
 - **Hoppers** fill ingredients from the top and serving containers from the sides, and take the dishes (and empty
   buckets or bowls left behind) from the bottom. Comparators read how full it is.
@@ -132,7 +136,7 @@ plates, mugs and bottles come back when you finish a dish or drink.
 - **Datapack friendly**: cooking pot (`sprout_and_soil:cooking`), cutting board (`sprout_and_soil:cutting`) and
   mortar (`sprout_and_soil:tool_shapeless`) recipes are JSON, and the heat sources, sickle blocks, knives and serving
   containers are tags.
-- An **advancement tree** with 18 goals, from your first seed to *Master Gardener* and *Gourmet*.
+- An **advancement tree** with 18 goals, from planting a seed to *Master Gardener* and *Gourmet*.
 
 ![Downloads](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/header-downloads.png)
 
@@ -191,4 +195,14 @@ with commands; the steam, the sprinkler spray, the watering and the cooking pot 
 
 ![](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/divider.png)
 
-[Discord](https://discord.gg/SAmd9fhNhr) · [Source and issues](https://github.com/MeherBenSalem/sprout_and_soil) · [Support us](https://nightbeam.dev/support) · Made by NightBeam Studio
+---
+
+### More from NightBeam Studio
+
+- **[Remnants: Ashen Legacy](https://www.curseforge.com/minecraft/modpacks/remnants-ashen-legacy)**: the story-driven soulslike RPG modpack built on NightBeam's mods
+- **[Premium server plugins](https://nightbeam.dev/store)**: anti-cheat, ranked PvP, SMP setups and more on BuiltByBit
+- **[NightBeam Pro](https://nightbeam.dev/memberships)**: the model library and NightBeam Forge credits, from $5 a month
+- **[Discord](https://discord.gg/TJc3CxR4jK)**: support, bug reports, suggestions and early looks
+- **[Support NightBeam](https://nightbeam.dev/support)**: help keep every mod free
+
+**Follow:** [YouTube](https://www.youtube.com/@nightbeamstudio) · [Instagram](https://www.instagram.com/nightbeamstudio/) · [X](https://x.com/NightBeamLLC) · [Facebook](https://www.facebook.com/profile.php?id=61574823331471) · [Source and issues](https://github.com/MeherBenSalem/sprout_and_soil)
