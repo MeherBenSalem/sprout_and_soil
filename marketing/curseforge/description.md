@@ -1,6 +1,6 @@
 ![Sprout & Soil 1.0: The Harvest Update](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/banner.png)
 
-**[Discord](https://discord.gg/TJc3CxR4jK) · [Source and issues](https://github.com/MeherBenSalem/sprout_and_soil)**
+**[Docs](https://nightbeam.dev/docs/sprout-and-soil) · [Discord](https://discord.gg/TJc3CxR4jK) · [Source and issues](https://github.com/MeherBenSalem/sprout_and_soil)**
 
 **The all-in-one farming and cooking mod.** Plant 40 crops and 12 fruit trees, forage wild gardens for new seeds,
 keep your fields watered and safe, then carry the harvest to a real kitchen: a cooking pot over the fire, cutting
