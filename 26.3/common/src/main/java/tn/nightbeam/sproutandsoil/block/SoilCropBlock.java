@@ -90,11 +90,12 @@ public class SoilCropBlock extends CropBlock {
     }
 
     @Override
-    public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
+    public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state,
+            net.minecraft.world.level.block.BonemealSource source) {
         if (tall && getAge(state) >= TALL_THRESHOLD && !hasHeadroom(level, pos)) {
             return false;
         }
-        return super.isValidBonemealTarget(level, pos, state);
+        return super.isValidBonemealTarget(level, pos, state, source);
     }
 
     private static boolean hasHeadroom(LevelReader level, BlockPos pos) {

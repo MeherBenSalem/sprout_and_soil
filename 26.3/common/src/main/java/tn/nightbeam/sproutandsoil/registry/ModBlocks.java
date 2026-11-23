@@ -60,8 +60,9 @@ public final class ModBlocks {
         }
 
         for (ContentManifest.Tree tree : manifest.trees()) {
-            ResourceKey<net.minecraft.world.level.levelgen.feature.ConfiguredFeature<?, ?>> feature =
-                    ResourceKey.create(Registries.CONFIGURED_FEATURE, tree.feature());
+            // 26.3 folds configured features into Registries.FEATURE (net.minecraft...feature.Feature).
+            ResourceKey<net.minecraft.world.level.levelgen.feature.Feature> feature =
+                    ResourceKey.create(Registries.FEATURE, tree.feature());
             SAPLINGS.add(register(tree.sapling(), () -> new FruitSaplingBlock(
                     new TreeGrower(SproutAndSoil.MOD_ID + ":" + tree.id(), Optional.empty(), Optional.of(feature), Optional.empty()),
                     Keys.copy(Blocks.OAK_SAPLING, tree.sapling()))));

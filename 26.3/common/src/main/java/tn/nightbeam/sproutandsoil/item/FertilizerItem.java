@@ -12,6 +12,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.BonemealSource;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.GrassBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -35,12 +36,12 @@ public class FertilizerItem extends Item {
         for (BlockPos pos : BlockPos.betweenClosed(origin.offset(-RADIUS, -1, -RADIUS), origin.offset(RADIUS, 1, RADIUS))) {
             BlockState state = level.getBlockState(pos);
             if (state.getBlock() instanceof BonemealableBlock plant && !(plant instanceof GrassBlock)
-                    && plant.isValidBonemealTarget(level, pos, state)) {
+                    && plant.isValidBonemealTarget(level, pos, state, BonemealSource.INTERACTION)) {
                 any = true;
                 if (level instanceof ServerLevel serverLevel) {
                     BlockPos target = pos.immutable();
-                    if (plant.isBonemealSuccess(serverLevel, serverLevel.getRandom(), target, state)) {
-                        plant.performBonemeal(serverLevel, serverLevel.getRandom(), target, state);
+                    if (plant.isBonemealSuccess(serverLevel, serverLevel.getRandom(), target, state, BonemealSource.INTERACTION)) {
+                        plant.performBonemeal(serverLevel, serverLevel.getRandom(), target, state, BonemealSource.INTERACTION);
                     }
                     serverLevel.levelEvent(1505, target, 15);
                 }
