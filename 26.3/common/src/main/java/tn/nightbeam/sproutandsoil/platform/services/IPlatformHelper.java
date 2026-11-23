@@ -23,7 +23,9 @@ public interface IPlatformHelper {
 
     <T extends AbstractContainerMenu> MenuType<T> createMenuType(MenuFactory<T> factory);
 
-    CreativeModeTab.Builder creativeTabBuilder();
+    /** Builds a creative tab; fill gets one sink per refresh and passes it every item to show. */
+    CreativeModeTab creativeTab(net.minecraft.network.chat.Component title, java.util.function.Supplier<net.minecraft.world.item.ItemStack> icon,
+            java.util.function.Consumer<java.util.function.Consumer<net.minecraft.world.item.Item>> fill);
 
     @FunctionalInterface
     interface BlockEntityFactory<T extends BlockEntity> {

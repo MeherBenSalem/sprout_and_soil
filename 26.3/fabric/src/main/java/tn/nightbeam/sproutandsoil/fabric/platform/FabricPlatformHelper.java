@@ -40,7 +40,8 @@ public class FabricPlatformHelper implements IPlatformHelper {
     }
 
     @Override
-    public CreativeModeTab.Builder creativeTabBuilder() {
-        return FabricCreativeModeTab.builder();
+    public CreativeModeTab creativeTab(net.minecraft.network.chat.Component title, java.util.function.Supplier<net.minecraft.world.item.ItemStack> icon,
+            java.util.function.Consumer<java.util.function.Consumer<net.minecraft.world.item.Item>> fill) {
+        return FabricCreativeModeTab.builder().title(title).icon(icon).displayItems((parameters, output) -> fill.accept(output::accept)).build();
     }
 }

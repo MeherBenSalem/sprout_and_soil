@@ -37,7 +37,7 @@ public final class Watering {
 
     public static boolean isPlant(BlockState state) {
         Block block = state.getBlock();
-        return state.is(BlockTags.CROPS) || state.is(BlockTags.SAPLINGS)
+        return state.is(BlockTags.CROPS) || block instanceof net.minecraft.world.level.block.SaplingBlock
                 || (block instanceof BonemealableBlock && !(block instanceof GrassBlock) && !state.is(BlockTags.LEAVES));
     }
 }

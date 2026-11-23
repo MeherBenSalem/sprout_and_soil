@@ -48,8 +48,10 @@ public class FruitLeavesBlock extends UntintedParticleLeavesBlock {
     }
 
     @Override
-    public MapCodec<FruitLeavesBlock> codec() {
-        return CODEC;
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    public MapCodec<UntintedParticleLeavesBlock> codec() {
+        // UntintedParticleLeavesBlock pins codec()'s type to itself, so the subclass codec is handed back through it.
+        return (MapCodec) CODEC;
     }
 
     @Override

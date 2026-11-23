@@ -79,7 +79,7 @@ public class CuttingBoardBlockEntity extends BlockEntity {
         for (ItemStack result : recipe.get().value().rollResults(level.getRandom())) {
             Block.popResourceFromFace(level, worldPosition, net.minecraft.core.Direction.UP, result);
         }
-        level.sendParticles(new ItemParticleOption(ParticleTypes.ITEM, ingredient), worldPosition.getX() + 0.5D,
+        level.sendParticles(new ItemParticleOption(ParticleTypes.ITEM, ingredient.getItem()), worldPosition.getX() + 0.5D,
                 worldPosition.getY() + 0.15D, worldPosition.getZ() + 0.5D, 8, 0.15D, 0.05D, 0.15D, 0.05D);
         level.playSound(null, worldPosition, SoundEvents.SHEEP_SHEAR, SoundSource.BLOCKS, 0.8F, 0.9F + level.getRandom().nextFloat() * 0.2F);
         level.playSound(null, worldPosition, SoundEvents.WOOD_HIT, SoundSource.BLOCKS, 0.6F, 1.2F);

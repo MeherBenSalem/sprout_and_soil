@@ -39,7 +39,7 @@ public class SoilCakeBlock extends CakeBlock {
         if (!level.isClientSide()) {
             player.awardStat(Stats.EAT_CAKE_SLICE);
             player.getFoodData().eat(3, 0.3F);
-            level.playSound(null, pos, SoundEvents.GENERIC_EAT, SoundSource.PLAYERS, 0.8F, 1.0F);
+            level.playSound(null, pos, SoundEvents.GENERIC_EAT.value(), SoundSource.PLAYERS, 0.8F, 1.0F);
             int bites = state.getValue(BITES);
             level.gameEvent(player, GameEvent.EAT, pos);
             if (bites < MAX_BITES) {

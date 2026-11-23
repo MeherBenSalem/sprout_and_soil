@@ -27,18 +27,17 @@ public final class ModCreativeTabs {
     }
 
     private static RegistryEntry<CreativeModeTab> tab(String name, String icon) {
-        return Services.REGISTRAR.register(Registries.CREATIVE_MODE_TAB, name, () -> Services.PLATFORM.creativeTabBuilder()
-                .title(Component.translatable("itemGroup.sprout_and_soil." + name))
-                .icon(() -> new ItemStack(ModItems.get(icon)))
-                .displayItems((parameters, output) -> {
+        return Services.REGISTRAR.register(Registries.CREATIVE_MODE_TAB, name, () -> Services.PLATFORM.creativeTab(
+                Component.translatable("itemGroup.sprout_and_soil." + name),
+                () -> new ItemStack(ModItems.get(icon)),
+                sink -> {
                     List<Identifier> ids = Content.manifest().tabs().getOrDefault(name, List.of());
                     for (Identifier id : ids) {
                         Item item = BuiltInRegistries.ITEM.getValue(id);
                         if (item != Items.AIR) {
-                            output.accept(item);
+                            sink.accept(item);
                         }
                     }
-                })
-                .build());
+                }));
     }
 }
