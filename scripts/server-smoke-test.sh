@@ -275,11 +275,12 @@ oks=$(grep -c "SAS_OK " "$LOG"); loaded=$(grep -c "QA: loaded " "$LOG")
 echo "Commands OK: $oks of $EXPECTED_OK; mixin targets loaded: $loaded of $TARGET_COUNT"
 [ "$oks" -ge "$EXPECTED_OK" ] || { echo "::error::not every command check passed"; fail=1; }
 [ "$loaded" -ge "$TARGET_COUNT" ] || { echo "::error::not every mixin target class loaded"; fail=1; }
-# (The checkout path is left out: it holds the repository name.)
+# (The checkout path is left out: it holds the repository name. NeoForge's deprecation note on the mods.toml
+# logoFile key is metadata, not a load error.)
 # Errors, warnings and exceptions that mention the mod (its id, its logger name, its package or the smoke pack).
 # (Mixin's "refmap could not be read" warning is expected in a dev environment, where names are not remapped.)
 if grep -n -E "(ERROR|WARN|Exception|Caused by|Failed|Couldn't|Unknown|Errors in)" "$LOG" | sed "s|$ROOT|<checkout>|g" \
-    | grep -v -E "JAVA_TOOL_OPTIONS|Reference map '$MOD.refmap.json' .* could not be read" \
+    | grep -v -E "JAVA_TOOL_OPTIONS|deprecated \`logoFile\`|Reference map '$MOD.refmap.json' .* could not be read" \
     | grep -i -E "$MOD|Sprout & Soil|tn\.nightbeam\.sproutandsoil|$NS"; then
   echo "::error::error or warning mentioning the mod"; fail=1
 fi
