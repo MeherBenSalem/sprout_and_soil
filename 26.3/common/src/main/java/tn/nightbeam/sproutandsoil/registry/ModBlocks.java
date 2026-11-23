@@ -2,6 +2,7 @@ package tn.nightbeam.sproutandsoil.registry;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.util.random.WeightedList;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -64,7 +65,7 @@ public final class ModBlocks {
             ResourceKey<net.minecraft.world.level.levelgen.feature.Feature> feature =
                     ResourceKey.create(Registries.FEATURE, tree.feature());
             SAPLINGS.add(register(tree.sapling(), () -> new FruitSaplingBlock(
-                    new TreeGrower(SproutAndSoil.MOD_ID + ":" + tree.id(), Optional.empty(), Optional.of(feature), Optional.empty()),
+                    new TreeGrower(SproutAndSoil.MOD_ID + ":" + tree.id(), WeightedList.of(feature), WeightedList.of(), WeightedList.of(), feature),
                     Keys.copy(Blocks.OAK_SAPLING, tree.sapling()))));
             FRUIT_LEAVES.add(register(tree.leaves(), () -> new FruitLeavesBlock(
                     Keys.copy(Blocks.OAK_LEAVES, tree.leaves()), tree.fruit())));
