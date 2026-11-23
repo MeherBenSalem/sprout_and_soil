@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#sprout_and_soil:spawns/marsh",
+  "features": "sprout_and_soil:wild_garden/marsh_garden",
+  "step": "vegetal_decoration"
+}

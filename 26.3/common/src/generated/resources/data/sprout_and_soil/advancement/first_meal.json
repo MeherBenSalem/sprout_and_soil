@@ -1,0 +1,64 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:vegetable_soup"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.first_meal.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.first_meal.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "meal": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "sprout_and_soil:tomato_soup",
+            "sprout_and_soil:vegetable_soup",
+            "sprout_and_soil:pumpkin_soup",
+            "sprout_and_soil:chicken_noodle_soup",
+            "sprout_and_soil:beef_stew",
+            "sprout_and_soil:fish_stew",
+            "sprout_and_soil:miso_soup",
+            "sprout_and_soil:ramen",
+            "sprout_and_soil:chili_con_carne",
+            "sprout_and_soil:vegetable_curry",
+            "sprout_and_soil:chicken_curry",
+            "sprout_and_soil:fried_rice",
+            "sprout_and_soil:mushroom_risotto",
+            "sprout_and_soil:oatmeal",
+            "sprout_and_soil:corn_chowder",
+            "sprout_and_soil:mac_and_cheese",
+            "sprout_and_soil:baked_beans",
+            "sprout_and_soil:french_onion_soup",
+            "sprout_and_soil:potato_leek_soup",
+            "sprout_and_soil:broccoli_cheese_soup",
+            "sprout_and_soil:gazpacho",
+            "sprout_and_soil:vegetable_stir_fry",
+            "sprout_and_soil:dumplings",
+            "sprout_and_soil:custard",
+            "sprout_and_soil:popcorn",
+            "sprout_and_soil:garden_salad",
+            "sprout_and_soil:fruit_salad",
+            "sprout_and_soil:coleslaw",
+            "sprout_and_soil:greek_salad",
+            "sprout_and_soil:guacamole"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "meal"
+    ]
+  ],
+  "parent": "sprout_and_soil:cooking_pot"
+}

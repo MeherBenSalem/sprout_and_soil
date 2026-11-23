@@ -1,0 +1,18 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:rice",
+    "sprout_and_soil:sweet_potato",
+    "sprout_and_soil:cauliflower",
+    "sprout_and_soil:onion",
+    "sprout_and_soil:ginger",
+    "sprout_and_soil:chili_pepper"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:vegetable_curry"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

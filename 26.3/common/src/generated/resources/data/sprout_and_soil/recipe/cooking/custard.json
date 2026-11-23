@@ -1,0 +1,16 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "minecraft:egg",
+    "minecraft:egg",
+    "minecraft:milk_bucket",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:custard"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

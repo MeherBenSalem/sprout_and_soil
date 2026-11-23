@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:coffee"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.coffee.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.coffee.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "caffeinated": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "sprout_and_soil:caffeinated": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "caffeinated"
+    ]
+  ],
+  "parent": "sprout_and_soil:cooking_pot"
+}

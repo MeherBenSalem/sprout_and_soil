@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#sprout_and_soil:spawns/woodland",
+  "features": "sprout_and_soil:wild_garden/woodland_garden",
+  "step": "vegetal_decoration"
+}

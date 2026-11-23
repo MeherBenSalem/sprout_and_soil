@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "sprout_and_soil:block/sweet_potato_stage2"
+  },
+  "render_type": "minecraft:cutout"
+}

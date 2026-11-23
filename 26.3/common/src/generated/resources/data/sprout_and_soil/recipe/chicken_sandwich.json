@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bread",
+    "sprout_and_soil:cooked_chicken_cuts",
+    "sprout_and_soil:lettuce",
+    "sprout_and_soil:tomato"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:chicken_sandwich"
+  }
+}

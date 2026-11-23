@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bread",
+    "sprout_and_soil:garlic",
+    "sprout_and_soil:butter"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:garlic_bread"
+  }
+}

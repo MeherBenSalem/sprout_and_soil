@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "sprout_and_soil:item/iron_sickle"
+  }
+}

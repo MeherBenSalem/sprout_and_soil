@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:flour",
+    "sprout_and_soil:flour",
+    "sprout_and_soil:flour",
+    "minecraft:water_bucket"
+  ],
+  "result": {
+    "count": 3,
+    "id": "sprout_and_soil:dough"
+  }
+}

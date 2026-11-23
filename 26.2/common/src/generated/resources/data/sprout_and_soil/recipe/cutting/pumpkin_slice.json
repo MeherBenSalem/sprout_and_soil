@@ -1,0 +1,13 @@
+{
+  "type": "sprout_and_soil:cutting",
+  "ingredient": "minecraft:pumpkin",
+  "tool": "#c:tools/knife",
+  "results": [
+    {
+      "item": {
+        "count": 4,
+        "id": "sprout_and_soil:pumpkin_slice"
+      }
+    }
+  ]
+}

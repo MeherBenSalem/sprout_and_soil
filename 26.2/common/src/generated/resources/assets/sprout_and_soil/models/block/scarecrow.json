@@ -1,0 +1,170 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "sprout_and_soil:block/scarecrow/straw",
+    "shirt": "sprout_and_soil:block/scarecrow/shirt",
+    "pumpkin": "sprout_and_soil:block/scarecrow/pumpkin",
+    "post": "sprout_and_soil:block/scarecrow/post",
+    "straw": "sprout_and_soil:block/scarecrow/straw"
+  },
+  "elements": [
+    {
+      "__comment": "post",
+      "from": [7, 0, 7],
+      "to": [9, 10, 9],
+      "faces": {
+        "down": {"uv": [6, 0, 8, 2], "texture": "#post"},
+        "north": {"uv": [0, 0, 2, 10], "texture": "#post"},
+        "south": {"uv": [0, 0, 2, 10], "texture": "#post"},
+        "west": {"uv": [0, 0, 2, 10], "texture": "#post"},
+        "east": {"uv": [0, 0, 2, 10], "texture": "#post"}
+      }
+    },
+    {
+      "__comment": "straw hem",
+      "from": [4.5, 8.5, 6.5],
+      "to": [11.5, 10, 9.5],
+      "faces": {
+        "down": {"uv": [0, 13, 7, 16], "texture": "#straw"},
+        "north": {"uv": [0, 13, 7, 14.5], "texture": "#straw"},
+        "south": {"uv": [0, 13, 7, 14.5], "texture": "#straw"},
+        "west": {"uv": [0, 13, 3, 14.5], "texture": "#straw"},
+        "east": {"uv": [0, 13, 3, 14.5], "texture": "#straw"}
+      }
+    },
+    {
+      "__comment": "shirt",
+      "from": [4, 10, 6],
+      "to": [12, 18, 10],
+      "faces": {
+        "down": {"uv": [8, 12, 16, 16], "texture": "#shirt"},
+        "up": {"uv": [8, 8, 16, 12], "texture": "#shirt"},
+        "north": {"uv": [0, 0, 8, 8], "texture": "#shirt"},
+        "south": {"uv": [8, 0, 16, 8], "texture": "#shirt"},
+        "west": {"uv": [0, 8, 4, 16], "texture": "#shirt"},
+        "east": {"uv": [4, 8, 8, 16], "texture": "#shirt"}
+      }
+    },
+    {
+      "__comment": "west sleeve",
+      "from": [1, 14.5, 6.5],
+      "to": [4, 17.5, 9.5],
+      "faces": {
+        "down": {"uv": [4, 12, 7, 15], "texture": "#shirt"},
+        "up": {"uv": [4, 8, 7, 11], "texture": "#shirt"},
+        "north": {"uv": [0, 8, 3, 11], "texture": "#shirt"},
+        "south": {"uv": [0, 8, 3, 11], "texture": "#shirt"},
+        "west": {"uv": [1, 12, 4, 15], "texture": "#shirt"}
+      }
+    },
+    {
+      "__comment": "west straw cuff",
+      "from": [0, 15, 7],
+      "to": [1, 17, 9],
+      "faces": {
+        "down": {"uv": [12, 6, 13, 8], "texture": "#straw"},
+        "up": {"uv": [12, 6, 13, 8], "texture": "#straw"},
+        "north": {"uv": [12, 0, 13, 2], "texture": "#straw"},
+        "south": {"uv": [12, 0, 13, 2], "texture": "#straw"},
+        "west": {"uv": [12, 0, 14, 2], "texture": "#straw"},
+        "east": {"uv": [12, 0, 14, 2], "texture": "#straw"}
+      }
+    },
+    {
+      "__comment": "east sleeve",
+      "from": [12, 14.5, 6.5],
+      "to": [15, 17.5, 9.5],
+      "faces": {
+        "down": {"uv": [4, 12, 7, 15], "texture": "#shirt"},
+        "up": {"uv": [4, 8, 7, 11], "texture": "#shirt"},
+        "north": {"uv": [0, 8, 3, 11], "texture": "#shirt"},
+        "south": {"uv": [0, 8, 3, 11], "texture": "#shirt"},
+        "east": {"uv": [1, 12, 4, 15], "texture": "#shirt"}
+      }
+    },
+    {
+      "__comment": "east straw cuff",
+      "from": [15, 15, 7],
+      "to": [16, 17, 9],
+      "faces": {
+        "down": {"uv": [12, 6, 13, 8], "texture": "#straw"},
+        "up": {"uv": [12, 6, 13, 8], "texture": "#straw"},
+        "north": {"uv": [12, 0, 13, 2], "texture": "#straw"},
+        "south": {"uv": [12, 0, 13, 2], "texture": "#straw"},
+        "west": {"uv": [12, 0, 14, 2], "texture": "#straw"},
+        "east": {"uv": [12, 0, 14, 2], "texture": "#straw"}
+      }
+    },
+    {
+      "__comment": "straw collar",
+      "from": [5.5, 18, 6.5],
+      "to": [10.5, 19, 9.5],
+      "faces": {
+        "up": {"uv": [1, 13, 6, 16], "texture": "#straw"},
+        "north": {"uv": [0, 13, 5, 14], "texture": "#straw"},
+        "south": {"uv": [0, 13, 5, 14], "texture": "#straw"},
+        "west": {"uv": [0, 13, 3, 14], "texture": "#straw"},
+        "east": {"uv": [0, 13, 3, 14], "texture": "#straw"}
+      }
+    },
+    {
+      "__comment": "pumpkin head",
+      "from": [4, 19, 4],
+      "to": [12, 27, 12],
+      "faces": {
+        "down": {"uv": [8, 8, 16, 16], "texture": "#pumpkin"},
+        "up": {"uv": [0, 8, 8, 16], "texture": "#pumpkin"},
+        "north": {"uv": [0, 0, 8, 8], "texture": "#pumpkin"},
+        "south": {"uv": [8, 0, 16, 8], "texture": "#pumpkin"},
+        "west": {"uv": [8, 0, 16, 8], "texture": "#pumpkin"},
+        "east": {"uv": [8, 0, 16, 8], "texture": "#pumpkin"}
+      }
+    },
+    {
+      "__comment": "hat brim",
+      "from": [2, 26.5, 2],
+      "to": [14, 27.5, 14],
+      "faces": {
+        "down": {"uv": [0, 12, 12, 0], "texture": "#straw"},
+        "up": {"uv": [0, 0, 12, 12], "texture": "#straw"},
+        "north": {"uv": [0, 12, 12, 13], "texture": "#straw"},
+        "south": {"uv": [0, 12, 12, 13], "texture": "#straw"},
+        "west": {"uv": [0, 12, 12, 13], "texture": "#straw"},
+        "east": {"uv": [0, 12, 12, 13], "texture": "#straw"}
+      }
+    },
+    {
+      "__comment": "hat crown",
+      "from": [5, 27.5, 5],
+      "to": [11, 30, 11],
+      "faces": {
+        "up": {"uv": [3, 3, 9, 9], "texture": "#straw"},
+        "north": {"uv": [0, 13, 6, 15.5], "texture": "#straw"},
+        "south": {"uv": [0, 13, 6, 15.5], "texture": "#straw"},
+        "west": {"uv": [0, 13, 6, 15.5], "texture": "#straw"},
+        "east": {"uv": [0, 13, 6, 15.5], "texture": "#straw"}
+      }
+    },
+    {
+      "__comment": "hat band",
+      "from": [4.9, 27.5, 4.9],
+      "to": [11.1, 28.5, 11.1],
+      "faces": {
+        "north": {"uv": [7, 14, 13.2, 15], "texture": "#straw"},
+        "south": {"uv": [7, 14, 13.2, 15], "texture": "#straw"},
+        "west": {"uv": [7, 14, 13.2, 15], "texture": "#straw"},
+        "east": {"uv": [7, 14, 13.2, 15], "texture": "#straw"}
+      }
+    }
+  ],
+  "display": {
+    "gui": {"rotation": [25, 205, 0], "translation": [0, -3.63, 0], "scale": [0.526, 0.526, 0.526]},
+    "ground": {"rotation": [0, 0, 0], "translation": [0, 1, 0], "scale": [0.2, 0.2, 0.2]},
+    "fixed": {"rotation": [0, 0, 0], "translation": [0, -3.5, 0], "scale": [0.45, 0.45, 0.45]},
+    "head": {"rotation": [0, 0, 0], "translation": [0, -12, 0], "scale": [1, 1, 1]},
+    "thirdperson_righthand": {"rotation": [75, 45, 0], "translation": [0, 1, 0], "scale": [0.3, 0.3, 0.3]},
+    "thirdperson_lefthand": {"rotation": [75, 45, 0], "translation": [0, 1, 0], "scale": [0.3, 0.3, 0.3]},
+    "firstperson_righthand": {"rotation": [0, 45, 0], "translation": [0, -2, 0], "scale": [0.3, 0.3, 0.3]},
+    "firstperson_lefthand": {"rotation": [0, 225, 0], "translation": [0, -2, 0], "scale": [0.3, 0.3, 0.3]}
+  }
+}

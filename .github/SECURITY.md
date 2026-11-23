@@ -1,24 +1,30 @@
 # Security Policy
 
-## Supported Versions
+## Supported versions
 
-| Version root | Minecraft line | Loaders |
-| --- | --- | --- |
-| `1.20.1/` | 1.20.1 | Fabric, Forge |
-| `1.21.1/` | 1.21.1 | Fabric, NeoForge |
-| `26.2/` | 26.2 | Fabric, NeoForge |
+Security fixes are generally applied to the latest release line of Sprout & Soil for the actively maintained
+Minecraft targets:
 
-Security fixes may be applied selectively depending on impact and porting cost across isolated version roots.
+- Minecraft 1.20.1 (Fabric, Forge)
+- Minecraft 1.21.1 (Fabric, NeoForge)
+- Minecraft 26.2 (Fabric, NeoForge)
+- Minecraft 26.3 (Fabric, NeoForge)
 
-## Reporting a Vulnerability
+Older releases may not receive backports.
 
-Do not disclose security issues publicly before maintainers can investigate.
+## Reporting a vulnerability
 
-Use GitHub private vulnerability reporting or a private security advisory. Include:
+Please **do not** open a public issue for security vulnerabilities.
 
-- affected version root and loader
-- reproduction steps or proof of concept
-- expected impact
-- relevant logs or stack traces
+Use [GitHub private vulnerability reporting](https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability)
+on this repository whenever possible.
 
-For non-security bugs, open a normal GitHub issue.
+Include:
+
+- Affected Minecraft version and loader (Fabric / Forge / NeoForge)
+- Mod version
+- Steps to reproduce
+- Impact assessment
+
+Do not publicly disclose exploit details until maintainers have had a reasonable
+chance to investigate and release a fix.

@@ -1,0 +1,16 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:tofu",
+    "minecraft:kelp",
+    "sprout_and_soil:soybeans",
+    "sprout_and_soil:leek"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:miso_soup"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

@@ -1,32 +1,83 @@
-.gradle
-**/.gradle
-build
-**/build
-all-jars/
-run
-runs
-bin
-out
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Eclipse
+.metadata/
+.settings/
+.classpath
+.project
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iws
 *.iml
-.idea
-.vscode
+*.ipr
+out/
+
+# VS Code / Cursor
+.vscode/
+*.code-workspace
+.cursor/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs/
 *.log
+build_log.txt
+build_output.txt
+dep_warning.txt
+debug.log
+
+# Run folders
+run/
+runs/
+/test/
+
+# Archives / built artifacts (do not commit jars, except the release jars the publish workflow uploads)
+*.jar
+!releases/*.jar
+*.war
+*.zip
+*.tar
+*.tar.gz
+dist/
+
+# Keep the Gradle wrapper jar
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# Env / secrets
 .env
 .env.*
-secrets/
+!.env.example
+
+# Temp
+input.txt
+output.txt
+
+# Python
+__pycache__/
+*.pyc
+
+# This repo
+# Jars collected by the old root build, the upload script's local resume state and secrets (secrets/local.env)
+all-jars/
 .release-upload-state.json
+secrets/
+# Asset pipeline scratch output
+tools/assetgen/build/
+# Old MCreator workspace files
 .mcreator
 sprout_and_soil.mcreator
 mcreator.gradle
-elements
-.eclipse
-.settings
-.classpath
-.project
-.factorypath
-*.class
-
-# asset pipeline scratch output
-tools/assetgen/build/
-__pycache__/
-*.pyc
+hs_err_pid*
+replay_pid*.log

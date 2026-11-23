@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:plate",
+    "sprout_and_soil:cooked_cod_fillet",
+    "sprout_and_soil:cooked_cod_fillet",
+    "sprout_and_soil:fries",
+    "sprout_and_soil:lemon"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:fish_and_chips"
+  }
+}

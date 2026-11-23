@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "#c:foods/berry",
+    "#c:foods/berry",
+    "minecraft:snowball"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:berry_smoothie"
+  }
+}

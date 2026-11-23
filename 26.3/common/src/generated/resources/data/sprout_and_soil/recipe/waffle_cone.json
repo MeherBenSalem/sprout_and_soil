@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:flour",
+    "minecraft:sugar",
+    "minecraft:egg"
+  ],
+  "result": {
+    "count": 3,
+    "id": "sprout_and_soil:waffle_cone"
+  }
+}

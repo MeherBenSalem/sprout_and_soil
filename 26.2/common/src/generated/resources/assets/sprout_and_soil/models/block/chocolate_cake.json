@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cake",
+  "textures": {
+    "particle": "sprout_and_soil:block/chocolate_cake_side",
+    "bottom": "sprout_and_soil:block/chocolate_cake_bottom",
+    "top": "sprout_and_soil:block/chocolate_cake_top",
+    "side": "sprout_and_soil:block/chocolate_cake_side",
+    "inside": "sprout_and_soil:block/chocolate_cake_inner"
+  }
+}

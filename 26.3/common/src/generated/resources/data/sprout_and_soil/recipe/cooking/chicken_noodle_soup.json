@@ -1,0 +1,16 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:chicken_cuts",
+    "sprout_and_soil:raw_pasta",
+    "minecraft:carrot",
+    "sprout_and_soil:celery"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:chicken_noodle_soup"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

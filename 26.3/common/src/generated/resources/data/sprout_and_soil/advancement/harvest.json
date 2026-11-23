@@ -1,0 +1,76 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:lettuce"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.harvest.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.harvest.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "produce": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:tomato",
+              "sprout_and_soil:bell_pepper",
+              "sprout_and_soil:chili_pepper",
+              "sprout_and_soil:eggplant",
+              "sprout_and_soil:cucumber",
+              "sprout_and_soil:zucchini",
+              "sprout_and_soil:green_beans",
+              "sprout_and_soil:lettuce",
+              "sprout_and_soil:cabbage",
+              "sprout_and_soil:spinach",
+              "sprout_and_soil:broccoli",
+              "sprout_and_soil:cauliflower",
+              "sprout_and_soil:celery",
+              "sprout_and_soil:asparagus",
+              "sprout_and_soil:garlic",
+              "sprout_and_soil:onion",
+              "sprout_and_soil:leek",
+              "sprout_and_soil:radish",
+              "sprout_and_soil:turnip",
+              "sprout_and_soil:sweet_potato",
+              "sprout_and_soil:ginger",
+              "sprout_and_soil:peanuts",
+              "sprout_and_soil:corn",
+              "sprout_and_soil:rice",
+              "sprout_and_soil:barley",
+              "sprout_and_soil:oats",
+              "sprout_and_soil:soybeans",
+              "sprout_and_soil:strawberry",
+              "sprout_and_soil:blueberries",
+              "sprout_and_soil:raspberries",
+              "sprout_and_soil:blackberries",
+              "sprout_and_soil:cranberries",
+              "sprout_and_soil:grapes",
+              "sprout_and_soil:pineapple",
+              "sprout_and_soil:coffee_beans",
+              "sprout_and_soil:tea_leaves",
+              "sprout_and_soil:cotton",
+              "sprout_and_soil:basil",
+              "sprout_and_soil:mint",
+              "sprout_and_soil:peppercorns"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "produce"
+    ]
+  ],
+  "parent": "sprout_and_soil:root"
+}

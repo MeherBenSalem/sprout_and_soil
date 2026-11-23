@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:mortar_and_pestle",
+    "sprout_and_soil:peanuts",
+    "sprout_and_soil:peanuts",
+    "minecraft:glass_bottle"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:cooking_oil"
+  }
+}

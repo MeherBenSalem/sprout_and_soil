@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:apple_pie"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.pie.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.pie.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pie": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "sprout_and_soil:apple_pie",
+              "sprout_and_soil:cherry_pie",
+              "sprout_and_soil:berry_pie"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "pie"
+    ]
+  ],
+  "parent": "sprout_and_soil:cooking_pot"
+}

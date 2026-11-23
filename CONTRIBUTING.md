@@ -14,13 +14,17 @@ Thanks for contributing to Sprout & Soil.
 2. Make the smallest coherent change that solves the problem.
 3. Content (crops, trees, dishes, recipes) is declared once in `tools/assetgen/sas/spec/`. After editing it, run
    `python3 tools/assetgen/build_assets.py` (add `--art` to regenerate textures) and commit the regenerated files in
-   `1.21.1/common/src/generated/resources/` and `1.20.1/common/src/generated/resources/`. The validator must report
-   zero problems.
-4. Build the version roots you changed from inside those folders (`1.20.1/` needs Java 17, `1.21.1/` Java 21), run
-   their GameTests, and for gameplay or data changes boot every release jar with `tools/qa/prod_server.sh <mc> <loader>`
-   and `tools/qa/client_boot.sh <mc> <loader>`.
-5. Update documentation when behavior or release steps change.
-6. Open a pull request with a clear summary and verification notes.
+   `<version>/common/src/generated/resources/` for all four workspaces (`1.20.1/`, `1.21.1/`, `26.2/`, `26.3/`). The
+   validator must report zero problems.
+4. Build the version roots you changed from inside those folders (`1.20.1/` runs Gradle on Java 21 with a Java 17
+   toolchain, `1.21.1/` needs Java 21, `26.2/` and `26.3/` Java 25), or all of them with `./gradlew buildAll` from the
+   root. Run their GameTests, and for gameplay or data changes boot every release jar with
+   `tools/qa/prod_server.sh <mc> <loader>` and `tools/qa/client_boot.sh <mc> <loader>`.
+5. Keep every workspace on the same `version=` (`./gradlew checkVersions`, `./gradlew syncVersion -PmodVersion=x.y.z`)
+   and run `python3 scripts/check_targets.py workspaces`. The supported targets are exactly 1.20.1 (Fabric, Forge) and
+   1.21.1, 26.2, 26.3 (Fabric, NeoForge).
+6. Update documentation when behavior or release steps change.
+7. Open a pull request with a clear summary and verification notes.
 
 ## Coding expectations
 

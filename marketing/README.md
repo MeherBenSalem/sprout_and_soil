@@ -33,7 +33,7 @@ NODE_PATH="$(npm root -g)" node marketing/source/render.cjs card-crops  # one as
 ```
 
 The cards read item and block textures straight from `1.21.1/common/src/generated/resources`, so they always show
-the textures that ship. Rendering `icon` rewrites both workspaces' `logo.png`; commit them together.
+the textures that ship. Rendering `icon` rewrites every workspace's `logo.png`; commit them together.
 
 ## Adding a Minecraft version
 

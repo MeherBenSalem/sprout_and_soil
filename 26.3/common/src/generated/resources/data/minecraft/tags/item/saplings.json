@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:apple_sapling",
+    "sprout_and_soil:orange_sapling",
+    "sprout_and_soil:lemon_sapling",
+    "sprout_and_soil:lime_sapling",
+    "sprout_and_soil:peach_sapling",
+    "sprout_and_soil:pear_sapling",
+    "sprout_and_soil:plum_sapling",
+    "sprout_and_soil:sweet_cherry_sapling",
+    "sprout_and_soil:mango_sapling",
+    "sprout_and_soil:avocado_sapling",
+    "sprout_and_soil:banana_sapling",
+    "sprout_and_soil:olive_sapling"
+  ]
+}

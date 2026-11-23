@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bread",
+    "sprout_and_soil:peanut_butter",
+    "sprout_and_soil:berry_jam"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:pbj_sandwich"
+  }
+}

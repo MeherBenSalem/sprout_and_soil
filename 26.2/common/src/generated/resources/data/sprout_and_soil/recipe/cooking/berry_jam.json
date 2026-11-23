@@ -1,0 +1,15 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "#c:foods/berry",
+    "#c:foods/berry",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:berry_jam"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:glass_bottle"
+}

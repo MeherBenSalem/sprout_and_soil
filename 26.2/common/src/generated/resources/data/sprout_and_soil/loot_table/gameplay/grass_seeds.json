@@ -1,0 +1,118 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "minecraft:shears"
+            }
+          }
+        },
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.04
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:asparagus_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:barley_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:basil_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:blackberry_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:blueberry_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:broccoli_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cabbage_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cauliflower_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:celery_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:corn_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cranberry_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:cucumber_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:green_bean_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:leek_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:lettuce_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:oat_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:radish_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:raspberry_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:spinach_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:strawberry_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:tomato_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:turnip_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:zucchini_seeds"
+        }
+      ]
+    }
+  ]
+}

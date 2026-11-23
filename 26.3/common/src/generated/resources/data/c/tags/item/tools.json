@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#c:tools/knife",
+    "sprout_and_soil:iron_sickle",
+    "sprout_and_soil:golden_sickle",
+    "sprout_and_soil:diamond_sickle",
+    "sprout_and_soil:netherite_sickle"
+  ]
+}

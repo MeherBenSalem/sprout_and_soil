@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:stick",
+    "minecraft:cooked_mutton",
+    "sprout_and_soil:bell_pepper",
+    "sprout_and_soil:onion",
+    "sprout_and_soil:tomato"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:kebab"
+  }
+}

@@ -9,8 +9,8 @@ boards and knives, a mortar and pestle, and more than 150 foods and drinks to co
 Everything is built on vanilla mechanics, so bone meal, bees, villagers, hoppers and other farming mods just work.
 Every texture and model was made for this mod.
 
-Fabric and Forge on Minecraft 1.20.1 · Fabric and NeoForge on Minecraft 1.21.1 · install on the server and clients ·
-Fabric API is all you need on Fabric
+Fabric and Forge on Minecraft 1.20.1 · Fabric and NeoForge on Minecraft 1.21.1, 26.2 and 26.3 · install on the
+server and clients · Fabric API is all you need on Fabric
 
 ![What's inside](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/header-inside.png)
 
@@ -20,8 +20,8 @@ Fabric API is all you need on Fabric
 - **Cutting boards, five knives and a mortar & pestle** to prepare ingredients
 - **150+ foods and drinks**, including pies, pizza and cakes you place and share, and three new effects
 - **Watering cans, sprinklers, sickles, fertilizer and scarecrows** to run a bigger farm
-- **Wild gardens** in six climates, seeds from grass, and new farmer and wandering trader offers
-- **23 produce crates**, an advancement tree, convention tags and JEI support
+- **Wild gardens** in six climates, seeds from grass, and new farmer and wandering trader offers (1.20.1 and 1.21.1)
+- **23 produce crates**, an advancement tree, convention tags and JEI support (JEI on 1.20.1 and 1.21.1)
 
 > **1.0 is a complete rewrite.** The 0.x blocks and items (`*_plant_stage_*`, `letuce`) no longer exist, so start a
 > new world or expect them to disappear from an old one.
@@ -53,8 +53,8 @@ Fabric API is all you need on Fabric
 - In daylight the leaves go from leafy to **blossoming**, set **unripe fruit** and then **ripen**. Right-click ripe
   leaves to pick one or two fruit; the cycle starts again.
 - Trees grow wild in fitting biomes (orchards in forests and plains, citrus and tropical fruit in savannas and
-  jungles, cherries in cherry groves, olives on dry plateaus) and from saplings you find, trade for or get from
-  leaves.
+  jungles, cherries in cherry groves, olives on dry plateaus) and from saplings you find or get from leaves (or
+  trade for, on 1.20.1 and 1.21.1).
 
 ![The kitchen](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/header-kitchen.png)
 
@@ -115,8 +115,8 @@ plates, mugs and bottles come back when you finish a dish or drink.
 - **Wild gardens** grow in six climates (meadow, woodland, highland, arid, tropical and marsh). Break one for the
   seeds of the crops that grow there, or shear it to take it home.
 - Breaking grass sometimes drops the seeds of temperate crops.
-- **Farmers** trade seeds, produce, fruit, fertilizer, watering cans and meals. **Wandering traders** bring fruit
-  saplings and rare seeds.
+- On 1.20.1 and 1.21.1, **farmers** trade seeds, produce, fruit, fertilizer, watering cans and meals, and
+  **wandering traders** bring fruit saplings and rare seeds. On 26.2 and 26.3 the mod adds no trades.
 - Produce and seeds can be composted, and farmer villagers plant the seeds.
 
 ![Every item](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/header-items.png)
@@ -127,12 +127,13 @@ plates, mugs and bottles come back when you finish a dish or drink.
 
 ![Plays well with others](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/card-compat.png)
 
-- **JEI** (optional) shows every cooking pot and cutting board recipe, with the pot and the board as catalysts.
+- **JEI** (optional, 1.20.1 and 1.21.1) shows every cooking pot and cutting board recipe, with the pot and the board
+  as catalysts.
 - **Convention tags** so recipes from other mods accept our produce: `c:crops/*`, `c:seeds/*`, `c:foods/*`,
   `c:tools/knife` and `c:drinks`, plus `forge:crops/*`, `forge:seeds/*`, `forge:vegetables`, `forge:fruits` and
   `forge:tools/knives` on 1.20.1. Knives from other mods in those tags work on the cutting board.
 - **Datapack friendly**: cooking pot (`sprout_and_soil:cooking`), cutting board (`sprout_and_soil:cutting`) and
-  mortar (`sprout_and_soil:tool_shapeless`) recipes are JSON, and the heat sources, sickle blocks, knives and serving
+  mortar (`sprout_and_soil:tool_shapeless` on 1.20.1 and 1.21.1, plain shapeless crafting on 26.2 and 26.3) recipes are JSON, and the heat sources, sickle blocks, knives and serving
   containers are tags.
 - An **advancement tree** with 18 goals, from planting a seed to *Master Gardener* and *Gourmet*.
 
@@ -142,19 +143,21 @@ Pick the file that matches **both** your Minecraft version and your loader:
 
 | Minecraft | Fabric (needs Fabric API) | Forge / NeoForge |
 |-----------|---------------------------|------------------|
-| 1.20.1 | `sprout_and_soil-fabric-1.20.1-1.0.0.jar` | `sprout_and_soil-forge-1.20.1-1.0.0.jar` (Forge 47.4.0+) |
-| 1.21.1 | `sprout_and_soil-fabric-1.21.1-1.0.0.jar` | `sprout_and_soil-neoforge-1.21.1-1.0.0.jar` (NeoForge 21.1.80+) |
+| 1.20.1 | `sprout_and_soil-fabric-1.20.1-1.0.1.jar` | `sprout_and_soil-forge-1.20.1-1.0.1.jar` (Forge 47.4.0+) |
+| 1.21.1 | `sprout_and_soil-fabric-1.21.1-1.0.1.jar` | `sprout_and_soil-neoforge-1.21.1-1.0.1.jar` (NeoForge 21.1.80+) |
+| 26.2 | `sprout_and_soil-fabric-26.2-1.0.1.jar` | `sprout_and_soil-neoforge-26.2-1.0.1.jar` (NeoForge 26.2.0.93+) |
+| 26.3 | `sprout_and_soil-fabric-26.3-1.0.1.jar` | `sprout_and_soil-neoforge-26.3-1.0.1.jar` (NeoForge 26.3.0.97+) |
 
-Install it on the server and on every client. JEI is optional.
+Install it on the server and on every client. JEI is optional (1.20.1 and 1.21.1).
 
 ![FAQ](https://raw.githubusercontent.com/MeherBenSalem/sprout_and_soil/main/marketing/images/header-faq.png)
 
-**Where do I get seeds?** Break wild gardens (they show up in most overworld biomes), break grass, or trade with
-farmer villagers and wandering traders. Garlic, onions, sweet potatoes, ginger, peanuts, rice, soybeans, coffee
+**Where do I get seeds?** Break wild gardens (they show up in most overworld biomes), break grass, or (on 1.20.1
+and 1.21.1) trade with farmer villagers and wandering traders. Garlic, onions, sweet potatoes, ginger, peanuts, rice, soybeans, coffee
 beans and peppercorns are planted directly, like potatoes.
 
 **Why is my cooking pot not cooking?** It needs heat directly below it (see the flame in its screen) and, for many
-dishes, the right container in the container slot. JEI shows exactly what each dish needs.
+dishes, the right container in the container slot. JEI (on 1.20.1 and 1.21.1) shows exactly what each dish needs.
 
 **Does it work with other farming and cooking mods?** Yes. Crops are vanilla crop blocks, so harvesting add-ons,
 bone meal and villagers handle them, and the convention tags let other mods' recipes use our produce.

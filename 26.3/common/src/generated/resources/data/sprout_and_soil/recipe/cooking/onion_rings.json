@@ -1,0 +1,15 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:onion",
+    "sprout_and_soil:flour",
+    "sprout_and_soil:cooking_oil",
+    "sprout_and_soil:salt"
+  ],
+  "result": {
+    "count": 2,
+    "id": "sprout_and_soil:onion_rings"
+  },
+  "experience": 0.35,
+  "cookingtime": 200
+}

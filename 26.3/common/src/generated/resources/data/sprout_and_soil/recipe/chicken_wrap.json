@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:tortilla",
+    "sprout_and_soil:cooked_chicken_cuts",
+    "sprout_and_soil:lettuce",
+    "sprout_and_soil:cucumber"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:chicken_wrap"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:mortar_and_pestle",
+    "sprout_and_soil:peppercorns"
+  ],
+  "result": {
+    "count": 2,
+    "id": "sprout_and_soil:black_pepper"
+  }
+}

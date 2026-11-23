@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.1 — Minecraft 26.2 and 26.3
+
+### Added
+- Minecraft 26.2 and 26.3 are now supported, on both Fabric and NeoForge, with the same crops, fruit trees, wild
+  gardens, kitchen, foods, tools and advancements as on the other versions.
+
+### Notes
+- On 26.2 and 26.3 there is no JEI integration yet, and farmers and wandering traders don't get the Sprout & Soil
+  trades. Seeds still come from wild gardens and grass, and saplings from fruit tree leaves.
+- Nothing changes on Minecraft 1.20.1 (Fabric, Forge) or 1.21.1 (Fabric, NeoForge).
+
 ## 1.0.0 — The Harvest Update
 
 A complete rewrite. Sprout & Soil is now an all-in-one farming and cooking mod.

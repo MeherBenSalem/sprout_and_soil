@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "sprout_and_soil:hot_cocoa"
+    },
+    "title": {
+      "translate": "advancements.sprout_and_soil.cozy.title"
+    },
+    "description": {
+      "translate": "advancements.sprout_and_soil.cozy.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cozy": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "sprout_and_soil:cozy": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cozy"
+    ]
+  ],
+  "parent": "sprout_and_soil:cooking_pot"
+}

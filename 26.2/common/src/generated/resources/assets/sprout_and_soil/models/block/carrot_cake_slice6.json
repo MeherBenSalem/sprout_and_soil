@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cake_slice6",
+  "textures": {
+    "particle": "sprout_and_soil:block/carrot_cake_side",
+    "bottom": "sprout_and_soil:block/carrot_cake_bottom",
+    "top": "sprout_and_soil:block/carrot_cake_top",
+    "side": "sprout_and_soil:block/carrot_cake_side",
+    "inside": "sprout_and_soil:block/carrot_cake_inner"
+  }
+}

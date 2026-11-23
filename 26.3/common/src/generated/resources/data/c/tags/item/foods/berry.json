@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "sprout_and_soil:strawberry",
+    "sprout_and_soil:blueberries",
+    "sprout_and_soil:raspberries",
+    "sprout_and_soil:blackberries",
+    "sprout_and_soil:cranberries",
+    "sprout_and_soil:cherries"
+  ]
+}

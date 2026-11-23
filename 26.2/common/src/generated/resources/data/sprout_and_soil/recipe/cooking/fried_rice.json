@@ -1,0 +1,17 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:rice",
+    "minecraft:egg",
+    "sprout_and_soil:green_beans",
+    "sprout_and_soil:onion",
+    "sprout_and_soil:soy_sauce"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:fried_rice"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

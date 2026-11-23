@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": "minecraft:milk_bucket",
+    "S": "minecraft:sugar",
+    "E": "minecraft:egg",
+    "F": "sprout_and_soil:flour",
+    "C": "sprout_and_soil:chocolate_bar"
+  },
+  "pattern": [
+    "MMM",
+    "SES",
+    "FCF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:chocolate_cake"
+  }
+}

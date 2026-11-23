@@ -1,0 +1,222 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "sprout_and_soil:block/cooking_pot/pot",
+    "pot": "sprout_and_soil:block/cooking_pot/pot",
+    "rim": "sprout_and_soil:block/cooking_pot/rim",
+    "lid": "sprout_and_soil:block/cooking_pot/lid",
+    "broth": "sprout_and_soil:block/cooking_pot/broth"
+  },
+  "elements": [
+    {
+      "__comment": "foot",
+      "from": [3, 0, 3],
+      "to": [13, 1, 13],
+      "faces": {
+        "down": {"uv": [0, 10, 10, 16], "texture": "#pot"},
+        "north": {"uv": [0, 5, 10, 6], "texture": "#pot"},
+        "south": {"uv": [0, 5, 10, 6], "texture": "#pot"},
+        "west": {"uv": [0, 5, 10, 6], "texture": "#pot"},
+        "east": {"uv": [0, 5, 10, 6], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "body",
+      "from": [2.5, 1, 2.5],
+      "to": [13.5, 7, 13.5],
+      "faces": {
+        "down": {"uv": [0, 10, 11, 16], "texture": "#pot"},
+        "north": {"uv": [0, 0, 11, 6], "texture": "#pot"},
+        "south": {"uv": [0, 0, 11, 6], "texture": "#pot"},
+        "west": {"uv": [0, 0, 11, 6], "texture": "#pot"},
+        "east": {"uv": [0, 0, 11, 6], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "belly",
+      "from": [2, 2, 2],
+      "to": [14, 6, 14],
+      "faces": {
+        "down": {"uv": [13, 2, 16, 5], "texture": "#pot"},
+        "up": {"uv": [13, 2, 16, 5], "texture": "#pot"},
+        "north": {"uv": [0, 6, 12, 10], "texture": "#pot"},
+        "south": {"uv": [0, 6, 12, 10], "texture": "#pot"},
+        "west": {"uv": [0, 6, 12, 10], "texture": "#pot"},
+        "east": {"uv": [0, 6, 12, 10], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "rim north",
+      "from": [2, 7, 2],
+      "to": [14, 9, 3],
+      "faces": {
+        "down": {"uv": [0, 4, 12, 5], "texture": "#rim"},
+        "up": {"uv": [0, 4, 12, 5], "texture": "#rim"},
+        "north": {"uv": [0, 0, 12, 2], "texture": "#rim"},
+        "south": {"uv": [1, 2, 13, 4], "texture": "#rim"},
+        "west": {"uv": [0, 0, 1, 2], "texture": "#rim"},
+        "east": {"uv": [0, 0, 1, 2], "texture": "#rim"}
+      }
+    },
+    {
+      "__comment": "rim south",
+      "from": [2, 7, 13],
+      "to": [14, 9, 14],
+      "faces": {
+        "down": {"uv": [0, 15, 12, 16], "texture": "#rim"},
+        "up": {"uv": [0, 15, 12, 16], "texture": "#rim"},
+        "north": {"uv": [1, 2, 13, 4], "texture": "#rim"},
+        "south": {"uv": [0, 0, 12, 2], "texture": "#rim"},
+        "west": {"uv": [0, 0, 1, 2], "texture": "#rim"},
+        "east": {"uv": [0, 0, 1, 2], "texture": "#rim"}
+      }
+    },
+    {
+      "__comment": "rim west",
+      "from": [2, 7, 3],
+      "to": [3, 9, 13],
+      "faces": {
+        "down": {"uv": [0, 5, 1, 15], "texture": "#rim"},
+        "up": {"uv": [0, 5, 1, 15], "texture": "#rim"},
+        "west": {"uv": [1, 0, 11, 2], "texture": "#rim"},
+        "east": {"uv": [1, 2, 11, 4], "texture": "#rim"}
+      }
+    },
+    {
+      "__comment": "rim east",
+      "from": [13, 7, 3],
+      "to": [14, 9, 13],
+      "faces": {
+        "down": {"uv": [11, 5, 12, 15], "texture": "#rim"},
+        "up": {"uv": [11, 5, 12, 15], "texture": "#rim"},
+        "west": {"uv": [1, 2, 11, 4], "texture": "#rim"},
+        "east": {"uv": [1, 0, 11, 2], "texture": "#rim"}
+      }
+    },
+    {
+      "__comment": "stew",
+      "from": [3, 7, 3],
+      "to": [13, 8, 13],
+      "faces": {
+        "up": {"uv": [3, 3, 13, 13], "texture": "#broth"}
+      }
+    },
+    {
+      "__comment": "west handle grip",
+      "from": [0, 7.5, 6],
+      "to": [1, 8.5, 10],
+      "faces": {
+        "down": {"uv": [11, 1, 12, 5], "texture": "#pot"},
+        "up": {"uv": [11, 1, 12, 5], "texture": "#pot"},
+        "north": {"uv": [11, 0, 12, 1], "texture": "#pot"},
+        "south": {"uv": [11, 0, 12, 1], "texture": "#pot"},
+        "west": {"uv": [11, 0, 15, 1], "texture": "#pot"},
+        "east": {"uv": [11, 0, 15, 1], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "west handle arm",
+      "from": [1, 7.5, 6],
+      "to": [2, 8.5, 7],
+      "faces": {
+        "down": {"uv": [12, 2, 13, 3], "texture": "#pot"},
+        "up": {"uv": [12, 2, 13, 3], "texture": "#pot"},
+        "north": {"uv": [11, 2, 12, 3], "texture": "#pot"},
+        "south": {"uv": [11, 2, 12, 3], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "west handle arm",
+      "from": [1, 7.5, 9],
+      "to": [2, 8.5, 10],
+      "faces": {
+        "down": {"uv": [12, 2, 13, 3], "texture": "#pot"},
+        "up": {"uv": [12, 2, 13, 3], "texture": "#pot"},
+        "north": {"uv": [11, 2, 12, 3], "texture": "#pot"},
+        "south": {"uv": [11, 2, 12, 3], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "east handle grip",
+      "from": [15, 7.5, 6],
+      "to": [16, 8.5, 10],
+      "faces": {
+        "down": {"uv": [11, 1, 12, 5], "texture": "#pot"},
+        "up": {"uv": [11, 1, 12, 5], "texture": "#pot"},
+        "north": {"uv": [11, 0, 12, 1], "texture": "#pot"},
+        "south": {"uv": [11, 0, 12, 1], "texture": "#pot"},
+        "west": {"uv": [11, 0, 15, 1], "texture": "#pot"},
+        "east": {"uv": [11, 0, 15, 1], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "east handle arm",
+      "from": [14, 7.5, 6],
+      "to": [15, 8.5, 7],
+      "faces": {
+        "down": {"uv": [12, 2, 13, 3], "texture": "#pot"},
+        "up": {"uv": [12, 2, 13, 3], "texture": "#pot"},
+        "north": {"uv": [11, 2, 12, 3], "texture": "#pot"},
+        "south": {"uv": [11, 2, 12, 3], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "east handle arm",
+      "from": [14, 7.5, 9],
+      "to": [15, 8.5, 10],
+      "faces": {
+        "down": {"uv": [12, 2, 13, 3], "texture": "#pot"},
+        "up": {"uv": [12, 2, 13, 3], "texture": "#pot"},
+        "north": {"uv": [11, 2, 12, 3], "texture": "#pot"},
+        "south": {"uv": [11, 2, 12, 3], "texture": "#pot"}
+      }
+    },
+    {
+      "__comment": "lid",
+      "from": [1.5, 9, 4.5],
+      "to": [11.5, 10, 14.5],
+      "faces": {
+        "down": {"uv": [0, 0, 10, 10], "texture": "#lid"},
+        "up": {"uv": [0, 0, 10, 10], "texture": "#lid"},
+        "north": {"uv": [0, 10, 10, 11], "texture": "#lid"},
+        "south": {"uv": [0, 10, 10, 11], "texture": "#lid"},
+        "west": {"uv": [0, 10, 10, 11], "texture": "#lid"},
+        "east": {"uv": [0, 10, 10, 11], "texture": "#lid"}
+      }
+    },
+    {
+      "__comment": "lid boss",
+      "from": [3.5, 10, 6.5],
+      "to": [9.5, 11, 12.5],
+      "faces": {
+        "up": {"uv": [10, 0, 16, 6], "texture": "#lid"},
+        "north": {"uv": [10, 6, 16, 7], "texture": "#lid"},
+        "south": {"uv": [10, 6, 16, 7], "texture": "#lid"},
+        "west": {"uv": [10, 6, 16, 7], "texture": "#lid"},
+        "east": {"uv": [10, 6, 16, 7], "texture": "#lid"}
+      }
+    },
+    {
+      "__comment": "lid knob",
+      "from": [5.5, 11, 8.5],
+      "to": [7.5, 12.5, 10.5],
+      "faces": {
+        "up": {"uv": [12, 0, 14, 2], "texture": "#rim"},
+        "north": {"uv": [12, 2, 14, 3.5], "texture": "#rim"},
+        "south": {"uv": [12, 2, 14, 3.5], "texture": "#rim"},
+        "west": {"uv": [12, 2, 14, 3.5], "texture": "#rim"},
+        "east": {"uv": [12, 2, 14, 3.5], "texture": "#rim"}
+      }
+    }
+  ],
+  "display": {
+    "gui": {"rotation": [30, 225, 0], "translation": [0, 1.65, 0], "scale": [0.8, 0.8, 0.8]},
+    "ground": {"rotation": [0, 0, 0], "translation": [0, 3, 0], "scale": [0.3, 0.3, 0.3]},
+    "fixed": {"rotation": [0, 0, 0], "translation": [0, 0, 0], "scale": [0.6, 0.6, 0.6]},
+    "head": {"rotation": [0, 0, 0], "translation": [0, 0.75, 0], "scale": [1, 1, 1]},
+    "thirdperson_righthand": {"rotation": [75, 45, 0], "translation": [0, 2.5, 0], "scale": [0.4, 0.4, 0.4]},
+    "thirdperson_lefthand": {"rotation": [75, 45, 0], "translation": [0, 2.5, 0], "scale": [0.4, 0.4, 0.4]},
+    "firstperson_righthand": {"rotation": [0, 45, 0], "translation": [0, 1, 0], "scale": [0.45, 0.45, 0.45]},
+    "firstperson_lefthand": {"rotation": [0, 225, 0], "translation": [0, 1, 0], "scale": [0.45, 0.45, 0.45]}
+  }
+}

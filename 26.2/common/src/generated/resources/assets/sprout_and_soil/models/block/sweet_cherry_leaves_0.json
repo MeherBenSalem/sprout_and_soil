@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "sprout_and_soil:block/sweet_cherry_leaves_0"
+  },
+  "render_type": "minecraft:cutout_mipped"
+}

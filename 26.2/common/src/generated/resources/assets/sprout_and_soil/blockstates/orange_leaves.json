@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "sprout_and_soil:block/orange_leaves_0"
+    },
+    "age=1": {
+      "model": "sprout_and_soil:block/orange_leaves_1"
+    },
+    "age=2": {
+      "model": "sprout_and_soil:block/orange_leaves_2"
+    },
+    "age=3": {
+      "model": "sprout_and_soil:block/orange_leaves_3"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": "sprout_and_soil:cod_fillet",
+  "result": {
+    "id": "sprout_and_soil:cooked_cod_fillet"
+  }
+}

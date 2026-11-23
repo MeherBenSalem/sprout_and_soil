@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": "sprout_and_soil:bacon",
+  "result": {
+    "id": "sprout_and_soil:cooked_bacon"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "minecraft:cocoa_beans",
+    "minecraft:cocoa_beans",
+    "minecraft:sugar",
+    "minecraft:milk_bucket"
+  ],
+  "result": {
+    "count": 3,
+    "id": "sprout_and_soil:chocolate_bar"
+  },
+  "experience": 0.35,
+  "cookingtime": 200
+}

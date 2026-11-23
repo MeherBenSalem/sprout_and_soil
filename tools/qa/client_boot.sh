@@ -17,6 +17,7 @@ world="$repo/build/qa/$mc-$loader/world"
 [[ -d "$world" ]] || { echo "no server world at $world - run tools/qa/prod_server.sh $mc $loader first" >&2; exit 2; }
 case "$(grep -E '^java_version=' "$ws/gradle.properties" | cut -d= -f2)" in
   17) export JAVA_HOME="${JAVA_HOME_17:-/usr/lib/jvm/java-17-openjdk-amd64}" ;;
+  25) export JAVA_HOME="${JAVA_HOME_25:-/usr/lib/jvm/java-25-openjdk-amd64}" ;;
   *) export JAVA_HOME="${JAVA_HOME_21:-/usr/lib/jvm/java-21-openjdk-amd64}" ;;
 esac
 

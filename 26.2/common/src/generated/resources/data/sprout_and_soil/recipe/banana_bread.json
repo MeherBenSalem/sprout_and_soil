@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:flour",
+    "sprout_and_soil:banana",
+    "sprout_and_soil:banana",
+    "minecraft:sugar",
+    "minecraft:egg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:banana_bread"
+  }
+}

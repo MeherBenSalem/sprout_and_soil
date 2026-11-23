@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:mortar_and_pestle",
+    "minecraft:wheat"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:flour"
+  }
+}

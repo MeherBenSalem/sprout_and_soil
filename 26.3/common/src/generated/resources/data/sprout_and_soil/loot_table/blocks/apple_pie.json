@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sprout_and_soil:apple_pie"
+        }
+      ],
+      "condition": {
+        "type": "minecraft:all_of",
+        "terms": [
+          {
+            "type": "minecraft:survives_explosion"
+          },
+          {
+            "type": "minecraft:match_block",
+            "blocks": "sprout_and_soil:apple_pie",
+            "state": {
+              "servings_taken": "0"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "random_sequence": "sprout_and_soil:blocks/apple_pie"
+}

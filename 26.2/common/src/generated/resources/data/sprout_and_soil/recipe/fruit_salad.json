@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "#c:foods/fruit",
+    "#c:foods/fruit",
+    "#c:foods/berry",
+    "#c:foods/berry"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:fruit_salad"
+  }
+}

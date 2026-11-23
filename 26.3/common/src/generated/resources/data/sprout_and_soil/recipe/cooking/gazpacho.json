@@ -1,0 +1,17 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:tomato",
+    "sprout_and_soil:tomato",
+    "sprout_and_soil:cucumber",
+    "sprout_and_soil:bell_pepper",
+    "sprout_and_soil:garlic"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:gazpacho"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

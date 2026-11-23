@@ -1,0 +1,14 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:tea_leaves",
+    "sprout_and_soil:tea_leaves"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:green_tea"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "sprout_and_soil:mug"
+}

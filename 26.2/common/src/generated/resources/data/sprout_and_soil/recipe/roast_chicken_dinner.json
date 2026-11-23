@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:plate",
+    "minecraft:cooked_chicken",
+    "minecraft:baked_potato",
+    "minecraft:carrot",
+    "sprout_and_soil:celery"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:roast_chicken_dinner"
+  }
+}

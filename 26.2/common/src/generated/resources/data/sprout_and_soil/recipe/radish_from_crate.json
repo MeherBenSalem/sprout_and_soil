@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:radish_crate"
+  ],
+  "result": {
+    "count": 9,
+    "id": "sprout_and_soil:radish"
+  }
+}

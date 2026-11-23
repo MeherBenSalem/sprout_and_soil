@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "sprout_and_soil:orange",
+    "sprout_and_soil:orange"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:orange_juice"
+  }
+}

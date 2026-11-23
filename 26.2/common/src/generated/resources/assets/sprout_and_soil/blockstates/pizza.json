@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "servings_taken=0": {
+      "model": "sprout_and_soil:block/pizza_0"
+    },
+    "servings_taken=1": {
+      "model": "sprout_and_soil:block/pizza_1"
+    },
+    "servings_taken=2": {
+      "model": "sprout_and_soil:block/pizza_2"
+    },
+    "servings_taken=3": {
+      "model": "sprout_and_soil:block/pizza_3"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:glass_bottle",
+    "minecraft:carrot",
+    "minecraft:carrot"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:carrot_juice"
+  }
+}

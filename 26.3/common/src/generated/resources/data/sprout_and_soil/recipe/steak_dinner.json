@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:plate",
+    "minecraft:cooked_beef",
+    "minecraft:baked_potato",
+    "sprout_and_soil:broccoli",
+    "sprout_and_soil:butter"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:steak_dinner"
+  }
+}

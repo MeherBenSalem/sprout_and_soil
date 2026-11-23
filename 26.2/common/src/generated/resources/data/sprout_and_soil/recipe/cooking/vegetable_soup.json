@@ -1,0 +1,16 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "minecraft:carrot",
+    "minecraft:potato",
+    "sprout_and_soil:celery",
+    "sprout_and_soil:onion"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:vegetable_soup"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

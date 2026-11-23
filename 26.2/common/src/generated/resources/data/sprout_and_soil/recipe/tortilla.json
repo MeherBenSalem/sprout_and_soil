@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": "sprout_and_soil:cornmeal",
+  "result": {
+    "id": "sprout_and_soil:tortilla"
+  }
+}

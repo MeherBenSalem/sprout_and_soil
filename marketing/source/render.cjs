@@ -12,6 +12,8 @@ const RELEASE = { version: '1.0', name: 'The Harvest Update' };
 const VERSIONS = [
   { minecraft: '1.20.1', loaders: ['Fabric', 'Forge'] },
   { minecraft: '1.21.1', loaders: ['Fabric', 'NeoForge'] },
+  { minecraft: '26.2', loaders: ['Fabric', 'NeoForge'] },
+  { minecraft: '26.3', loaders: ['Fabric', 'NeoForge'] },
 ];
 const LOADERS = ['Fabric', 'Forge', 'NeoForge'].filter((loader) => VERSIONS.some((v) => v.loaders.includes(loader)));
 
@@ -223,7 +225,7 @@ const assets = {
   'card-wild': () => card({
     kicker: 'Into the wild', title: 'Wild gardens<br>and trades', color: C.meadow,
     points: ['Six kinds of <b class="hi">wild garden</b>, from meadow to marsh, drop the seeds that grow there',
-      'Breaking grass can turn up seeds too', 'Farmers trade seeds, produce and meals; wandering traders bring saplings',
+      'Breaking grass can turn up seeds too', 'Farmers trade seeds, produce and meals; wandering traders bring saplings (1.20.1 and 1.21.1)',
       'All produce composts, and farmer villagers plant the seeds'],
     art: `${photo(region('gardens.jpg', 160, 90, 1600, 900, 900), { tilt: 1 })}
       <div style="margin-top:34px">${tiles(['meadow_garden', 'woodland_garden', 'highland_garden', 'arid_garden', 'tropical_garden', 'marsh_garden'].map((g) => `block/${g}`), 54)}</div>` }),
@@ -244,10 +246,10 @@ const assets = {
 
   'card-compat': () => card({
     kicker: 'For servers and modpacks', title: 'Plays well<br>with others', color: C.soft,
-    points: [`${LOADERS.join(', ')} on Minecraft ${VERSIONS.map((v) => v.minecraft).join(' and ')}`,
+    points: [`${LOADERS.join(', ')} on Minecraft ${VERSIONS.map((v) => v.minecraft).join(', ').replace(/, ([^,]+)$/, ' and $1')}`,
       'Vanilla crop blocks: bone meal, bees, villagers and farming add-ons just work',
       'Convention tags (<b class="hi">c:crops/*</b>, <b class="hi">c:seeds/*</b>, knives, foods; <b class="hi">forge:</b> on 1.20.1)',
-      '<b class="hi">JEI</b> shows every cooking pot and cutting board recipe', 'Recipes, heat sources and drops are data: tune them with a datapack'],
+      '<b class="hi">JEI</b> shows every cooking pot and cutting board recipe (1.20.1 and 1.21.1)', 'Recipes, heat sources and drops are data: tune them with a datapack'],
     art: `<div style="position:relative">${photo(region('kitchen.jpg', 0, 40, 1920, 1040, 900), { tilt: -1 })}</div>
       <div style="margin-top:40px">${stats([['Loaders', LOADERS.length], ['Versions', VERSIONS.length], ['Crops', '40'], ['Items', ALL_ITEMS.length]])}</div>` }),
 };

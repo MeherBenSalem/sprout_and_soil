@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "tn.nightbeam.sproutandsoil.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FarmlandBlockMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

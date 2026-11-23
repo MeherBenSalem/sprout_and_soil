@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "sprout_and_soil:cooked_rice",
+    "minecraft:dried_kelp",
+    "sprout_and_soil:salmon_fillet"
+  ],
+  "result": {
+    "count": 3,
+    "id": "sprout_and_soil:salmon_maki"
+  }
+}

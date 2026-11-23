@@ -23,6 +23,7 @@ jar="$repo/$mc/$loader/build/libs/sprout_and_soil-$loader-$mc-$(prop version).ja
 
 case "$(prop java_version)" in
   17) java_home="${JAVA_HOME_17:-/usr/lib/jvm/java-17-openjdk-amd64}" ;;
+  25) java_home="${JAVA_HOME_25:-/usr/lib/jvm/java-25-openjdk-amd64}" ;;
   *) java_home="${JAVA_HOME_21:-/usr/lib/jvm/java-21-openjdk-amd64}" ;;
 esac
 export JAVA_HOME="$java_home" PATH="$java_home/bin:$PATH"

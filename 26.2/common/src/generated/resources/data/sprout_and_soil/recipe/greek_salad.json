@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bowl",
+    "sprout_and_soil:tomato",
+    "sprout_and_soil:cucumber",
+    "sprout_and_soil:olives",
+    "sprout_and_soil:cheese",
+    "sprout_and_soil:onion"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:greek_salad"
+  }
+}

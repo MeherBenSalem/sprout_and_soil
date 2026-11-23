@@ -1,0 +1,16 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:oats",
+    "sprout_and_soil:oats",
+    "minecraft:milk_bucket",
+    "minecraft:sugar"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:oatmeal"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

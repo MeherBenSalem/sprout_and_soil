@@ -1,0 +1,17 @@
+{
+  "type": "sprout_and_soil:cooking",
+  "ingredients": [
+    "sprout_and_soil:rice",
+    "minecraft:brown_mushroom",
+    "minecraft:brown_mushroom",
+    "sprout_and_soil:onion",
+    "sprout_and_soil:cheese"
+  ],
+  "result": {
+    "count": 1,
+    "id": "sprout_and_soil:mushroom_risotto"
+  },
+  "experience": 0.35,
+  "cookingtime": 200,
+  "container": "minecraft:bowl"
+}

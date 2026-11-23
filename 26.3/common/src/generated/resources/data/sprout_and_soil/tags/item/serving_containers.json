@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:bowl",
+    "minecraft:glass_bottle",
+    "sprout_and_soil:mug",
+    "sprout_and_soil:plate"
+  ]
+}

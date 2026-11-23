@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:bone_meal",
+    "minecraft:bone_meal",
+    "minecraft:rotten_flesh",
+    "minecraft:dirt"
+  ],
+  "result": {
+    "count": 4,
+    "id": "sprout_and_soil:fertilizer"
+  }
+}
