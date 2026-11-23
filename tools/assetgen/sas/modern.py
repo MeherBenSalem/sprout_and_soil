@@ -12,6 +12,9 @@ Textures, blockstates, lang, tags and the content manifest are copied as they ar
 - advancement backgrounds name a texture without ``textures/`` and ``.png``;
 - ``minecraft:random_patch`` is gone: a wild garden patch is its ``simple_block`` feature placed with
   count + random_offset + block_predicate_filter modifiers (the same spread, as triangular distributions);
+- tree configs lost ``dirt_provider``/``force_dirt``: what goes under the trunk is ``below_trunk_provider``
+  (26.2: a rule-based provider that puts dirt where ``#minecraft:cannot_replace_below_tree_trunk`` allows;
+  26.3: the built-in ``minecraft:soil_beneath_tree``). Without it the data pack fails to load and the server stops;
 - NeoForge loads every ``data/<ns>/loot_modifiers/*.json``; the global list file is gone;
 - tool materials name their repair items with an item tag (``sprout_and_soil:flint_tool_materials``).
 
@@ -138,6 +141,31 @@ def split_patches(data: Path) -> None:
              "y_spread": _trapezoid(config["y_spread"])},
         ] + inner.get("placement", [])
         _write(placed_path, placed_body)
+
+
+BELOW_TRUNK_262 = {
+    "type": "minecraft:rule_based_state_provider",
+    "rules": [{
+        "if_true": {"type": "minecraft:not", "predicate": {"type": "minecraft:matching_block_tag",
+                                                           "tag": "minecraft:cannot_replace_below_tree_trunk"}},
+        "then": {"type": "minecraft:simple_state_provider", "state": {"Name": "minecraft:dirt"}},
+    }],
+}
+BELOW_TRUNK_263 = "minecraft:soil_beneath_tree"
+
+
+def trees(data: Path, v263: bool) -> None:
+    """Tree configs: dirt_provider + force_dirt -> below_trunk_provider."""
+    configured = data / M / "worldgen" / "configured_feature"
+    for path in sorted(configured.rglob("*.json")):
+        body = _read(path)
+        if body.get("type") != "minecraft:tree":
+            continue
+        config = body["config"]
+        config.pop("dirt_provider", None)
+        config.pop("force_dirt", None)
+        config["below_trunk_provider"] = BELOW_TRUNK_263 if v263 else BELOW_TRUNK_262
+        _write(path, body)
 
 
 def item_definitions(assets: Path) -> None:
@@ -285,6 +313,7 @@ def port(game: str) -> None:
 
     shutil.rmtree(data / "neoforge" / "loot_modifiers")
     split_patches(data)
+    trees(data, formats["v263"])
     _write(data / M / "tags" / "item" / "flint_tool_materials.json", {"values": ["minecraft:flint"]})
     for path in sorted(data.rglob("*.json")):
         rel = path.relative_to(data).as_posix()
@@ -343,7 +372,7 @@ def validate() -> list[str]:
             problems.append(f"{game}: global_loot_modifiers.json left behind")
         for path in target.rglob("*.json"):
             text = path.read_text()
-            if "minecraft:random_patch" in text or '"minecraft:chain"' in text:
+            if "minecraft:random_patch" in text or '"minecraft:chain"' in text or '"dirt_provider"' in text:
                 problems.append(f"{game}: {path.relative_to(target)} has a pre-26 reference")
             if formats["v263"] and ('"condition": "' in text or '"function": "' in text or '"Name":' in text):
                 problems.append(f"{game}: {path.relative_to(target)} still has a 26.2 loot or block-state shape")

@@ -1,9 +1,6 @@
 {
   "type": "minecraft:tree",
   "decorators": [],
-  "dirt_provider": {
-    "id": "minecraft:dirt"
-  },
   "foliage_placer": {
     "type": "minecraft:blob_foliage_placer",
     "radius": 2,
@@ -63,7 +60,6 @@
       }
     ]
   },
-  "force_dirt": false,
   "ignore_vines": true,
   "minimum_size": {
     "type": "minecraft:two_layers_feature_size",
@@ -82,5 +78,6 @@
     "properties": {
       "axis": "y"
     }
-  }
+  },
+  "below_trunk_provider": "minecraft:soil_beneath_tree"
 }
