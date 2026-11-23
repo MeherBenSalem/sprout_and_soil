@@ -7,7 +7,7 @@
     "offset": 0
   },
   "foliage_provider": {
-    "type": "minecraft:weighted_state_provider",
+    "type": "minecraft:weighted",
     "entries": [
       {
         "weight": 4,

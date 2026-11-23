@@ -27,6 +27,8 @@ range for the mod's resource pack and data pack.)
   and ``block_state_property`` became ``match_block`` (``blocks`` and ``state``);
 - configured features live in ``worldgen/feature`` with their config flattened into the feature object,
   block states are ``{"id", "properties"}`` and simple state providers are the bare state;
+  ``minecraft:weighted_state_provider`` is registered as ``minecraft:weighted`` (the old name stops the data pack
+  from loading);
   ``random_offset`` became ``minecraft:offset`` with ``x``/``y``/``z``;
 - block model elements: ``"shade": false`` became ``"shade_direction_override": "up"``;
 - compost chances are an item component (set in Java), so NeoForge's compostables data map is not shipped.
@@ -259,7 +261,8 @@ def loot_modifier_263(body: dict) -> dict:
 
 
 def block_states_263(node):
-    """{"Name", "Properties"} -> {"id", "properties"}; simple_state_provider -> the bare state; random_offset -> offset."""
+    """{"Name", "Properties"} -> {"id", "properties"}; simple_state_provider -> the bare state;
+    weighted_state_provider -> weighted; random_offset -> offset."""
     if isinstance(node, list):
         return [block_states_263(v) for v in node]
     if not isinstance(node, dict):
@@ -271,6 +274,8 @@ def block_states_263(node):
         return state
     if node.get("type") == "minecraft:simple_state_provider" and "state" in node:
         return block_states_263(node["state"])
+    if node.get("type") == "minecraft:weighted_state_provider":
+        return {"type": "minecraft:weighted", **{k: block_states_263(v) for k, v in node.items() if k != "type"}}
     if node.get("type") == "minecraft:random_offset":
         xz, y = node.get("xz_spread", 0), node.get("y_spread", 0)
         return {"type": "minecraft:offset", "x": xz, "y": y, "z": xz}
@@ -374,7 +379,8 @@ def validate() -> list[str]:
             text = path.read_text()
             if "minecraft:random_patch" in text or '"minecraft:chain"' in text or '"dirt_provider"' in text:
                 problems.append(f"{game}: {path.relative_to(target)} has a pre-26 reference")
-            if formats["v263"] and ('"condition": "' in text or '"function": "' in text or '"Name":' in text):
+            if formats["v263"] and ('"condition": "' in text or '"function": "' in text or '"Name":' in text
+                                    or '_state_provider"' in text):
                 problems.append(f"{game}: {path.relative_to(target)} still has a 26.2 loot or block-state shape")
         if formats["v263"] and (data / M / "worldgen" / "configured_feature").exists():
             problems.append(f"{game}: worldgen/configured_feature left behind")
