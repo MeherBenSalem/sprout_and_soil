@@ -253,6 +253,8 @@ for _ in $(seq 1 240); do
   sleep 5
   if grep -q "SAS_SMOKE_OK" "$LOG"; then result=ok; break; fi
   if grep -q -E "$CRASH" "$LOG"; then result=crash; break; fi
+  # A smoke function that does not parse never runs: no need to wait for the timeout.
+  if grep -q "Failed to load function" "$LOG"; then result=bad_function; break; fi
   if ! kill -0 $PID 2>/dev/null; then result=exited; break; fi
 done
 sleep 10
