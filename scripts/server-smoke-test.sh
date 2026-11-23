@@ -4,10 +4,10 @@
 # player online:
 #   places every Sprout & Soil configured feature (12 fruit trees, 6 wild gardens) with /place feature on prepared pads,
 #   places every structure template with /place template,
-#   plants every fruit sapling on its own pad and, with a high random tick speed, checks that each grew into its tree
+#   plants every fruit sapling on its own pad, bone-meals it from a dispenser and checks that each grew into its tree
 #   (the sapling's tree grower finds its feature),
 #   sets every Sprout & Soil block (crops, crates, feasts, cooking pot, cutting board, scarecrow, sprinkler...) on
-#   farmland and lets them random-tick,
+#   farmland,
 #   summons every Sprout & Soil item as an item entity and checks each one is still there a few ticks later
 #   (an unknown or broken item is dropped as air),
 #   then runs /save-all and a guarded /reload and stops.
@@ -105,8 +105,8 @@ echo "Saplings ($SAPLING_COUNT), blocks ($BLOCK_COUNT), items ($ITEM_COUNT)"
 
 if [ "$VERSION" = 1.20.1 ]; then COUNT='Count:1b'; else COUNT='count:1'; fi
 case "$VERSION" in
-  26.*) RANDOM_TICK=random_tick_speed; DAYLIGHT=advance_time; WEATHER=advance_weather; MOBS=spawn_mobs ;;
-  *) RANDOM_TICK=randomTickSpeed; DAYLIGHT=doDaylightCycle; WEATHER=doWeatherCycle; MOBS=doMobSpawning ;;
+  26.*) DAYLIGHT=advance_time; WEATHER=advance_weather; MOBS=spawn_mobs ;;
+  *) DAYLIGHT=doDaylightCycle; WEATHER=doWeatherCycle; MOBS=doMobSpawning ;;
 esac
 
 # Pads for the features and saplings: 13x13, 16 blocks apart, four rows north of spawn, high above the terrain
@@ -164,13 +164,22 @@ for dir in function functions; do
 
   {
     i=0
+    # Up to 1.21.1 a wild garden is a random patch whose 8 tries can all miss the pad; any of 5 placements counts.
     for f in $FEATURES; do
       set -- ${SLOTS[$i]}; i=$((i + 1))
-      check "place_feature_$f" place feature "$MOD:$f" "$1" 100 "$2"
+      echo "scoreboard players set #g sas 0"
+      for _ in 1 2 3 4 5; do
+        echo "execute if score #g sas matches 0 store success score #g sas run place feature $MOD:$f $1 100 $2"
+      done
+      echo "execute if score #g sas matches 1 run say SAS_OK place_feature_$f"
+      echo "execute unless score #g sas matches 1 run say SAS_FAILED place_feature_$f"
     done
+    # Each sapling with a dispenser of bone meal east of it (pulsed by pulse.mcfunction).
     for s in $SAPLINGS; do
       set -- ${SLOTS[$i]}; i=$((i + 1))
       check "plant_$s" setblock "$1" 100 "$2" "$MOD:$s"
+      echo "setblock $(($1+1)) 100 $2 minecraft:dispenser[facing=west]"
+      echo "item replace block $(($1+1)) 100 $2 container.0 with minecraft:bone_meal 64"
     done
     for t in $TEMPLATES; do
       set -- ${SLOTS[$i]}; i=$((i + 1))
@@ -188,11 +197,24 @@ for dir in function functions; do
       x=$((-30 + (j % 20))); z=$((16 + (j / 20))); j=$((j + 1))
       check "summon_$it" summon minecraft:item "$x" 120 "$z" "{Item:{id:\"$MOD:$it\",$COUNT},Tags:[\"sas_smoke\",\"sas_i_$it\"],NoGravity:1b,PickupDelay:32767,Age:-32768}"
     done
-    # Saplings, crops and fruit leaves grow on random ticks.
-    echo "gamerule $RANDOM_TICK 1000"
+    echo 'scoreboard players set #p sas 0'
+    echo "schedule function $NS:pulse 10t"
     echo 'say SAS_SMOKE_RAN'
     echo "schedule function $NS:items 10t"
   } > "$FN/$dir/run.mcfunction"
+
+  # Bone meal: 25 redstone pulses into every sapling's dispenser, 10 ticks apart (each has a 45% chance to advance it).
+  {
+    echo 'scoreboard players add #p sas 1'
+    i=$FEATURE_COUNT
+    for _ in $SAPLINGS; do set -- ${SLOTS[$i]}; i=$((i + 1)); echo "setblock $(($1+2)) 100 $2 minecraft:redstone_block"; done
+    echo "schedule function $NS:unpulse 4t"
+    echo "execute if score #p sas matches ..24 run schedule function $NS:pulse 10t"
+  } > "$FN/$dir/pulse.mcfunction"
+  {
+    i=$FEATURE_COUNT
+    for _ in $SAPLINGS; do set -- ${SLOTS[$i]}; i=$((i + 1)); echo "setblock $(($1+2)) 100 $2 minecraft:air"; done
+  } > "$FN/$dir/unpulse.mcfunction"
 
   # An item that does not exist, or whose stack fails to load, leaves an empty item entity that is removed at once.
   {
@@ -203,7 +225,6 @@ for dir in function functions; do
   } > "$FN/$dir/items.mcfunction"
 
   {
-    echo "gamerule $RANDOM_TICK 3"
     i=$FEATURE_COUNT
     for s in $SAPLINGS; do
       set -- ${SLOTS[$i]}; i=$((i + 1))
@@ -254,9 +275,10 @@ oks=$(grep -c "SAS_OK " "$LOG"); loaded=$(grep -c "QA: loaded " "$LOG")
 echo "Commands OK: $oks of $EXPECTED_OK; mixin targets loaded: $loaded of $TARGET_COUNT"
 [ "$oks" -ge "$EXPECTED_OK" ] || { echo "::error::not every command check passed"; fail=1; }
 [ "$loaded" -ge "$TARGET_COUNT" ] || { echo "::error::not every mixin target class loaded"; fail=1; }
+# (The checkout path is left out: it holds the repository name.)
 # Errors, warnings and exceptions that mention the mod (its id, its logger name, its package or the smoke pack).
 # (Mixin's "refmap could not be read" warning is expected in a dev environment, where names are not remapped.)
-if grep -n -E "(ERROR|WARN|Exception|Caused by|Failed|Couldn't|Unknown|Errors in)" "$LOG" \
+if grep -n -E "(ERROR|WARN|Exception|Caused by|Failed|Couldn't|Unknown|Errors in)" "$LOG" | sed "s|$ROOT|<checkout>|g" \
     | grep -v -E "JAVA_TOOL_OPTIONS|Reference map '$MOD.refmap.json' .* could not be read" \
     | grep -i -E "$MOD|Sprout & Soil|tn\.nightbeam\.sproutandsoil|$NS"; then
   echo "::error::error or warning mentioning the mod"; fail=1
