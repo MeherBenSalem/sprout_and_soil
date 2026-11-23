@@ -32,6 +32,8 @@ neoForge {
         }
         server {
             server()
+            gameDirectory = project.file('runs/server')
+            programArgument('--nogui')
         }
         // QA client: opens the "qa" save straight away (see tools/qa/client_boot.sh).
         qaClient {
