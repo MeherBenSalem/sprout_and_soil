@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:leek_seeds_from_leek"
+        "recipes": [
+          "sprout_and_soil:leek_seeds_from_leek"
+        ]
       }
     },
     "has_ingredient": {

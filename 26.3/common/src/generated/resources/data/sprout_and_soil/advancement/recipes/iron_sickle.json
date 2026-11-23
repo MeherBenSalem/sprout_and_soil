@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:iron_sickle"
+        "recipes": [
+          "sprout_and_soil:iron_sickle"
+        ]
       }
     },
     "has_ingredient": {

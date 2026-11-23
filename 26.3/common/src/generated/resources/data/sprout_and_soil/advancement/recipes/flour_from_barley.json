@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:flour_from_barley"
+        "recipes": [
+          "sprout_and_soil:flour_from_barley"
+        ]
       }
     },
     "has_ingredient": {

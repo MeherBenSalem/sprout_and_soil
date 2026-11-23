@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:cooking_pot"
+        "recipes": [
+          "sprout_and_soil:cooking_pot"
+        ]
       }
     },
     "has_ingredient": {

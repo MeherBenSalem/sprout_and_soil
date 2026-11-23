@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:potato_from_crate"
+        "recipes": [
+          "sprout_and_soil:potato_from_crate"
+        ]
       }
     },
     "has_ingredient": {

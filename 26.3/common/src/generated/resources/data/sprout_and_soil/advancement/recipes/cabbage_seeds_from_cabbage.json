@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:cabbage_seeds_from_cabbage"
+        "recipes": [
+          "sprout_and_soil:cabbage_seeds_from_cabbage"
+        ]
       }
     },
     "has_ingredient": {

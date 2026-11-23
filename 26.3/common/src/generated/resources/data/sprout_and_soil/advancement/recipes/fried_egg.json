@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:fried_egg"
+        "recipes": [
+          "sprout_and_soil:fried_egg"
+        ]
       }
     },
     "has_ingredient": {

@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:tomato_seeds_from_tomato"
+        "recipes": [
+          "sprout_and_soil:tomato_seeds_from_tomato"
+        ]
       }
     },
     "has_ingredient": {

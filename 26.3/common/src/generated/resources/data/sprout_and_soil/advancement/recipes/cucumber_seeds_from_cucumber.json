@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:cucumber_seeds_from_cucumber"
+        "recipes": [
+          "sprout_and_soil:cucumber_seeds_from_cucumber"
+        ]
       }
     },
     "has_ingredient": {

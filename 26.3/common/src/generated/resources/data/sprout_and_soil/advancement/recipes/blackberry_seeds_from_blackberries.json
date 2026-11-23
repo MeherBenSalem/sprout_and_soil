@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:blackberry_seeds_from_blackberries"
+        "recipes": [
+          "sprout_and_soil:blackberry_seeds_from_blackberries"
+        ]
       }
     },
     "has_ingredient": {

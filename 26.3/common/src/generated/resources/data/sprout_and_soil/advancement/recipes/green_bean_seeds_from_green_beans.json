@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:green_bean_seeds_from_green_beans"
+        "recipes": [
+          "sprout_and_soil:green_bean_seeds_from_green_beans"
+        ]
       }
     },
     "has_ingredient": {

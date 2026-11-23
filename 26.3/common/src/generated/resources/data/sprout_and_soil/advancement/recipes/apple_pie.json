@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:apple_pie"
+        "recipes": [
+          "sprout_and_soil:apple_pie"
+        ]
       }
     },
     "has_ingredient": {

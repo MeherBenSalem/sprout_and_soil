@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:zucchini_seeds_from_zucchini"
+        "recipes": [
+          "sprout_and_soil:zucchini_seeds_from_zucchini"
+        ]
       }
     },
     "has_ingredient": {

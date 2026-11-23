@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:chili_pepper_seeds_from_chili_pepper"
+        "recipes": [
+          "sprout_and_soil:chili_pepper_seeds_from_chili_pepper"
+        ]
       }
     },
     "has_ingredient": {

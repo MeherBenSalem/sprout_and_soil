@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:celery_seeds_from_celery"
+        "recipes": [
+          "sprout_and_soil:celery_seeds_from_celery"
+        ]
       }
     },
     "has_ingredient": {

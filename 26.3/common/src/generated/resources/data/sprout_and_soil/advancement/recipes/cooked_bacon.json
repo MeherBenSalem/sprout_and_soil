@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:cooked_bacon"
+        "recipes": [
+          "sprout_and_soil:cooked_bacon"
+        ]
       }
     },
     "has_ingredient": {

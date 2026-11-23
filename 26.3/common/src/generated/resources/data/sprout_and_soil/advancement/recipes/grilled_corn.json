@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:grilled_corn"
+        "recipes": [
+          "sprout_and_soil:grilled_corn"
+        ]
       }
     },
     "has_ingredient": {

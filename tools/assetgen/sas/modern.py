@@ -22,6 +22,8 @@ Textures, blockstates, lang, tags and the content manifest are copied as they ar
 range for the mod's resource pack and data pack.)
 
 26.3 only
+- the ``minecraft:recipe_unlocked`` trigger takes a ``recipes`` list instead of one ``recipe`` (the old key stops
+  the advancement, and the recipe book unlock it carries, from loading);
 - loot conditions and functions are keyed by ``type``; a ``condition`` field holds one condition (several are
   wrapped in ``minecraft:all_of``), ``functions`` became ``modifier``, rolls and counts are integer providers,
   and ``block_state_property`` became ``match_block`` (``blocks`` and ``state``);
@@ -247,6 +249,8 @@ def loot_263(node):
 def advancement_263(body: dict) -> dict:
     for criterion in body.get("criteria", {}).values():
         conditions = criterion.get("conditions", {})
+        if criterion.get("trigger") == "minecraft:recipe_unlocked" and isinstance(conditions.get("recipe"), str):
+            conditions["recipes"] = [conditions.pop("recipe")]
         for key, value in list(conditions.items()):
             if _is_condition_list(value):
                 conditions[key] = conditions_263(value)
@@ -382,6 +386,8 @@ def validate() -> list[str]:
             if formats["v263"] and ('"condition": "' in text or '"function": "' in text or '"Name":' in text
                                     or '_state_provider"' in text):
                 problems.append(f"{game}: {path.relative_to(target)} still has a 26.2 loot or block-state shape")
+            if formats["v263"] and "/advancement/" in path.as_posix() and '"recipe": "' in text:
+                problems.append(f"{game}: {path.relative_to(target)} still has a single recipe_unlocked recipe")
         if formats["v263"] and (data / M / "worldgen" / "configured_feature").exists():
             problems.append(f"{game}: worldgen/configured_feature left behind")
         models = target / "assets" / M / "models" / "item"

@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:turnip_seeds_from_turnip"
+        "recipes": [
+          "sprout_and_soil:turnip_seeds_from_turnip"
+        ]
       }
     },
     "has_ingredient": {

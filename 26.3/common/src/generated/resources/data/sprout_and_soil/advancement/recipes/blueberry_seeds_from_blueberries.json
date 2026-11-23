@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:blueberry_seeds_from_blueberries"
+        "recipes": [
+          "sprout_and_soil:blueberry_seeds_from_blueberries"
+        ]
       }
     },
     "has_ingredient": {

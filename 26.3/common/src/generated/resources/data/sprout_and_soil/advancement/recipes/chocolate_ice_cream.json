@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:chocolate_ice_cream"
+        "recipes": [
+          "sprout_and_soil:chocolate_ice_cream"
+        ]
       }
     },
     "has_ingredient": {

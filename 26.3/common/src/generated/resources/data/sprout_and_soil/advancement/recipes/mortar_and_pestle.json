@@ -4,7 +4,9 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "sprout_and_soil:mortar_and_pestle"
+        "recipes": [
+          "sprout_and_soil:mortar_and_pestle"
+        ]
       }
     },
     "has_ingredient": {
