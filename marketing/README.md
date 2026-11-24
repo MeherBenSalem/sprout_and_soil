@@ -1,11 +1,11 @@
 # Marketing
 
-Listing copy and artwork for CurseForge and Modrinth. Nothing here ships in the mod JARs except the icon, which is
+Listing copy and artwork for CurseForge (NightBeam publishes to CurseForge only). Nothing here ships in the mod JARs except the icon, which is
 also every workspace's `logo.png`.
 
 | Path | What it is |
 |------|------------|
-| `curseforge/description.md` | The project description (Markdown; also works on Modrinth). Images load from this repo's `main` branch. |
+| `curseforge/description.md` | The project description (Markdown). Images load from this repo's `main` branch. |
 | `curseforge/summary.txt` | The one-line summary (215 characters, the limit is 250). |
 | `images/banner.png` | 1800×600 header banner. |
 | `images/icon.png` | 512×512 project icon; `render.cjs` also copies it to `<version>/common/src/main/resources/logo.png`. |
@@ -21,7 +21,7 @@ The look: a farmhouse recipe card. Cream paper with a faint red gingham check, w
 Caprasimo serif and copy in Figtree. Screenshots are taped-on photo prints, and every icon is one of the mod's own
 textures drawn at a whole-pixel scale. Each feature has a colour: leaf green for farming, blossom pink for orchards,
 tomato red for the kitchen, butter yellow for dishes, water blue for tools, meadow green for the wild. Headers are cream
-labels with a stitched border, so they read on both CurseForge's dark page and Modrinth's light one.
+labels with a stitched border, so they read on CurseForge's dark page and on a light one.
 
 ## Regenerating the images
 

@@ -140,8 +140,8 @@ tools/assetgen/            content spec + asset pipeline (Python 3 + Pillow)
   STYLE.md                 art style guide
 tools/qa/                  production server and client boot checks
 tools/showcase/            datapack-driven in-game showcase + screenshot capture
-scripts/                   release tooling: target checks, same-day guard, Modrinth / CurseForge upload
-marketing/                 CurseForge / Modrinth listing copy and artwork
+scripts/                   release tooling: target checks, same-day guard, CurseForge upload
+marketing/                 CurseForge listing copy and artwork
 ```
 
 The Java side reads `sprout_and_soil/content/manifest.json` (generated from the spec) to register the
@@ -156,11 +156,11 @@ python3 tools/assetgen/build_assets.py --art    # also regenerate every texture 
 ## Releasing
 
 CI (`.github/workflows/ci.yml`) builds all 8 jars on every push to `main` that touches the build. Publishing to
-Modrinth and CurseForge is `.github/workflows/publish.yml`, run by hand (`version`, `dry_run`) or by a `v*.*.*` tag;
+CurseForge is `.github/workflows/publish.yml`, run by hand (`version`, `dry_run`) or by a `v*.*.*` tag;
 it never runs on a plain push. It refuses a second release of the mod on the same day (Africa/Tunis), takes the jars
 from `releases/`, the GitHub Release or a build from source, and fails unless exactly the 8 jars are found. It needs
-the secrets `MODRINTH_TOKEN`, `CURSEFORGE_TOKEN`, `CURSEFORGE_API_KEY` and the variables `MODRINTH_ID`,
-`CURSEFORGE_ID`.
+the secrets `CURSEFORGE_TOKEN` (upload token) and `CURSEFORGE_API_KEY` (Core API key) and the variable
+`CURSEFORGE_ID`. NightBeam publishes to CurseForge only; the Modrinth page stays up but gets no new versions.
 
 ## Contributing / Security / License
 
