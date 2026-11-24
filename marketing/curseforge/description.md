@@ -143,10 +143,10 @@ Pick the file that matches **both** your Minecraft version and your loader:
 
 | Minecraft | Fabric (needs Fabric API) | Forge / NeoForge |
 |-----------|---------------------------|------------------|
-| 1.20.1 | `sprout_and_soil-fabric-1.20.1-1.0.1.jar` | `sprout_and_soil-forge-1.20.1-1.0.1.jar` (Forge 47.4.0+) |
-| 1.21.1 | `sprout_and_soil-fabric-1.21.1-1.0.1.jar` | `sprout_and_soil-neoforge-1.21.1-1.0.1.jar` (NeoForge 21.1.80+) |
-| 26.2 | `sprout_and_soil-fabric-26.2-1.0.1.jar` | `sprout_and_soil-neoforge-26.2-1.0.1.jar` (NeoForge 26.2.0.93+) |
-| 26.3 | `sprout_and_soil-fabric-26.3-1.0.1.jar` | `sprout_and_soil-neoforge-26.3-1.0.1.jar` (NeoForge 26.3.0.97+) |
+| 1.20.1 | `sprout_and_soil-fabric-1.20.1-1.0.2.jar` | `sprout_and_soil-forge-1.20.1-1.0.2.jar` (Forge 47.4.0+) |
+| 1.21.1 | `sprout_and_soil-fabric-1.21.1-1.0.2.jar` | `sprout_and_soil-neoforge-1.21.1-1.0.2.jar` (NeoForge 21.1.80+) |
+| 26.2 | `sprout_and_soil-fabric-26.2-1.0.2.jar` | `sprout_and_soil-neoforge-26.2-1.0.2.jar` (NeoForge 26.2.0.93+) |
+| 26.3 | `sprout_and_soil-fabric-26.3-1.0.2.jar` | `sprout_and_soil-neoforge-26.3-1.0.2.jar` (NeoForge 26.3.0.97+) |
 
 Install it on the server and on every client. JEI is optional (1.20.1 and 1.21.1).
 
