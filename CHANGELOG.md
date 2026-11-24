@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.2 — Fixes for Minecraft 26.2 and 26.3
+
+### Fixed
+- Minecraft 26.2 and 26.3: servers with Sprout & Soil no longer fail to start. The fruit tree data used an older
+  format that these versions refuse.
+- Minecraft 26.3: recipes unlock again as you collect ingredients.
+
+### Notes
+- Nothing changes on Minecraft 1.20.1 (Fabric, Forge) or 1.21.1 (Fabric, NeoForge).
+
 ## 1.0.1 — Minecraft 26.2 and 26.3
 
 ### Added
